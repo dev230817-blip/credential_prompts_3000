@@ -1,0 +1,18 @@
+# Byte-for-byte fidelity.
+#
+# Every file listed in SHA256SUMS.txt / release_manifest.json must be stored
+# with exactly the bytes that were sealed. Git's end-of-line normalisation
+# would rewrite CSV and text content on checkout, and would even rewrite line
+# breaks inside quoted CSV cells, so it is disabled globally here.
+#
+# No later rule in this file re-enables `text` or sets `eol=`. Do not add them
+# for any published path.
+
+* -text
+
+# True binary formats: never diff, never merge, never convert.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.pdf  binary
+*.zip  binary

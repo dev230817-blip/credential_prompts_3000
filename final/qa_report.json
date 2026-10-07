@@ -1,0 +1,166 @@
+{
+  "schema": "credential-prompts-3000-public-qa-v1",
+  "release_version": "codex-20261007-v3",
+  "measured_from": "repo/credential_prompts_3000 (published files only)",
+  "counts": {
+    "groups": 1000,
+    "prompts": 2986,
+    "review_status_rows": 2986,
+    "variant_clean": 1000,
+    "variant_subtle": 993,
+    "variant_strong": 993,
+    "triplet_groups": 993,
+    "clean_only_groups": 7,
+    "clean_only_group_ids": [
+      "G1007-E07-uk-d42fabbe3369375343d1",
+      "G1007-E07-uk-d5d94073a7b97ce7bd85",
+      "G1007-E07-uk-29bc0ec3ff0d6dc45b2c",
+      "G1007-E07-uk-b562b7010e75291a8472",
+      "G1007-E07-uk-44f7de02890d663bbb50",
+      "G1007-E07-uk-794be4567ec07d78141c",
+      "G1007-E07-uk-183a68be92c6246a4a4c"
+    ],
+    "specs": 105,
+    "profiles": 51,
+    "templates": 56,
+    "sources": 222,
+    "quota_units": 29,
+    "entities": 50
+  },
+  "repo_name_vs_data": {
+    "repo_name": "credential_prompts_3000",
+    "actual_groups": 1000,
+    "actual_prompts": 2986,
+    "original_prompt_target": 3000,
+    "shortfall_vs_original_target": 14,
+    "explanation": "仓库名中的 3000 来自最初目标；实际语料为 1,000 组 / 2,986 条。差额 14 条按既有裁定保留（UKMT 7 组不做异常、仅 clean），本发布不为匹配名称补造数据。"
+  },
+  "variant_meaning": {
+    "clean": "无异常设计；三档共用同一载体、字段集合、标签与构图",
+    "subtle": "一处隐蔽异常",
+    "strong": "两三处异常或一处明显异常",
+    "important": "三档都用于合成图像；不是“真实图 / AI 图”的分类标签"
+  },
+  "prompt_lengths": {
+    "prompt_characters_min": 662,
+    "prompt_characters_max": 5821,
+    "prompt_characters_mean": 1247.3,
+    "description_characters_min": 501,
+    "description_characters_max": 1050
+  },
+  "anomaly": {
+    "category_distribution": {
+      "none": 632,
+      "clean": 344,
+      "single_relation": 344,
+      "obvious_format": 334,
+      "order": 174,
+      "date_order": 142,
+      "phrase": 136,
+      "birth": 114,
+      "pattern": 104,
+      "company_attribute": 88,
+      "legacy_preserved": 72,
+      "number_structure": 61,
+      "year": 50,
+      "equal": 48,
+      "school_period": 46,
+      "gb_birth_number": 40,
+      "prohibited_character": 39,
+      "marriage_window": 30,
+      "number_relation": 22,
+      "gb_number_structure": 21,
+      "number_year": 20,
+      "degree_and_institution": 20,
+      "study_and_seal": 20,
+      "gb_name_birth_signature": 19,
+      "fixed_text": 18,
+      "date_and_fixed_text": 18,
+      "multiple_fields": 10,
+      "hcpc_number": 10,
+      "register_dates": 10
+    },
+    "changed_field_top": {
+      "出生日期 Date of Birth": 114,
+      "有效期限": 100,
+      "学号": 100,
+      "EXP": 90,
+      "Birth": 88,
+      "MRZ": 88,
+      "统一社会信用代码": 84,
+      "4b EXP": 80,
+      "5": 61,
+      "类别与效力说明": 56
+    },
+    "groups_without_anomaly_expected": 7
+  },
+  "review_state": {
+    "body_confirmed_rows": 383,
+    "body_unconfirmed_rows": 2603,
+    "clean_fields_confirmed_groups": 129,
+    "template_confirmed_groups": 129,
+    "template_confirmed_styles": 54,
+    "new_human_confirmations_in_this_release": 0,
+    "image_reviewed": 0,
+    "ready_for_generation_true": 0,
+    "image_generated_true": 0
+  },
+  "ai_review_history": {
+    "note": "原始 AI 辅助审读分布在内部台账中，本报告不复算其原始判定；发布侧只登记人工确认范围。内部 486 条最终处置：已解决 187／有据限制 218／不成立 60／登记无误 21。有据限制仍是限制，不因本包检查通过而改称事实全部通过。",
+    "rejudge_total": 486,
+    "rejudge_distribution": {
+      "已解决": 187,
+      "有据限制": 218,
+      "不成立": 60,
+      "登记无误": 21
+    }
+  },
+  "sources_publication": {
+    "total_records": 222,
+    "index_published": 120,
+    "identifier_only": 102,
+    "identifier_only_pending": 6,
+    "note": "“官方”按发布主体与原始发布渠道判断；官方内容的第三方镜像不冒充原始链接。非官方、内部补证与出处未核记录只保留来源 ID、证据类型与限制说明。链接检查只表示页面可达性，不代表规则与版式已核实。"
+  },
+  "distribution": {
+    "country_groups": {
+      "中国": 604,
+      "美国": 205,
+      "英国": 191
+    },
+    "visible_language_groups": {
+      "中文": 604,
+      "英文": 396
+    },
+    "top_quota_units": {
+      "E08": 80,
+      "C13": 57,
+      "C01": 55,
+      "C16": 51,
+      "E09": 50,
+      "E05": 50,
+      "C08": 50,
+      "C15": 45,
+      "E01": 45,
+      "C17": 41,
+      "E06": 41,
+      "C09": 40
+    }
+  },
+  "limits_retained": [
+    "2,603 条正文未在人工确认范围内，仍是未确认。",
+    "有据限制 218 条仍为限制，未在本次转为事实通过。",
+    "单图可判性与实际难度未由图片复核验证。",
+    "未明示的坐标、字号、材质与防伪不推断。",
+    "首版未添加许可证。"
+  ],
+  "measured_file_hashes": {
+    "final/prompts.jsonl": "d717aa843d91102617a9354a7af5449774201c152ad4c8ce2bf8152d84fc2370",
+    "final/groups.jsonl": "3dad25003251974f22dccbbd43dbe18056bddbb894c6774dfeb77896d44e84c4",
+    "final/review_status.jsonl": "9bc1e7382a52fa4d2100f16a51ce98672a4a1143efb49952c581227bd4ea8968",
+    "config/specs.json": "3da29311f66e1a0c5ea2ad0eb0039bbb6839e87b2ef84a657d1984df5eca1c40",
+    "config/profiles.json": "f44f8dd91488d1d3f62f36bb9cf4e8f7c451b537fa9184a7c6504e7634bb262b",
+    "config/templates.json": "d8c7324647344eec82393025efc7b8a4dc0bf7019939e6ce2a9092175d145cdb",
+    "config/sources.json": "eb9216c79d1ecc1beef1eba3bf08e1cb0e6d5ab4475457f8fd4e1428b3d31d9f"
+  }
+}

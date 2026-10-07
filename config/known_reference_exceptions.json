@@ -1,0 +1,132 @@
+{
+  "schema": "deepseek-release-known-reference-exceptions-v1",
+  "note": "下列 profile_id / spec_id 在原始 v10 语料中即指向更早阶段（V1005／V7）的对象，这些对象未出现在 profiles_1007.json / specs_1007.json，也不在本次公开副本中重建。本次只登记，不补造对象，不修改任何既有 ID。",
+  "dangling_profile_ids": {
+    "CP1005-C01": {
+      "prompt_rows": 18,
+      "group_rows": 6
+    },
+    "CP1005-C15": {
+      "prompt_rows": 18,
+      "group_rows": 6
+    },
+    "CP1005-E08": {
+      "prompt_rows": 18,
+      "group_rows": 6
+    },
+    "CP1005-E09": {
+      "prompt_rows": 18,
+      "group_rows": 6
+    }
+  },
+  "dangling_spec_ids": {
+    "EXEC-V7-C13-main": {
+      "prompt_rows": 21,
+      "group_rows": 7
+    },
+    "EXEC-V7-C17-school": {
+      "prompt_rows": 18,
+      "group_rows": 6
+    },
+    "EXEC-V7-E06-us": {
+      "prompt_rows": 18,
+      "group_rows": 6
+    }
+  },
+  "affected_prompt_rows": 129,
+  "affected_group_rows": 43,
+  "duplicate_ids": {
+    "note": "重复 ID 在原始数据中已经存在，本次原样保留全部记录，不合并、不改名、不重建对象。按 ID 建索引会静默丢失其中一条，因此公开配置中的对象必须按行处理；本登记给出两条对象的哈希与差异字段。",
+    "duplicates": [
+      {
+        "object_type": "spec",
+        "id": "EXEC-V7-E07-uk",
+        "record_count": 2,
+        "unique_object_count": 2,
+        "object_sha256": [
+          "c5e845a371927560c7f2f159768892ea64c37b5d1695282cbccdcda8aea916d6",
+          "e5bf77d654a6175ac81549a2dfb5f22b3239f981f80eeec8666577a9d66b8408"
+        ],
+        "identical_content": false,
+        "differing_fields": [
+          "fields",
+          "generation_contract",
+          "layout_observations",
+          "source_ids"
+        ],
+        "impact": "UKMT（E07-uk）相关规格；不影响正文与可见值"
+      },
+      {
+        "object_type": "profile",
+        "id": "P1007-V6-E07-uk",
+        "record_count": 2,
+        "unique_object_count": 2,
+        "object_sha256": [
+          "805baaf6f617a3ec58127c3bdef646ec162c0fd2d3207bebf8a6689cc979538d",
+          "34b45adfbc2554d232b3889c6cfb3bd4bf4bb30fd3fc00a4ac00d63a81e5d726"
+        ],
+        "identical_content": false,
+        "differing_fields": [
+          "clean_only",
+          "source_ids",
+          "template"
+        ],
+        "impact": "UKMT（E07-uk）7 条 clean 提示词引用的画像；按 ID 建字典会掩盖两条对象差异"
+      },
+      {
+        "object_type": "template",
+        "id": "EXEC-V6-E07-uk",
+        "record_count": 2,
+        "unique_object_count": 1,
+        "object_sha256": [
+          "3d483873dcfcb0cbb477de9240f4b76c223edc4eb7873e06e906a5e82764b420",
+          "3d483873dcfcb0cbb477de9240f4b76c223edc4eb7873e06e906a5e82764b420"
+        ],
+        "identical_content": true,
+        "differing_fields": [],
+        "impact": "两条模板内容完全相同；仍按两条记录保留"
+      }
+    ],
+    "record_counts": {
+      "specs": {
+        "records": 105,
+        "unique_ids": 104
+      },
+      "profiles": {
+        "records": 51,
+        "unique_ids": 50
+      },
+      "templates": {
+        "records": 56,
+        "unique_ids": 55
+      }
+    }
+  },
+  "documented_urls": {
+    "note": "下列网址是已公开记录文本字段中的说明性官方网址（例如证件上印制的官网），不属于任何来源记录的公开索引链接。校验器用本清单区分“说明性官方网址”与“未公开来源的链接泄漏”。未公开来源的 URL 一律不进入公开文件。",
+    "count": 1,
+    "urls": [
+      {
+        "url": "http://www.gsxt.gov.cn",
+        "host": "www.gsxt.gov.cn",
+        "appears_in": [
+          "config/sources.json",
+          "config/specs.json"
+        ],
+        "classification": "documented_official_reference",
+        "note": "说明性官方网址，出现在已公开记录的文本字段中；不是该来源记录的公开索引链接。"
+      }
+    ],
+    "unregistered_non_official": []
+  },
+  "affected_by_reference_type": {
+    "profile": {
+      "prompt_rows": 72,
+      "group_rows": 24
+    },
+    "spec": {
+      "prompt_rows": 57,
+      "group_rows": 19
+    }
+  }
+}
