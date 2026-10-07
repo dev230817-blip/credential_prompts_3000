@@ -7,7 +7,7 @@
   ],
   "note": "release_manifest.json 列出全部载荷文件，排除自身与 SHA256SUMS.txt；SHA256SUMS.txt 覆盖候选目录中除自身以外的全部文件，含本清单。",
   "payload_file_count": 30,
-  "payload_bytes_total": 64113414,
+  "payload_bytes_total": 64113428,
   "payload_files": [
     {
       "path": ".gitattributes",
@@ -26,13 +26,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 6566,
-      "sha256": "1b330e3b5adf8d3c4d7d2fd1aa4e205f519e5c3b304e3a43cc8e8c91e6cc4627"
+      "bytes": 6572,
+      "sha256": "53d9846e7373e3d2cdefdee413c57a83c69eec24bc3812cd8e85623424a36cfb"
     },
     {
       "path": "README_EN.md",
-      "bytes": 7445,
-      "sha256": "b5c11241f4de5e96da90cc8285ff0d41816d40f109707b3e218430d7db4d312d"
+      "bytes": 7453,
+      "sha256": "2094dba90061abc5b1da184128d9d73cf6eb155165901de2e8b4f20bd66467cd"
     },
     {
       "path": "config/known_reference_exceptions.json",
