@@ -109,7 +109,8 @@
 `config/specs.json` 中。逐项清单见 `config/known_reference_exceptions.json` 的
 `dangling_*` 字段。本次只登记，不补造对象，也不改既有 ID。
 
-`config/profiles.json` 中有 1 个样式未被任何组引用，属保留对象。
+`config/profiles.json` 的 50 个唯一样式 ID 均被组引用，未被引用的配置样式为 0。
+组引用的 54 个 ID 包含这 50 个配置样式与上述 4 个缺失对象 ID。
 
 ## 8. 重复 ID
 

@@ -44,27 +44,22 @@ Human confirmation was recorded earlier by the user for the selected 129 groups 
 | --- | ---: |
 | Source records | 222 |
 | Published as official index | 120 |
-| Identifier only | 102 |
+| Identifier only | 96 |
 | Identifier only, provenance pending | 6 |
+| Unpublished total (the preceding two categories) | 102 |
 
 Official status is decided by the publishing body **and** the original channel. Third-party mirrors of official content are not presented as the official original link. Every referenced `source_id` resolves to a record; records whose provenance is not confirmed are published as identifier-only.
 
 ## 5. Retained limits
 
-- 2,603 条正文未在人工确认范围内，仍是未确认。
-- 有据限制 218 条仍为限制，未在本次转为事实通过。
-- 单图可判性与实际难度未由图片复核验证。
-- 未明示的坐标、字号、材质与防伪不推断。
-- 首版未添加许可证。
+Historical AI-review outcomes are inherited from internal records, not recomputed judgments. The JSON report retains their original Chinese category keys: resolved, evidence-backed limitations, unsubstantiated and correctly registered, respectively. Machine validation does not add human confirmation.
+
+- 2,603 prompt texts remain outside the human-confirmed scope.
+- 218 inherited evidence-backed limitations remain unresolved limitations.
+- Single-image detectability and difficulty have not been tested through image review.
+- Unspecified coordinates, font sizes, materials and security features are not inferred.
+- No license has been selected for this version.
 
 ## 6. Data measured
 
-| File | SHA-256 |
-| --- | --- |
-| `final/prompts.jsonl` | `d717aa843d91102617a9354a7af5449774201c152ad4c8ce2bf8152d84fc2370` |
-| `final/groups.jsonl` | `3dad25003251974f22dccbbd43dbe18056bddbb894c6774dfeb77896d44e84c4` |
-| `final/review_status.jsonl` | `9bc1e7382a52fa4d2100f16a51ce98672a4a1143efb49952c581227bd4ea8968` |
-| `config/specs.json` | `3da29311f66e1a0c5ea2ad0eb0039bbb6839e87b2ef84a657d1984df5eca1c40` |
-| `config/profiles.json` | `f44f8dd91488d1d3f62f36bb9cf4e8f7c451b537fa9184a7c6504e7634bb262b` |
-| `config/templates.json` | `d8c7324647344eec82393025efc7b8a4dc0bf7019939e6ce2a9092175d145cdb` |
-| `config/sources.json` | `eb9216c79d1ecc1beef1eba3bf08e1cb0e6d5ab4475457f8fd4e1428b3d31d9f` |
+The seven primary-data hashes are retained in `qa_report.json`. For the complete file set, use `SHA256SUMS.txt` and `release_manifest.json` at the repository root.

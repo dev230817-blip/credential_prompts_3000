@@ -15,7 +15,7 @@
 | `entity_id`、`quota_id` | 实体与配额单元 |
 | `candidate_id` | 早期候选编号，保留原值 |
 | `source_ids` | 该条引用的来源 ID 列表，可解析到 `config/sources.json` |
-| `release_version` | 本次发布标识，当前为 `deepseek-20261007-v1` |
+| `release_version` | 本次发布标识，当前为 `codex-20261007-v3`；文档与工具的后续修订另由 Git 提交记录区分 |
 
 ## 2. 内容字段
 
@@ -48,8 +48,9 @@
 
 ## 4. 审核状态字段
 
-本发布把当前审核状态写成固定枚举，并把原来的阶段性文字完整保留在
-`historical_review_status` 中。
+`final/prompts.jsonl` 把当前审核状态写成固定枚举，原阶段性文字保留在
+`historical_review_status` 中。`final/groups.jsonl` 保留原状态文字，没有该历史对象字段。
+当前确认范围以 `review_status.jsonl` 的实际 ID／哈希绑定为准，不能只按组文件的旧状态判断。
 
 | 字段 | 取值 | 含义 |
 | --- | --- | --- |
@@ -62,12 +63,12 @@
 | `generation_status` | 文本 | 生成阶段说明；属历史属性 |
 | `validation` | 对象 | 程序检查结果：`errors`、`checks`、`pending_checks` |
 
-原始中文值到当前枚举的对应关系：
+历史文字的参考含义如下；实际当前状态还取决于有效确认绑定，不是逐字替换：
 
 | 原值 | 当前值 |
 | --- | --- |
 | `待人工审核`、`新增模板待使用者确认`、`新增/修订模板待使用者确认`、`返修模板哈希已变，待审`、`正文待人工审核`、`返修正文待人工抽查` | 未确认类枚举 |
-| `使用者已审核通过文字取值`、`沿用已审字段` | `clean_fields_legacy_inherited`（仅历史继承，不进本轮 129 组） |
+| `使用者已审核通过文字取值`、`沿用已审字段` | 未被当前绑定覆盖时为 `clean_fields_legacy_inherited`；被覆盖时为 `clean_fields_confirmed` |
 
 **clean 取值确认只表达本组 clean 取值已确认，不扩展到 subtle 与 strong 的取值确认。**
 
@@ -98,6 +99,7 @@
 
 未确认条目一律使用明确的未确认取值和空绑定字符串，不填写任何时间。`confirmation_basis`
 只写来源类型，不复制对话、内部文件路径或个人信息。
+`clean_fields_only_no_body_confirmation` 是保留枚举，本包未使用；不是新增确认。
 
 `template_object_sha256` 绑定的是**发布副本中的模板对象**。发布副本给模板新增了
 `release_version`，因此该哈希与内部旧对象哈希不同；去掉 `release_version` 后的对象哈希等于
@@ -122,6 +124,12 @@
 | `release_link_checked_at`、`check_status` | 本次链接检查日期与**不含链接**的状态汇总 |
 | `evidence_type`、`support_scope`、`limitations`、`not_published_reason` | 仅保留 ID 的来源所公开的内容 |
 | `internal_origin_file_count` | 被清理的内部文件数量，仅保留计数 |
+| `original_checked_at` | 原来源记录的访问日期，区别于发布整理时的链接检查日期 |
+| `withheld_non_official_url_count` | 仅已公开来源带有此字段，统计从该记录隐藏的非官方 URL；不代表全部内部记录的隐藏数量 |
+| `发布日期或更新日期`、`本次访问日期` | 原页面日期与原核查访问日期，保留文字形式 |
+| `可见页面或面`、`已核字段与位置` | 原记录可支持的页面、证面、字段与位置 |
+| `核查状态` | 原证据核查状态，不等于发布链接可达性 |
+| `适用证件与范围`、`适用证件版本` | 原证据适用对象、范围与版次 |
 | `release_version` | 发布标识 |
 
 非公开来源不出现 URL 与发布机构详情，也不出现任何含链接的检查结果。含 URL 的完整访问记录
@@ -187,7 +195,7 @@ CSV／TXT 由主数据重新生成，规则固定：
 | `config/templates.json` | 56 | 55 | `EXEC-V6-E07-uk` |
 
 重复 ID 的两条对象哈希、差异字段与影响范围逐条登记在
-`config/known_reference_exceptions.json` 的 `duplicate_ids` 字段。三条重复模板内容相同；
+`config/known_reference_exceptions.json` 的 `duplicate_ids` 字段。同一 ID 下的两条模板记录内容相同；
 两条重复规格与两条重复画像内容不同。
 
 **读取这些文件时必须按行处理。** 按 ID 建字典会静默丢掉一条记录；遇到同名 ID 时应报告歧义，
@@ -197,3 +205,23 @@ CSV／TXT 由主数据重新生成，规则固定：
 ## v3 校验补充
 
 V32 按实际组成员复算正文与clean取值绑定，并核对review与prompt的组别、档位和正文确认标记。V33 同时核对发布模板、去掉release_version后的内部模板及解析状态。V41 从实际引用复算七个悬空ID的逐项影响与去重并集：profile为72条／24组，spec为57条／19组，总计129条／43组。
+
+## 10. 组级阶段字段
+
+以下字段保留运行阶段的信息，不构成人工确认。字段可能只在部分记录出现。
+
+| 字段 | 说明 |
+| --- | --- |
+| `generation_family` | 生成阶段或保留基线的来源系列标签 |
+| `source_status`、`layout_status` | 来源与版式的阶段状态，保留原文字 |
+| `revision_version` | 部分修订组记录的修订标签 |
+| `baseline_prompt_id` | 部分继承组对应的基线提示词 ID |
+| `evidence_level`、`execution_status` | 部分阶段记录的证据层级与执行状态 |
+| `text_review` | 部分记录保留的历史文字审阅说明 |
+
+## 11. QA 汇总字段
+
+`sources_publication` 的三个分类互不重叠。`identifier_only` 只统计该枚举，
+不再把待核项包含在内；`unpublished_total` 是 `identifier_only` 与
+`identifier_only_pending` 之和。`measured_file_hashes` 保留七个主数据文件的字节哈希。
+历史 AI 审读数字标为继承记录，公开工具不能重做当时的原始判定。

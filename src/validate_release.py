@@ -32,6 +32,11 @@ Publication boundary
 Hygiene
   V23       no internal paths or secrets in published text
   V28-V29   release_version present, exception registry present
+Reports and documentation
+  V42       exclusive source categories and unpublished total in QA
+  V43       exact primary-data hash map in QA
+  V44       current documentation and QA facts independently recomputed
+  V45       portable QA reconstruction, compared byte for byte
 
 Nothing is written inside the repository. The report goes to --report-dir
 (outside the repo) or to stdout.
@@ -50,6 +55,8 @@ import json
 import os
 import re
 import sys
+import subprocess
+import tempfile
 import zipfile
 
 EXPECTED_GROUPS = 1000
@@ -622,6 +629,113 @@ def main(argv=None):
                 zip_leaks.append({"zip": name, "error": str(exc)})
     rep.check("V39", "shipped ZIP leaks no URL outside the published allowlist",
               not zip_leaks, zip_leaks[:5])
+
+    # Public report checks are independent of the report generator.
+    try:
+        qa = load_json(os.path.join(final, "qa_report.json"))
+    except (OSError, ValueError):
+        qa = {}
+    source_counts = collections.Counter(s.get("publication") for s in sources)
+    expected_split = {"total_records": len(sources),
+                      "index_published": source_counts["index_published"],
+                      "identifier_only": source_counts["identifier_only"],
+                      "identifier_only_pending": source_counts["identifier_only_pending"],
+                      "unpublished_total": len(unpublished)}
+    split_errors = {key: {"expected": value, "actual": qa.get("sources_publication", {}).get(key)}
+                    for key, value in expected_split.items()
+                    if qa.get("sources_publication", {}).get(key) != value}
+    rep.check("V42", "QA source categories are exclusive and counts match records",
+              not split_errors, split_errors)
+    primary = ("final/prompts.jsonl", "final/groups.jsonl", "final/review_status.jsonl",
+               "config/specs.json", "config/profiles.json", "config/templates.json",
+               "config/sources.json")
+    actual_hashes = {}
+    for name in primary:
+        with open(os.path.join(repo, name), "rb") as f:
+            actual_hashes[name] = hashlib.sha256(f.read()).hexdigest()
+    rep.check("V43", "QA primary-data hash map matches current bytes and exact file set",
+              qa.get("measured_file_hashes") == actual_hashes,
+              [name for name in primary if qa.get("measured_file_hashes", {}).get(name) != actual_hashes[name]])
+
+    # Explicit current-facts table; archival CHANGELOG counts are not current assertions.
+    current_clean = {r["group_id"] for r in review if r["clean_fields_confirmed"]}
+    historical = {g["group_id"] for g in groups if g.get("manual_review_status") in
+                  ("使用者已审核通过文字取值", "沿用已审字段")}
+    inherited = [p for p in prompts if p.get("manual_review_status") == "clean_fields_legacy_inherited"]
+    used_profiles = {g["profile_id"] for g in groups}
+    versions = {p.get("release_version") for p in prompts} | {g.get("release_version") for g in groups}
+    current_version = next(iter(versions)) if len(versions) == 1 else "INVALID_MULTIPLE_VERSIONS"
+    expected_facts = {"release_version": current_version, "groups": len(groups), "prompts": len(prompts),
+                      "body_confirmed_rows": sum(r["body_confirmed"] for r in review),
+                      "body_unconfirmed_rows": sum(not r["body_confirmed"] for r in review),
+                      "clean_fields_confirmed_groups": len(current_clean),
+                      "template_confirmed_styles": len({r["profile_id"] for r in review if r["template_confirmed"]}),
+                      **{key: value for key, value in expected_split.items() if key != "total_records"},
+                      "configured_unique_profiles": len(profile_ids), "referenced_profiles": len(used_profiles),
+                      "unreferenced_configured_profiles": len(profile_ids - used_profiles),
+                      "historical_status_groups": len(historical),
+                      "historical_status_now_confirmed_groups": len(historical & current_clean),
+                      "legacy_inherited_groups": len({p["group_id"] for p in inherited}),
+                      "legacy_inherited_rows": len(inherited)}
+    doc_errors = []
+    try:
+        def read_doc(name):
+            with open(os.path.join(repo, name), encoding="utf-8") as f:
+                return f.read()
+        scope = read_doc("docs/review_scope.md")
+        rows = re.findall(r"^\| `([^`]+)` \| `([^`]+)` \|$", scope, re.M)
+        documented_facts = dict(rows)
+        if len(documented_facts) != len(rows):
+            doc_errors.append("duplicate current-facts rows")
+        for key, value in expected_facts.items():
+            if documented_facts.get(key) != str(value):
+                doc_errors.append({"field": key, "expected": str(value), "actual": documented_facts.get(key)})
+        fields = read_doc("docs/data_fields.md")
+        version_claim = re.search(r"当前为 `([^`]+)`", fields)
+        if not version_claim or version_claim.group(1) != current_version:
+            doc_errors.append("data_fields current release_version differs from data")
+        qa_counts, qa_review = qa.get("counts", {}), qa.get("review_state", {})
+        for key, value in (("groups", len(groups)), ("prompts", len(prompts)), ("sources", len(sources))):
+            if qa_counts.get(key) != value:
+                doc_errors.append("QA counts." + key)
+        for key in ("body_confirmed_rows", "body_unconfirmed_rows", "clean_fields_confirmed_groups", "template_confirmed_styles"):
+            if qa_review.get(key) != expected_facts[key]:
+                doc_errors.append("QA review_state." + key)
+        for name in ("README.md", "README_EN.md"):
+            text = read_doc(name)
+            for key, label in (("body_confirmed_rows", "confirmed prompt texts"),
+                               ("body_unconfirmed_rows", "unconfirmed prompt texts"),
+                               ("clean_fields_confirmed_groups", "confirmed clean groups"),
+                               ("template_confirmed_styles", "confirmed template styles")):
+                if not re.search(r"(?<![\d,])" + re.escape(format(expected_facts[key], ',')) + r"(?![\d,])", text):
+                    doc_errors.append(name + ": missing current " + label)
+    except OSError as exc:
+        doc_errors.append(type(exc).__name__ + ": required document unavailable")
+    rep.check("V44", "current documentation and QA facts match data (historical scopes separate)",
+              not doc_errors, doc_errors[:12])
+
+    rebuilt_equal, rebuild_detail = False, ""
+    with tempfile.TemporaryDirectory(prefix="credential_qa_check_") as tmp:
+        output = os.path.join(tmp, "rebuilt")
+        try:
+            command = [sys.executable, "-B", "-X", "utf8", os.path.join(repo, "src", "build_qa_report.py"),
+                       "--repo", repo, "--out", output]
+            child = subprocess.run(command, capture_output=True, timeout=60)
+            different = []
+            if child.returncode == 0:
+                for name in ("qa_report.json", "qa_report.md"):
+                    with open(os.path.join(output, name), "rb") as f:
+                        rebuilt = f.read()
+                    with open(os.path.join(final, name), "rb") as f:
+                        if rebuilt != f.read():
+                            different.append(name)
+            rebuilt_equal = child.returncode == 0 and not different
+            rebuild_detail = {"exit_code": child.returncode, "different_reports": different,
+                              "stderr": child.stderr.decode("utf-8", errors="replace")[-500:]}
+        except (OSError, subprocess.TimeoutExpired) as exc:
+            rebuild_detail = type(exc).__name__
+    rep.check("V45", "portable QA generator reproduces both published reports byte for byte",
+              rebuilt_equal, rebuild_detail)
 
     result = {
         "schema": "credential-release-validation-v3",

@@ -33,13 +33,13 @@
     "actual_prompts": 2986,
     "original_prompt_target": 3000,
     "shortfall_vs_original_target": 14,
-    "explanation": "仓库名中的 3000 来自最初目标；实际语料为 1,000 组 / 2,986 条。差额 14 条按既有裁定保留（UKMT 7 组不做异常、仅 clean），本发布不为匹配名称补造数据。"
+    "explanation": "The repository name retains the original 3,000-prompt target. Seven UKMT groups remain clean-only under the existing decision; no records were added to fill the 14-prompt shortfall."
   },
   "variant_meaning": {
-    "clean": "无异常设计；三档共用同一载体、字段集合、标签与构图",
-    "subtle": "一处隐蔽异常",
-    "strong": "两三处异常或一处明显异常",
-    "important": "三档都用于合成图像；不是“真实图 / AI 图”的分类标签"
+    "clean": "No designed anomaly; variants share the carrier, field set, labels and layout",
+    "subtle": "One concealed anomaly",
+    "strong": "Two or three anomalies, or one obvious anomaly",
+    "important": "All variants are synthetic-image prompts, not real-photo versus AI-image labels"
   },
   "prompt_lengths": {
     "prompt_characters_min": 662,
@@ -106,7 +106,7 @@
     "image_generated_true": 0
   },
   "ai_review_history": {
-    "note": "原始 AI 辅助审读分布在内部台账中，本报告不复算其原始判定；发布侧只登记人工确认范围。内部 486 条最终处置：已解决 187／有据限制 218／不成立 60／登记无误 21。有据限制仍是限制，不因本包检查通过而改称事实全部通过。",
+    "note": "Inherited from internal historical AI-assisted review, not independently recomputed from this repository: 486 rejudged records, comprising 187 resolved, 218 evidence-backed limitations, 60 unsubstantiated and 21 correctly registered. Limitations remain limitations.",
     "rejudge_total": 486,
     "rejudge_distribution": {
       "已解决": 187,
@@ -118,9 +118,10 @@
   "sources_publication": {
     "total_records": 222,
     "index_published": 120,
-    "identifier_only": 102,
+    "identifier_only": 96,
     "identifier_only_pending": 6,
-    "note": "“官方”按发布主体与原始发布渠道判断；官方内容的第三方镜像不冒充原始链接。非官方、内部补证与出处未核记录只保留来源 ID、证据类型与限制说明。链接检查只表示页面可达性，不代表规则与版式已核实。"
+    "unpublished_total": 102,
+    "note": "Publication categories are mutually exclusive. unpublished_total is the sum of identifier_only and identifier_only_pending. Official status requires the publisher and original channel; link reachability alone does not establish the correctness of rules or layouts."
   },
   "distribution": {
     "country_groups": {
@@ -148,11 +149,11 @@
     }
   },
   "limits_retained": [
-    "2,603 条正文未在人工确认范围内，仍是未确认。",
-    "有据限制 218 条仍为限制，未在本次转为事实通过。",
-    "单图可判性与实际难度未由图片复核验证。",
-    "未明示的坐标、字号、材质与防伪不推断。",
-    "首版未添加许可证。"
+    "2,603 prompt texts remain outside the human-confirmed scope.",
+    "218 inherited evidence-backed limitations remain unresolved limitations.",
+    "Single-image detectability and difficulty have not been tested through image review.",
+    "Unspecified coordinates, font sizes, materials and security features are not inferred.",
+    "No license has been selected for this version."
   ],
   "measured_file_hashes": {
     "final/prompts.jsonl": "d717aa843d91102617a9354a7af5449774201c152ad4c8ce2bf8152d84fc2370",

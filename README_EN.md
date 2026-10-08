@@ -52,6 +52,8 @@ See the [taxonomy](docs/taxonomy.md) for category counts, entity lists, and the 
 │   ├── sources.json / sources.csv       # Source indexes and support scope
 │   └── known_reference_exceptions.json  # Registered reference exceptions
 ├── docs/                               # Taxonomy, fields, review, and sources
+├── tests/                              # Regression tests
+├── .github/workflows/                  # Automated validation
 └── src/                                # Reading, export, and checking tools
 ```
 
@@ -71,11 +73,11 @@ JSONL and JSON files in `final/` and `config/` are the primary data. Arrays and 
 | `body_approved` / `variant_review_status` | Human confirmation of prompt text and variant review status |
 | `ready_for_generation` / `image_generated` | Generation readiness and image status; both are currently `false` |
 
-See [data fields](docs/data_fields.md) for the full schema and hash definitions.
+See [data fields](docs/data_fields.md) for field descriptions and hash definitions. Detailed field, source and review documents are primarily in Chinese.
 
 ## Usage
 
-Run these examples from the repository root. The tools use only the Python 3 standard library.
+Run these examples from the repository root. The tools use only the Python standard library; automated checks use Python 3.14.
 
 Read the prompts in the first base group:
 
@@ -105,6 +107,9 @@ python src/export_data.py --repo . --out ./my_export
 # Check data and references; write reports outside the repository
 python src/validate_release.py --repo . --report-dir ../validation_out
 
+# Rebuild public QA; output must be new and outside the repository
+python src/build_qa_report.py --repo . --out ../qa_rebuilt
+
 # Verify the file set and SHA-256 checksums
 python src/verify_hashes.py --repo .
 ```
@@ -113,7 +118,7 @@ These tools make no network requests and do not call image models. They support 
 
 ## Quality checks and known limits
 
-The validator runs 41 checks covering group and variant counts, IDs and references, prompt and visible-value hashes, human confirmation bindings, CSV consistency, and source publication conditions. Program checks, human confirmation, and image acceptance are recorded separately.
+The validator reports its check count and individual results, covering group and variant counts, IDs and references, prompt and visible-value hashes, human confirmation bindings, CSV consistency, and source publication conditions. Program checks, human confirmation, and image acceptance are recorded separately.
 
 Existing human confirmation covers **templates for 54 styles, clean values for 129 groups, and 383 prompt texts**. The remaining **2,603 prompt texts have not been confirmed by a human**. The 218 evidence-backed limitations retained from historical AI review still apply. See [review scope](docs/review_scope.md) and the [QA report](final/qa_report.md).
 
@@ -122,3 +127,6 @@ The source table contains 222 records: **120** have public source indexes. The r
 No image model has been called, so there are no measured results for image readability, OCR accuracy, visual realism, or detection difficulty.
 
 The project team has not selected a license, and no `LICENSE` file is included. See [release integrity](docs/release_integrity.md) for file hashes and Git line-ending settings.
+
+Values are constructed for research and have not been checked against real registries.
+They are not intended for credential issuance or identity authentication.

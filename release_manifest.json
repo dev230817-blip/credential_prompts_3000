@@ -6,8 +6,8 @@
     "SHA256SUMS.txt"
   ],
   "note": "release_manifest.json 列出全部载荷文件，排除自身与 SHA256SUMS.txt；SHA256SUMS.txt 覆盖候选目录中除自身以外的全部文件，含本清单。",
-  "payload_file_count": 30,
-  "payload_bytes_total": 64113428,
+  "payload_file_count": 32,
+  "payload_bytes_total": 64145955,
   "payload_files": [
     {
       "path": ".gitattributes",
@@ -21,18 +21,18 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 9519,
-      "sha256": "8af38a9a86d7ece629c976d4f385b46803039760840b53452f60080ba80a3d11"
+      "bytes": 9976,
+      "sha256": "a8e32afa524da7e8834e981c6d6e421355be95a186763338f84287ff7568f21d"
     },
     {
       "path": "README.md",
-      "bytes": 6572,
-      "sha256": "53d9846e7373e3d2cdefdee413c57a83c69eec24bc3812cd8e85623424a36cfb"
+      "bytes": 6990,
+      "sha256": "f4f824dcf867c6b004c420ad6e7b7fc948a3d27a9152107d2ca9766cf18a0d22"
     },
     {
       "path": "README_EN.md",
-      "bytes": 7453,
-      "sha256": "2094dba90061abc5b1da184128d9d73cf6eb155165901de2e8b4f20bd66467cd"
+      "bytes": 8014,
+      "sha256": "25bf2fa8728759b7cc99b93443d3e0755f81ebeb415fb9ac9ea6dc65962e341d"
     },
     {
       "path": "config/known_reference_exceptions.json",
@@ -71,33 +71,33 @@
     },
     {
       "path": "docs/data_fields.md",
-      "bytes": 11567,
-      "sha256": "d420a5e67696466ab203dccf4aff61d30764d21dd26fcee994d248689effb98a"
+      "bytes": 13706,
+      "sha256": "c8bc004af6788d157bb1bc306ded01cc4a08c5da3300fda72d733454ca7fbf18"
     },
     {
       "path": "docs/release_integrity.md",
-      "bytes": 2080,
-      "sha256": "a28a90038ea10a57293697aeee0161c8fea61c67aec46a73bbdcece10eaf07fd"
+      "bytes": 2315,
+      "sha256": "d3f0a76a824293950515d572078622776e9d17b0de73449eba9115ef1635d911"
     },
     {
       "path": "docs/reproduction_scope.md",
-      "bytes": 3975,
-      "sha256": "0d8d8165252559d5a473a2a46fb677dfd9c21cd55ac666a456a1ca473f46956f"
+      "bytes": 3994,
+      "sha256": "311f422d46a3aec6cf5968907e67e3350251f17cddfc255e2ce893efdb1dc44e"
     },
     {
       "path": "docs/review_scope.md",
-      "bytes": 3902,
-      "sha256": "498632b3cd534f5c030f9032586397787762d30e0128360ca54fde3e5aed82f5"
+      "bytes": 5029,
+      "sha256": "564551b41b9aca7ad8449ee8487bedabbbbfd1f05511132b059e3bf3424bf808"
     },
     {
       "path": "docs/sources_and_limits.md",
-      "bytes": 8498,
-      "sha256": "b741e0caf30be684c2c11ed1316a91c64c03b2f163e577f0c5d570ee0e4fe08c"
+      "bytes": 8567,
+      "sha256": "ce1b3c69334d236a2e75a3b0bde65cb350174b7f343401b17e0e30a3e82c5679"
     },
     {
       "path": "docs/taxonomy.md",
-      "bytes": 5924,
-      "sha256": "9df4e048923bf10bb083359d0b8b5e90abad0617c8bb9c8695205ea9d8b22be9"
+      "bytes": 6028,
+      "sha256": "ad8f7130abbf306d267c791535745f4e246e0288b3fc29bb731bffc97713b0a3"
     },
     {
       "path": "final/groups.csv",
@@ -126,18 +126,23 @@
     },
     {
       "path": "final/qa_report.json",
-      "bytes": 5742,
-      "sha256": "2269d88261146d81c52eb6c0f4a8696cd5231bb7194d4108cc655984572ebd5f"
+      "bytes": 5791,
+      "sha256": "3c9903d22fa5318494c016c8102e57c1a8001471b7bbf8613f31cdd976ea8198"
     },
     {
       "path": "final/qa_report.md",
-      "bytes": 3105,
-      "sha256": "9c97403043ff9d2ec93445d6ddf70caf0ce0e1b2ffaa33127e111819612fe45a"
+      "bytes": 3002,
+      "sha256": "9b2de17ee03ea5c92b99c381a534a6f68740c4279879341339fdadc912fc4de5"
     },
     {
       "path": "final/review_status.jsonl",
       "bytes": 2817007,
       "sha256": "9bc1e7382a52fa4d2100f16a51ce98672a4a1143efb49952c581227bd4ea8968"
+    },
+    {
+      "path": "src/build_qa_report.py",
+      "bytes": 14399,
+      "sha256": "46e8eb05602c18be748ec3734eb5591fb7ef24fbb62aba2dc6cf8b98db356261"
     },
     {
       "path": "src/export_data.py",
@@ -151,13 +156,18 @@
     },
     {
       "path": "src/validate_release.py",
-      "bytes": 31700,
-      "sha256": "4a79b74e20d688bd72a6cc5bea5b26ca557ee1735d549270ed9056096e14e6e3"
+      "bytes": 39137,
+      "sha256": "0ab7894c8eee9cd90bbd357fd48107af565665722f418eb4d895ed54d2802dbd"
     },
     {
       "path": "src/verify_hashes.py",
       "bytes": 5606,
       "sha256": "28a746409a1abd8290ee9b7317dd83c82061c5fa50c524ef36dd7f382a2b1e60"
+    },
+    {
+      "path": "tests/test_release_consistency.py",
+      "bytes": 5616,
+      "sha256": "8132f9d0e92587739ee149de1b49b322e5a77dfa0cc49a41015efbece7de06b7"
     }
   ]
 }
