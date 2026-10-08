@@ -1,0 +1,29 @@
+name: Validate release
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.14'
+      - name: Validate data, reports and documentation
+        run: python -B -X utf8 src/validate_release.py --repo . --report-dir "$RUNNER_TEMP/release-checks"
+      - name: Verify hashes and file set
+        run: python -B -X utf8 src/verify_hashes.py --repo .
+      - name: Run regression and QA reproduction tests
+        run: python -B -X utf8 -m unittest discover -s tests -v

@@ -6,13 +6,18 @@
     "SHA256SUMS.txt"
   ],
   "note": "release_manifest.json 列出全部载荷文件，排除自身与 SHA256SUMS.txt；SHA256SUMS.txt 覆盖候选目录中除自身以外的全部文件，含本清单。",
-  "payload_file_count": 32,
-  "payload_bytes_total": 64145955,
+  "payload_file_count": 33,
+  "payload_bytes_total": 64146841,
   "payload_files": [
     {
       "path": ".gitattributes",
       "bytes": 575,
       "sha256": "58854ae79a7d05ee843c71eb145f0ad89b3cda555472570b5a5eef691dd5369c"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "bytes": 886,
+      "sha256": "233f54570b3e3a069de68476bb710151c0242cf7faaf395001710cba0fb37370"
     },
     {
       "path": ".gitignore",
