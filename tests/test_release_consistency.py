@@ -72,7 +72,7 @@ class ReleaseConsistency(unittest.TestCase):
         def mutate(repo):
             path = repo / 'docs/data_fields.md'
             path.write_text(path.read_text(encoding='utf-8').replace(
-                '当前为 `codex-20261007-v3`', '当前为 `wrong-version`'), encoding='utf-8', newline='\n')
+                '当前为 `codex-20261011-feedback-v4`', '当前为 `wrong-version`'), encoding='utf-8', newline='\n')
         self.assert_mutation(mutate, 'V44')
 
     def test_current_review_scope(self):
@@ -106,6 +106,62 @@ class ReleaseConsistency(unittest.TestCase):
         result = run_tool(REPO, 'validate_release.py')
         self.assertEqual(result.returncode, 0, result.stderr.decode('utf-8', errors='replace'))
         self.assertEqual(json.loads(result.stdout)['failed'], 0)
+
+    def test_changed_body_invalidates_confirmation(self):
+        def mutate(repo):
+            path = repo / 'final/prompts.jsonl'
+            rows = [json.loads(x) for x in path.read_text(encoding='utf-8').splitlines()]
+            rows[0]['prompt'] += ' altered body'
+            path.write_text(''.join(json.dumps(x, ensure_ascii=False) + '\n' for x in rows), encoding='utf-8')
+        self.assert_mutation(mutate, 'V14')
+
+    def test_missing_confirmation_record(self):
+        def mutate(repo):
+            path = repo / 'final/review_status.jsonl'
+            rows = path.read_text(encoding='utf-8').splitlines()
+            path.write_text('\n'.join(rows[1:]) + '\n', encoding='utf-8')
+        self.assert_mutation(mutate, 'V03')
+
+    def test_csv_body_disagreement(self):
+        def mutate(repo):
+            import csv
+            path = repo / 'final/prompts.csv'
+            with path.open(encoding='utf-8', newline='') as f:
+                reader = csv.DictReader(f); fields = reader.fieldnames; rows = list(reader)
+            rows[0]['prompt'] += ' altered export'
+            with path.open('w', encoding='utf-8', newline='') as f:
+                writer = csv.DictWriter(f, fieldnames=fields); writer.writeheader(); writer.writerows(rows)
+        self.assert_mutation(mutate, 'V24')
+
+    def test_active_template_disagreement(self):
+        def mutate(repo):
+            path = repo / 'config/active_templates.json'
+            data = json.loads(path.read_text(encoding='utf-8'))
+            data['templates'][0]['shared_prompt_sections']['layout'] += ' changed layout'
+            write_json(path, data)
+        self.assert_mutation(mutate, 'V46')
+
+    def test_coverage_counts(self):
+        def mutate(repo):
+            path = repo / 'config/reference_coverage.json'
+            data = json.loads(path.read_text(encoding='utf-8')); data['counts']['partial'] = 23
+            write_json(path, data)
+        self.assert_mutation(mutate, 'V48')
+
+    def test_private_metadata_path(self):
+        def mutate(repo):
+            path = repo / 'config/reference_coverage.json'
+            data = json.loads(path.read_text(encoding='utf-8')); data['note'] = 'C:/Users/private/original.png'
+            write_json(path, data)
+        self.assert_mutation(mutate, 'V49')
+
+    def test_wrong_confirmation_basis(self):
+        def mutate(repo):
+            path = repo / 'final/review_status.jsonl'
+            rows = [json.loads(x) for x in path.read_text(encoding='utf-8').splitlines()]
+            rows[0]['confirmation_basis'] = 'machine_check_only'
+            path.write_text(''.join(json.dumps(x, ensure_ascii=False) + '\n' for x in rows), encoding='utf-8')
+        self.assert_mutation(mutate, 'V47')
 
 if __name__ == '__main__':
     unittest.main()

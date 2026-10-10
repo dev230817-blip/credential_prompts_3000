@@ -120,13 +120,19 @@ These tools make no network requests and do not call image models. They support 
 
 The validator reports its check count and individual results, covering group and variant counts, IDs and references, prompt and visible-value hashes, human confirmation bindings, CSV consistency, and source publication conditions. Program checks, human confirmation, and image acceptance are recorded separately.
 
-Existing human confirmation covers **templates for 54 styles, clean values for 129 groups, and 383 prompt texts**. The remaining **2,603 prompt texts have not been confirmed by a human**. The 218 evidence-backed limitations retained from historical AI review still apply. See [review scope](docs/review_scope.md) and the [QA report](final/qa_report.md).
+On 2026-10-11 the user explicitly confirmed all **2,986 current prompt texts**; **0** bodies remain unconfirmed. Independent clean-value confirmation remains **129 groups**. Unchanged independently confirmed templates cover **31 styles**; historical approvals remain archived. Body approval does not establish source verification or image acceptance.
 
 The source table contains 222 records: **120** have public source indexes. The remaining **102** records retain IDs, support scope, and limits; 6 of them are marked provenance-pending. Seven dangling references affect 129 prompts across 43 base groups, and three duplicate-ID sets are registered. Preserve these exceptions when using the configuration files. Details are in [sources and limits](docs/sources_and_limits.md) and the [reference exception registry](config/known_reference_exceptions.json).
 
-No image model has been called, so there are no measured results for image readability, OCR accuracy, visual realism, or detection difficulty.
+No image model has been called for this released version, so there are no measured results for image readability, OCR accuracy, visual realism, or detection difficulty.
 
 The project team has not selected a license, and no `LICENSE` file is included. See [release integrity](docs/release_integrity.md) for file hashes and Git line-ending settings.
 
 Values are constructed for research and have not been checked against real registries.
 They are not intended for credential issuance or identity authentication.
+
+## Feedback revision, 11 October
+
+This version explicitly describes supported signatures, seals, institutional marks and key graphics. It updates 1,150 prompt bodies across 388 groups and 23 styles while retaining visible values and anomaly designs. Current shared descriptions are in `config/active_templates.json`; legacy templates and specifications remain baseline references, and the frozen generator does not reproduce the current bodies byte for byte.
+
+Internal reference coverage is 5 obtained, 22 partial, 21 sample-only and 2 missing. C02 now has edited independent householder-card references; C18 and NMC remain missing. Further source research is stopped, with limitations retained. Private original images and observations are excluded. Current-version images generated and accepted remain 0.

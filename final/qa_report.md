@@ -26,17 +26,17 @@ The repository name says `3000`; the corpus is **1000 groups / 2986 prompts**. T
 
 | Item | Value |
 | --- | ---: |
-| body_confirmed rows | 383 |
-| Unconfirmed body rows | 2603 |
+| body_confirmed rows | 2986 |
+| Unconfirmed body rows | 0 |
 | clean-fields confirmed groups | 129 |
-| template confirmed groups | 129 |
-| template confirmed styles | 54 |
-| New human confirmations in this release | 0 |
+| template confirmed groups | 31 |
+| template confirmed styles | 31 |
+| New human confirmations in this release | 2986 |
 | Images generated / reviewed | 0 |
 | ready_for_generation = true | 0 |
 | image_generated = true | 0 |
 
-Human confirmation was recorded earlier by the user for the selected 129 groups / 383 rows. This release only carries that state through verified bindings; it adds none.
+On 2026-10-11 the user explicitly confirmed all 2,986 latest prompt bodies. The 2,986 confirmation events include reconfirmation; 2,603 IDs were outside the historical 383-body scope. Independent clean-field and template approvals retain their own bindings.
 
 ## 4. Source publication
 
@@ -54,7 +54,7 @@ Official status is decided by the publishing body **and** the original channel. 
 
 Historical AI-review outcomes are inherited from internal records, not recomputed judgments. The JSON report retains their original Chinese category keys: resolved, evidence-backed limitations, unsubstantiated and correctly registered, respectively. Machine validation does not add human confirmation.
 
-- 2,603 prompt texts remain outside the human-confirmed scope.
+- All 2,986 current bodies were explicitly confirmed by the user; independent field/template and source statuses remain separate.
 - 218 inherited evidence-backed limitations remain unresolved limitations.
 - Single-image detectability and difficulty have not been tested through image review.
 - Unspecified coordinates, font sizes, materials and security features are not inferred.
@@ -62,4 +62,4 @@ Historical AI-review outcomes are inherited from internal records, not recompute
 
 ## 6. Data measured
 
-The seven primary-data hashes are retained in `qa_report.json`. For the complete file set, use `SHA256SUMS.txt` and `release_manifest.json` at the repository root.
+The primary-data hashes are retained in `qa_report.json`. For the complete file set, use `SHA256SUMS.txt` and `release_manifest.json` at the repository root.

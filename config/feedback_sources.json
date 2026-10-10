@@ -1,0 +1,156 @@
+{
+  "sources": [
+    {
+      "source_id": "D2010-001",
+      "publication": "identifier_only_pending",
+      "reported_evidence_level": "①官方样张（经 Commons 转载；credit 指向公安部域名）",
+      "entity_ids": [
+        "C01-authority",
+        "C01-portrait"
+      ],
+      "support_scope": "二代居民身份证国徽面与人像面的样本身份版式：国徽＋标题＋签发机关／有效期限栏；人像面字段名与公民身份号码写法",
+      "limitations": "字号、坐标、防伪；非官网直取；样件带 SAMPLE／样本 叠印；不能替代实件",
+      "acceptance": "DSH supplied observation; official original provenance not newly checked in this release"
+    },
+    {
+      "source_id": "D2010-002",
+      "publication": "identifier_only_pending",
+      "reported_evidence_level": "①官方（学校）",
+      "entity_ids": [
+        "C12-main"
+      ],
+      "support_scope": "2022-01-01 起可在国家政务服务平台获取普通话水平测试等级证书电子证书、与纸质同等效力；小程序查询路径",
+      "limitations": "证书内页版式；PDF 内只有小程序截图",
+      "acceptance": "DSH supplied observation; official original provenance not newly checked in this release"
+    },
+    {
+      "source_id": "D2010-003",
+      "publication": "identifier_only_pending",
+      "reported_evidence_level": "②公开实物观察（第三方发布）",
+      "entity_ids": [
+        "C15-main"
+      ],
+      "support_scope": "营业执照副本实物形态：标题「营业执照（副 本）」、字段行、重要提示 3 条、登记机关红色圆章与日期",
+      "limitations": "正本版式；2022-09-01 调整版；字号与坐标；发布者已遮罩部分字段值",
+      "acceptance": "DSH supplied observation; official original provenance not newly checked in this release"
+    },
+    {
+      "source_id": "D2010-004",
+      "publication": "identifier_only_pending",
+      "reported_evidence_level": "①官方样卡（行业协会转载）",
+      "entity_ids": [
+        "E08-uk"
+      ],
+      "support_scope": "2021-12 改版后英国驾照正面：标题 UK DRIVING LICENCE、无 EU 旗帜、右上 Union Jack、1／2／3／4a／4b／4c／5／7／8／9 字段编号",
+      "limitations": "字号、坐标、防伪；图为 326×204 小图；非 DVLA 官网直取",
+      "acceptance": "DSH supplied observation; official original provenance not newly checked in this release"
+    },
+    {
+      "source_id": "D2010-005",
+      "publication": "identifier_only_pending",
+      "reported_evidence_level": "②公开实物观察（第三方发布）",
+      "entity_ids": [
+        "E09-uk"
+      ],
+      "support_scope": "英格兰及威尔士 Companies House 成立证书的证面结构：Royal Arms、标题、Company Number、登记官证明句、Given at Companies House on <date>、左下 Companies House 标识、右下圆形登记官印章",
+      "limitations": "private company limited by shares 版式；字号与坐标；所见为改名证书且公司类型为 C.I.C.",
+      "acceptance": "DSH supplied observation; official original provenance not newly checked in this release"
+    },
+    {
+      "source_id": "D2010-006",
+      "publication": "identifier_only_pending",
+      "reported_evidence_level": "③第三方转载（正文标注综合司法部官网）",
+      "entity_ids": [
+        "C16-legal"
+      ],
+      "support_scope": "标准号 SF/T 0165-2024、2024-02-01 实施、公告「删除了司法部印章（2019 版 5.4.1）、司法部部长签名（2019 版 5.4.2）」",
+      "limitations": "标准全文；自媒体转述与标准文本的一致性；「删除印章」一项与 cuploeru 新版图所见红色圆章矛盾，待官方原文",
+      "acceptance": "DSH supplied observation; official original provenance not newly checked in this release"
+    },
+    {
+      "source_id": "D2010-007",
+      "publication": "identifier_only_pending",
+      "reported_evidence_level": "③第三方转载（使用者线索）",
+      "entity_ids": [
+        "C06-m"
+      ],
+      "support_scope": "M 类贴纸件面：类别栏印 M、(1)—(11) 字段序号、右上红色圆形国徽图案＋长城图案、停留 030、签发地点 河内",
+      "limitations": "官方印法；字号尺寸防伪；MRZ；版次；照片与姓名已被发布者遮挡",
+      "acceptance": "DSH supplied observation; official original provenance not newly checked in this release"
+    },
+    {
+      "source_id": "D2010-008",
+      "publication": "identifier_only_pending",
+      "reported_evidence_level": "③第三方转载（人社系统网站，使用者线索）",
+      "entity_ids": [
+        "C12-main"
+      ],
+      "support_scope": "证书内页版式：左右分栏字段、国家语委与人社机构两枚红章、二维码与条码、cltt.org 查询行",
+      "limitations": "2022 新版版式；字号坐标；是否相机拍摄未核",
+      "acceptance": "DSH supplied observation; official original provenance not newly checked in this release"
+    },
+    {
+      "source_id": "D2010-009",
+      "publication": "identifier_only_pending",
+      "reported_evidence_level": "③第三方转载（使用者线索）",
+      "entity_ids": [
+        "C15-main"
+      ],
+      "support_scope": "营业执照**正本**界面：字段行顺序、注册资本／营业期限等 A 格式添加项、登记机关红色圆章、gsxt.gov.cn 网址行",
+      "limitations": "2022-09-01 调整版；字号坐标；发布者贴纸遮挡属二次编辑",
+      "acceptance": "DSH supplied observation; official original provenance not newly checked in this release"
+    },
+    {
+      "source_id": "D2010-010",
+      "publication": "identifier_only_pending",
+      "reported_evidence_level": "③第三方转载（人社系统网站，使用者线索）",
+      "entity_ids": [
+        "C16-teacher"
+      ],
+      "support_scope": "教师资格证书内页左右页结构与字段集合、「认定机构（公章）」红章位置、封面烫金国徽与「教师资格证书」字样；本批共四件互证（2018／2020／2022 认定版与封面内页合照）",
+      "limitations": "2001 历史版版式与荧光位置；字号坐标；是否相机拍摄未核",
+      "acceptance": "DSH supplied observation; official original provenance not newly checked in this release"
+    },
+    {
+      "source_id": "D2010-011",
+      "publication": "identifier_only_pending",
+      "reported_evidence_level": "③第三方（企业自发布，使用者线索）",
+      "entity_ids": [
+        "E10-cslb"
+      ],
+      "support_scope": "挂墙执照完整件面：法定依据句、持照人与执照号、分类串、Board Chair 与 Registrar 两处手写签名、中部圆形州玺压印、不可转让说明、表次与审计号",
+      "limitations": "2025 指南相对 REV 03/15 的字段增删；字号与印章直径；是否相机拍摄未核",
+      "acceptance": "DSH supplied observation; official original provenance not newly checked in this release"
+    },
+    {
+      "source_id": "D2010-012",
+      "publication": "identifier_only_pending",
+      "reported_evidence_level": "③第三方（图片索引，使用者线索）",
+      "entity_ids": [
+        "E09-uk"
+      ],
+      "support_scope": "私人股份公司成立证书的标题、证明句、Companies Act 2006、limited by shares、登记官印章与公司资料表",
+      "limitations": "字号坐标（图为 327×355 缩略图）；原始发布页；是否相机拍摄未核",
+      "acceptance": "DSH supplied observation; official original provenance not newly checked in this release"
+    },
+    {
+      "source_id": "C02-U20",
+      "publication": "identifier_only",
+      "entity_ids": [
+        "C02-household"
+      ],
+      "support_scope": "Independent householder-card identity and regional footer structure",
+      "limitations": "Edited reference; unclear stamp text and date; regional differences; no national-layout claim"
+    },
+    {
+      "source_id": "C02-U21",
+      "publication": "identifier_only",
+      "entity_ids": [
+        "C02-household"
+      ],
+      "support_scope": "Independent householder-card identity and regional footer structure",
+      "limitations": "Edited reference; unclear stamp text and date; regional differences; no national-layout claim"
+    }
+  ],
+  "scope": "Supplementary observations; original source IDs and publication decisions retained"
+}

@@ -15,7 +15,7 @@
 | `entity_id`、`quota_id` | 实体与配额单元 |
 | `candidate_id` | 早期候选编号，保留原值 |
 | `source_ids` | 该条引用的来源 ID 列表，可解析到 `config/sources.json` |
-| `release_version` | 本次发布标识，当前为 `codex-20261007-v3`；文档与工具的后续修订另由 Git 提交记录区分 |
+| `release_version` | 本次发布标识，当前为 `codex-20261011-feedback-v4`；文档与工具的后续修订另由 Git 提交记录区分 |
 
 ## 2. 内容字段
 
@@ -91,8 +91,8 @@
 | `clean_fields_binding_sha256` | clean 取值绑定哈希 |
 | `body_confirmed` | 该条正文是否确认 |
 | `body_group_binding_sha256` | 所属组的正文绑定哈希 |
-| `confirmed_at`、`reconfirmed_at` | 原确认时间与重确认时间；未确认时为空字符串 |
-| `confirmation_basis` | 来源类型：`existing_user_content_confirmation`、`clean_fields_only_no_body_confirmation`、`not_in_review_scope` |
+| `confirmed_at`、`reconfirmed_at` | 本次正文确认日期与重确认日期；原记录保留在 historical_confirmation |
+| `confirmation_basis` | 当前为 `user_explicit_full_latest_body_confirmation`；历史来源类型保存在 `historical_confirmation` |
 | `ready_for_generation`、`image_generated` | 原样带出 |
 | `image_review_status` | 固定 `not_reviewed` |
 | `release_version` | 发布标识 |
@@ -162,7 +162,7 @@ def canonical_hash(obj) -> str:
 
 **正文哈希、取值哈希、模板哈希和整行哈希必须分开记录。** 发布转换改变整行哈希时，不代表
 正文哈希或取值哈希发生变化。发布副本中 2,986 条正文哈希与可见值哈希与内部 v10 全量一致；
-383 条模板已确认记录的发布对象哈希全部可复算。
+当前保留的独立模板确认记录，其发布对象哈希全部可复算；受当前共用描述修订影响的旧绑定仅作为历史保留。
 
 ## 8. 导出规则
 
@@ -225,3 +225,11 @@ V32 按实际组成员复算正文与clean取值绑定，并核对review与promp
 不再把待核项包含在内；`unpublished_total` 是 `identifier_only` 与
 `identifier_only_pending` 之和。`measured_file_hashes` 保留七个主数据文件的字节哈希。
 历史 AI 审读数字标为继承记录，公开工具不能重做当时的原始判定。
+
+## 当前反馈记录
+
+`config/active_templates.json` 按 `profile_id` 给出54个当前共用描述，是读取当前版面段落的依据；`config/templates.json` 保留旧槽位模板基线。它们不是完整冻结生成器复现声明。
+
+`config/review_contract.json` 固定本次使用者明确确认的正文范围。`historical_confirmation` 保留每条旧审核状态、时间与哈希；`template_invalidation_reason` 说明旧模板绑定失效原因。独立模板和clean取值确认不因正文全量确认扩大。
+
+`config/reference_coverage.json` 列出50实体内部参考状态；`config/feedback_sources.json` 只保存补充证据ID、支持范围与限制，不包含原图或未核来源URL。

@@ -64,11 +64,11 @@ EXPECTED_PROMPTS = 2986
 EXPECTED_VARIANTS = {"clean": 1000, "subtle": 993, "strong": 993}
 EXPECTED_TRIPLETS = 993
 EXPECTED_CLEAN_ONLY = 7
-EXPECTED_BODY_CONFIRMED = 383
-EXPECTED_UNCONFIRMED = 2603
+EXPECTED_BODY_CONFIRMED = 2986
+EXPECTED_UNCONFIRMED = 0
 EXPECTED_CLEAN_GROUPS = 129
-EXPECTED_TEMPLATE_GROUPS = 129
-EXPECTED_TEMPLATE_STYLES = 54
+EXPECTED_TEMPLATE_GROUPS = 31
+EXPECTED_TEMPLATE_STYLES = 31
 
 INTERNAL_PATH_PATTERNS = [
     re.compile(r"(?<![A-Za-z0-9])[A-Za-z]:[\\/]"),
@@ -422,6 +422,10 @@ def main(argv=None):
             identity_errors.append("%s: review group/variant mismatch" % r.get("prompt_id"))
         if bool(r.get("body_confirmed")) != bool(p.get("body_approved")):
             identity_errors.append("%s: review body status != prompt status" % r.get("prompt_id"))
+        if p.get("variant_review_status") != ("body_confirmed" if r.get("body_confirmed") else "body_unconfirmed"):
+            identity_errors.append("%s: body status enum mismatch" % r.get("prompt_id"))
+        if p.get("template_review_status") != ("template_confirmed" if r.get("template_confirmed") else "template_unconfirmed"):
+            identity_errors.append("%s: template status enum mismatch" % r.get("prompt_id"))
         review_by_group[p.get("group_id")].append(r)
     for gid, actual in prompts_by_group.items():
         rows = review_by_group.get(gid, [])
@@ -457,21 +461,21 @@ def main(argv=None):
               not identity_errors, identity_errors[:6])
 
     confirmed = [r for r in review if r.get("body_confirmed")]
-    rep.check("V16", "confirmed body rows == 383",
+    rep.check("V16", "confirmed body rows == 2986",
               len(confirmed) == EXPECTED_BODY_CONFIRMED, len(confirmed))
-    rep.check("V17", "unconfirmed body rows == 2603",
+    rep.check("V17", "unconfirmed body rows == 0",
               len(review) - len(confirmed) == EXPECTED_UNCONFIRMED,
               len(review) - len(confirmed))
     clean_groups = {r.get("group_id") for r in review if r.get("clean_fields_confirmed")}
     rep.check("V18", "clean_fields confirmed groups == 129",
               len(clean_groups) == EXPECTED_CLEAN_GROUPS, len(clean_groups))
     tpl_groups = {r.get("group_id") for r in review if r.get("template_confirmed")}
-    rep.check("V19", "template confirmed groups == 129",
+    rep.check("V19", "template confirmed groups match current retained bindings",
               len(tpl_groups) == EXPECTED_TEMPLATE_GROUPS, len(tpl_groups))
     scopes = {r.get("template_confirmation_scope") for r in review
               if r.get("template_confirmed")}
     styles = {s.split("profile:")[1].split(" ")[0] for s in scopes if "profile:" in s}
-    rep.check("V20", "template confirmation covers 54 profiles",
+    rep.check("V20", "template confirmation covers current retained profiles",
               len(styles) == EXPECTED_TEMPLATE_STYLES, len(styles))
 
     tpl_errors = template_binding_checks(review, templates)
@@ -500,6 +504,52 @@ def main(argv=None):
                     break
     rep.check("V23", "no internal paths or secrets in published text",
               not hits, hits[:5])
+
+    active = load_json(os.path.join(config, "active_templates.json"))["templates"]
+    active_by_profile = {t["profile_id"]: t for t in active}
+    active_errors = []
+    if len(active) != 54 or len(active_by_profile) != 54 or set(active_by_profile) != {p["profile_id"] for p in prompts}:
+        active_errors.append("active profile set or identity mismatch")
+    for p in prompts:
+        if active_by_profile.get(p["profile_id"], {}).get("shared_prompt_sections") != p.get("shared_prompt_sections"):
+            active_errors.append(p["prompt_id"] + ": shared description mismatch")
+    for r in review:
+        if r["template_confirmed"]:
+            spec = r["template_confirmation_scope"].split("spec:")[-1]
+            if any(t["shared_prompt_sections"] != active_by_profile[r["profile_id"]]["shared_prompt_sections"] for t in templates if t["spec_id"] == spec):
+                active_errors.append(r["prompt_id"] + ": stale independent template approval")
+    rep.check("V46", "active shared templates match all current prompts and retained approvals", not active_errors, active_errors[:5])
+    contract = load_json(os.path.join(config, "review_contract.json"))
+    contract_errors = []
+    for r in review:
+        if r.get("confirmation_basis") != "user_explicit_full_latest_body_confirmation" or r.get("confirmed_at") != "2026-10-11":
+            contract_errors.append(r["prompt_id"] + ": confirmation provenance")
+    expected_contract = {"body_confirmed_rows": 2986, "body_unconfirmed_rows": 0, "body_confirmed_groups": 1000,
+        "clean_fields_confirmed_groups": 129, "template_confirmed_groups": EXPECTED_TEMPLATE_GROUPS,
+        "template_confirmed_styles": EXPECTED_TEMPLATE_STYLES, "historical_body_confirmed_rows": 383,
+        "current_body_events": 2986, "newly_covered_body_ids_vs_historical": 2603}
+    for key, value in expected_contract.items():
+        if contract.get(key) != value: contract_errors.append("contract:" + key)
+    rep.check("V47", "explicit latest-body confirmation has exact scope and provenance", not contract_errors, contract_errors[:5])
+    coverage = load_json(os.path.join(config, "reference_coverage.json"))
+    entries = coverage["entities"]
+    expected_coverage = {"obtained": 5, "partial": 22, "sample_only": 21, "missing": 2}
+    coverage_ok = len(entries) == 50 and len({e["entity_id"] for e in entries}) == 50 and dict(collections.Counter(e["status"] for e in entries)) == expected_coverage and coverage.get("counts") == expected_coverage
+    coverage_ok = coverage_ok and {e["entity_id"] for e in entries if e["status"] == "missing"} == {"C18-main", "E10-nmc"} and next(e["status"] for e in entries if e["entity_id"] == "C02-household") == "partial"
+    rep.check("V48", "reference coverage has exact entity identities and 5/22/21/2 counts", coverage_ok, coverage.get("counts"))
+    supplemental = load_json(os.path.join(config, "feedback_sources.json"))
+    boundary_hits = []
+    for label, obj in (("active", active), ("contract", contract), ("coverage", coverage), ("supplemental", supplemental)):
+        for pointer, text in walk_strings(obj):
+            if any(pat.search(text) for pat in INTERNAL_PATH_PATTERNS + SECRET_PATTERNS) or URL_PATTERN.search(text):
+                boundary_hits.append(label + pointer)
+    rep.check("V49", "new metadata excludes private paths, secrets and unverified URLs", not boundary_hits, boundary_hits[:5])
+    # Export tool is the single definition of the existing TXT framing.
+    with tempfile.TemporaryDirectory(prefix="credential_export_check_") as tmp:
+        out = os.path.join(tmp, "export")
+        child = subprocess.run([sys.executable, "-B", os.path.join(repo, "src/export_data.py"), "--repo", repo, "--out", out], capture_output=True, timeout=60)
+        txt_ok = child.returncode == 0 and open(os.path.join(out, "prompts.txt"), "rb").read() == open(os.path.join(final, "prompts.txt"), "rb").read()
+    rep.check("V50", "TXT export matches all current prompt bodies byte for byte", txt_ok)
 
     # ---------------- CSV reconciliation ----------------
     ok_p, msg_p = reconcile_csv(os.path.join(final, "prompts.csv"), prompts, "prompt_id")
@@ -648,7 +698,8 @@ def main(argv=None):
               not split_errors, split_errors)
     primary = ("final/prompts.jsonl", "final/groups.jsonl", "final/review_status.jsonl",
                "config/specs.json", "config/profiles.json", "config/templates.json",
-               "config/sources.json")
+               "config/sources.json", "config/active_templates.json", "config/review_contract.json",
+               "config/reference_coverage.json", "config/feedback_sources.json")
     actual_hashes = {}
     for name in primary:
         with open(os.path.join(repo, name), "rb") as f:

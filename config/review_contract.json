@@ -1,0 +1,19 @@
+{
+  "release_version": "codex-20261011-feedback-v4",
+  "confirmed_at": "2026-10-11",
+  "body_confirmation_basis": "user_explicit_full_latest_body_confirmation",
+  "body_confirmed_rows": 2986,
+  "body_unconfirmed_rows": 0,
+  "body_confirmed_groups": 1000,
+  "clean_fields_confirmed_groups": 129,
+  "template_confirmed_groups": 31,
+  "template_confirmed_styles": 31,
+  "historical_template_styles": 54,
+  "historical_body_confirmed_rows": 383,
+  "current_body_events": 2986,
+  "newly_covered_body_ids_vs_historical": 2603,
+  "historical_confirmed_bodies_changed": 290,
+  "template_inheritance": "Only matching shared sections retain independent historical template confirmation",
+  "image_generated": 0,
+  "image_reviewed": 0
+}

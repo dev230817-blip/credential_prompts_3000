@@ -1,0 +1,760 @@
+{
+  "templates": [
+    {
+      "profile_id": "CP1005-C01",
+      "entity_id": "C01-portrait",
+      "spec_id": "C01-CN-ID2",
+      "shared_prompt_sections": {
+        "object": "生成合成居民身份证人像面，持证人采用给定虚构值，证件名称与字段保持所选样式的写法。",
+        "carrier": "以正面平扫方式呈现单份完整载体，放在浅色无文字背景上，四周保留边缘与适量空白。画面不旋转、不裁切，不叠加装饰性标题，文字与图形均保持在载体范围内。",
+        "layout": "人像与个人信息区域并列，不指定未复原的左右方位。信息区依次为姓名、分行的性别与民族、出生、住址和号码，号码较醒目，不用颜色强调字符。持证人人像另造，性别与字段一致，黑色短发、正面、浅色衬衫和无文字背景。浅色彩色底纹不添未核防伪细节；不出现国徽、签发机关、有效期限、证件标题或公章。",
+        "rendering": "所有可见文字使用下方给定的完整值，逐字排印，保留原来的中文、英文、数字、标点和日期写法。字段标签与字段值清楚分开，不将说明中的文字角色名另印为标签，不把提示词指令印在证面上。三档共用同一载体、构图、字段集合、标签与成像条件，只在指定字段值中体现差异。文字随载体表面平面印刷，避免悬浮文字、额外说明、重影和过度锐化。保持自然的纸张或卡片质感，边缘与文字清晰，画面中没有手、桌面杂物或第二份证件。不增加未提供的号码、法律条款、背面内容、隐藏字段或可访问地址。已有印章、签名与照片只按各自说明呈现，不补造未核的防伪功能、字体规格或精确坐标。输出为一幅完整证面图，采用均匀照明和正面视角，让已列文字可以直接阅读。"
+      },
+      "template_version": "1007-reviewed-v2.1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "CP1005-C15",
+      "entity_id": "C15-main",
+      "spec_id": "C15-CN-CORP-A-2022",
+      "shared_prompt_sections": {
+        "object": "生成虚构公司的营业执照正本照面文字候选，限于已接入的原字段合同，正文值逐项给定。",
+        "carrier": "以正面平扫方式呈现单份完整载体，放在浅色无文字背景上，四周保留边缘与适量空白。画面不旋转、不裁切，不叠加装饰性标题，文字与图形均保持在载体范围内。",
+        "layout": "横版正本含标题、国徽、边框、登记事项与登记机关公章，文字按给定清单列明。保留2022年调整后的字段集合，不另加营业期限、股东名单或发起人信息。机关与公司用虚构名称，公章用登记机关文字，形状、颜色不指定。字段、二维码、企业码和公章的位置不指定；两种码仅为无可读文字图形，不编码访问地址。",
+        "rendering": "所有可见文字使用下方给定的完整值，逐字排印，保留原来的中文、英文、数字、标点和日期写法。字段标签与字段值清楚分开，不将说明中的文字角色名另印为标签，不把提示词指令印在证面上。三档共用同一载体、构图、字段集合、标签与成像条件，只在指定字段值中体现差异。文字随载体表面平面印刷，避免悬浮文字、额外说明、重影和过度锐化。保持自然的纸张或卡片质感，边缘与文字清晰，画面中没有手、桌面杂物或第二份证件。不增加未提供的号码、法律条款、背面内容、隐藏字段或可访问地址。已有印章、签名与照片只按各自说明呈现，不补造未核的防伪功能、字体规格或精确坐标。输出为一幅完整证面图，采用均匀照明和正面视角，让已列文字可以直接阅读。"
+      },
+      "template_version": "1007-reviewed-v2.1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "CP1005-E08",
+      "entity_id": "E08-us",
+      "spec_id": "E08-US-CA-DL-2025",
+      "shared_prompt_sections": {
+        "object": "Create a synthetic California driver licence front using invented holder details and the selected official sample layout.",
+        "carrier": "Show one complete document as an evenly lit flat scan on a plain pale background. Keep every edge visible and the view straight.",
+        "layout": "Keep state and title above, portrait at left, signature below; DLN, EXP and DOB at upper right; name, address and classes centrally; ISS and DD at lower left, physical descriptors below. Invent the portrait. Add no agency or subtype claim.",
+        "rendering": "Print every supplied visible value exactly, retaining spelling, capitals, punctuation and date notation. Separate labels and values; role names are not extra labels. Keep fields, layout and lighting fixed across variants. Print flat text with clear edges. Add no instructions, extra numbers, unlisted legal clauses, reverse-side content or working web addresses. Do not invent security functions, exact type sizes or coordinates. Show one complete document with no hands, other documents, clutter, floating text or sharpening halos."
+      },
+      "template_version": "1007-reviewed-v2.1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "CP1005-E09",
+      "entity_id": "E09-uk",
+      "spec_id": "E09-UK-EW-LTD-SHARES",
+      "shared_prompt_sections": {
+        "object": "Create a synthetic certificate of incorporation for an invented private company limited by shares in England and Wales, with supplied registrar text.",
+        "carrier": "Show one complete document as an evenly lit flat scan on a plain pale background. Keep every edge visible and the view straight.",
+        "layout": "Show only the required incorporation certificate text for a private company limited by shares in England and Wales. Use the supplied fictional registrar seal text. Add no directors, good-standing claims or unverified positions.",
+        "rendering": "Print every supplied visible value exactly, retaining spelling, capitals, punctuation and date notation. Separate labels and values; role names are not extra labels. Keep fields, layout and lighting fixed across variants. Print flat text with clear edges. Add no instructions, extra numbers, unlisted legal clauses, reverse-side content or working web addresses. Do not invent security functions, exact type sizes or coordinates. Show one complete document with no hands, other documents, clutter, floating text or sharpening halos."
+      },
+      "template_version": "1007-reviewed-v2.1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-C01-authority",
+      "entity_id": "C01-authority",
+      "spec_id": "DRAFT-C01-CN-ID2-FACES-2026-GEN1007",
+      "shared_prompt_sections": {
+        "object": "生成合成居民身份证国徽面，国家及证件标题按所选样式显示，签发机关采用给定的虚构值。",
+        "carrier": "以正面平扫方式呈现单份完整载体，放在浅色无文字背景上，四周保留边缘与适量空白。画面不旋转、不裁切，不叠加装饰性标题，文字与图形均保持在载体范围内。",
+        "layout": "国徽位于左侧中上部，右侧上下两行是国家名称与证件名称，下部两行是签发机关和有效期限。标题使用文字角色对应值，机关使用给定虚构名称。保留示例所见淡色长城图案与扭索底纹轮廓，不指定字体或坐标；此面不增加照片、姓名、出生日期或号码。",
+        "rendering": "所有可见文字使用下方给定的完整值，逐字排印，保留原来的中文、英文、数字、标点和日期写法。字段标签与字段值清楚分开，不将说明中的文字角色名另印为标签，不把提示词指令印在证面上。三档共用同一载体、构图、字段集合、标签与成像条件，只在指定字段值中体现差异。文字随载体表面平面印刷，避免悬浮文字、额外说明、重影和过度锐化。保持自然的纸张或卡片质感，边缘与文字清晰，画面中没有手、桌面杂物或第二份证件。不增加未提供的号码、法律条款、背面内容、隐藏字段或可访问地址。已有印章、签名与照片只按各自说明呈现，不补造未核的防伪功能、字体规格或精确坐标。输出为一幅完整证面图，采用均匀照明和正面视角，让已列文字可以直接阅读。"
+      },
+      "template_version": "1007-reviewed-v2.1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-C01-portrait",
+      "entity_id": "C01-portrait",
+      "spec_id": "C01-CN-ID2-GEN1007",
+      "shared_prompt_sections": {
+        "object": "生成合成居民身份证人像面，持证人采用给定虚构值，证件名称与字段保持所选样式的写法。",
+        "carrier": "以正面平扫方式呈现单份完整载体，放在浅色无文字背景上，四周保留边缘与适量空白。画面不旋转、不裁切，不叠加装饰性标题，文字与图形均保持在载体范围内。",
+        "layout": "人像与个人信息区域并列，不指定未复原的左右方位。信息区依次为姓名、分行的性别与民族、出生、住址和号码，号码较醒目，不用颜色强调字符。持证人人像另造，性别与字段一致，黑色短发、正面、浅色衬衫和无文字背景。浅色彩色底纹不添未核防伪细节；不出现国徽、签发机关、有效期限、证件标题或公章。",
+        "rendering": "所有可见文字使用下方给定的完整值，逐字排印，保留原来的中文、英文、数字、标点和日期写法。字段标签与字段值清楚分开，不将说明中的文字角色名另印为标签，不把提示词指令印在证面上。三档共用同一载体、构图、字段集合、标签与成像条件，只在指定字段值中体现差异。文字随载体表面平面印刷，避免悬浮文字、额外说明、重影和过度锐化。保持自然的纸张或卡片质感，边缘与文字清晰，画面中没有手、桌面杂物或第二份证件。不增加未提供的号码、法律条款、背面内容、隐藏字段或可访问地址。已有印章、签名与照片只按各自说明呈现，不补造未核的防伪功能、字体规格或精确坐标。输出为一幅完整证面图，采用均匀照明和正面视角，让已列文字可以直接阅读。"
+      },
+      "template_version": "1007-reviewed-v2.1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-C04-main",
+      "entity_id": "C04-main",
+      "spec_id": "DRAFT-C04-CN-PASSPORT-E-SUPP-V4",
+      "shared_prompt_sections": {
+        "object": "生成合成证件的单面文字候选，持证人、照片与机构采用给定虚构值。保留所选证件的字段范围和标题写法。",
+        "carrier": "以正面平扫方式呈现单份完整载体，放在浅色无文字背景上，四周保留边缘与适量空白。画面不旋转、不裁切，不叠加装饰性标题，文字与图形均保持在载体范围内。",
+        "layout": "只呈现资料页：上部标题、类型、国家码和护照号，左侧另造免冠彩色照片，姓名和个人字段依所见分区排列，右侧保留第二图像；下部为签发机关和给定签名，底部机读区为两行，每行44字符。姓名中文与对应大写拉丁文字均按给定值排印。不要呈现上方请求页或签证页。",
+        "rendering": "所有可见文字使用下方给定的完整值，逐字排印，保留原来的中文、英文、数字、标点和日期写法。字段标签与字段值清楚分开，不将说明中的文字角色名另印为标签，不把提示词指令印在证面上。三档共用同一载体、构图、字段集合、标签与成像条件，只在指定字段值中体现差异。文字随载体表面平面印刷，避免悬浮文字、额外说明、重影和过度锐化。保持自然的纸张或卡片质感，边缘与文字清晰，画面中没有手、桌面杂物或第二份证件。不增加未提供的号码、法律条款、背面内容、隐藏字段或可访问地址。已有印章、签名与照片只按各自说明呈现，不补造未核的防伪功能、字体规格或精确坐标。输出为一幅完整证面图，采用均匀照明和正面视角，让已列文字可以直接阅读。"
+      },
+      "template_version": "1007-supplement-v4",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-C05-hkmo",
+      "entity_id": "C05-hkmo",
+      "spec_id": "DRAFT-C05-CN-HKMO-CARD-SUPP-V4",
+      "shared_prompt_sections": {
+        "object": "生成合成证件的单面文字候选，持证人、照片与机构采用给定虚构值。保留所选证件的字段范围和标题写法。",
+        "carrier": "以正面平扫方式呈现单份完整载体，放在浅色无文字背景上，四周保留边缘与适量空白。画面不旋转、不裁切，不叠加装饰性标题，文字与图形均保持在载体范围内。",
+        "layout": "仅呈现港澳证正面：标题与红蓝标徽在顶部左侧，证号在右侧；左侧另造人像，个人信息在右侧，第二照片位于右侧中部。有效期限用两个日期，中下部机关与地点按给定值显示，底部保留一行30字符机读区，不分成三行。背面签注和指纹提示不进入这一面。",
+        "rendering": "所有可见文字使用下方给定的完整值，逐字排印，保留原来的中文、英文、数字、标点和日期写法。字段标签与字段值清楚分开，不将说明中的文字角色名另印为标签，不把提示词指令印在证面上。三档共用同一载体、构图、字段集合、标签与成像条件，只在指定字段值中体现差异。文字随载体表面平面印刷，避免悬浮文字、额外说明、重影和过度锐化。保持自然的纸张或卡片质感，边缘与文字清晰，画面中没有手、桌面杂物或第二份证件。不增加未提供的号码、法律条款、背面内容、隐藏字段或可访问地址。已有印章、签名与照片只按各自说明呈现，不补造未核的防伪功能、字体规格或精确坐标。输出为一幅完整证面图，采用均匀照明和正面视角，让已列文字可以直接阅读。"
+      },
+      "template_version": "1007-supplement-v4",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-C05-taiwan",
+      "entity_id": "C05-taiwan",
+      "spec_id": "DRAFT-C05-CN-TW-CARD-SUPP-V4",
+      "shared_prompt_sections": {
+        "object": "生成合成证件的单面文字候选，持证人、照片与机构采用给定虚构值。保留所选证件的字段范围和标题写法。",
+        "carrier": "以正面平扫方式呈现单份完整载体，放在浅色无文字背景上，四周保留边缘与适量空白。画面不旋转、不裁切，不叠加装饰性标题，文字与图形均保持在载体范围内。",
+        "layout": "仅呈现台湾证正面：顶部左侧为标题与红蓝标徽，右侧为证号；左侧另造人像，姓名、生日、性别和有效期限在信息区，右侧有第二照片。机关与签发地点在下部，底部为一行30字符机读区，不套三行卡式机读区。背面签注、二维码和提示文字不呈现。",
+        "rendering": "所有可见文字使用下方给定的完整值，逐字排印，保留原来的中文、英文、数字、标点和日期写法。字段标签与字段值清楚分开，不将说明中的文字角色名另印为标签，不把提示词指令印在证面上。三档共用同一载体、构图、字段集合、标签与成像条件，只在指定字段值中体现差异。文字随载体表面平面印刷，避免悬浮文字、额外说明、重影和过度锐化。保持自然的纸张或卡片质感，边缘与文字清晰，画面中没有手、桌面杂物或第二份证件。不增加未提供的号码、法律条款、背面内容、隐藏字段或可访问地址。已有印章、签名与照片只按各自说明呈现，不补造未核的防伪功能、字体规格或精确坐标。输出为一幅完整证面图，采用均匀照明和正面视角，让已列文字可以直接阅读。"
+      },
+      "template_version": "1007-supplement-v4",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-C06-f",
+      "entity_id": "C06-f",
+      "spec_id": "DRAFT-C06-CN-VISA-F-SUPP-V4",
+      "shared_prompt_sections": {
+        "object": "生成合成证件的单面文字候选，持证人、照片与机构采用给定虚构值。保留所选证件的字段范围和标题写法。",
+        "carrier": "以正面平扫方式呈现单份完整载体，放在浅色无文字背景上，四周保留边缘与适量空白。画面不旋转、不裁切，不叠加装饰性标题，文字与图形均保持在载体范围内。",
+        "layout": "呈现所选访问F字贴纸正面。上部标题横条下为访问（F），右上有红色签证号码，左侧为另造彩色人像。右侧按所见行区列姓名、性别、生日、护照号、入境次数、入境有效期、停留天数、签发日期、地点和备注，保留右侧CHINA字样与徽记。底部机读区两行，每行44字符。",
+        "rendering": "所有可见文字使用下方给定的完整值，逐字排印，保留原来的中文、英文、数字、标点和日期写法。字段标签与字段值清楚分开，不将说明中的文字角色名另印为标签，不把提示词指令印在证面上。三档共用同一载体、构图、字段集合、标签与成像条件，只在指定字段值中体现差异。文字随载体表面平面印刷，避免悬浮文字、额外说明、重影和过度锐化。保持自然的纸张或卡片质感，边缘与文字清晰，画面中没有手、桌面杂物或第二份证件。不增加未提供的号码、法律条款、背面内容、隐藏字段或可访问地址。已有印章、签名与照片只按各自说明呈现，不补造未核的防伪功能、字体规格或精确坐标。输出为一幅完整证面图，采用均匀照明和正面视角，让已列文字可以直接阅读。"
+      },
+      "template_version": "1007-supplement-v4",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-C10-degree",
+      "entity_id": "C10-degree",
+      "spec_id": "DRAFT-C10-CN-XWZS-2016-GEN1007",
+      "shared_prompt_sections": {
+        "object": "生成虚构高校的硕士学位证书正文面，采用2016年起单位自行设计的内容范围与所选元素说明。",
+        "carrier": "以正面平扫方式呈现单份完整载体，放在浅色无文字背景上，四周保留边缘与适量空白。画面不旋转、不裁切，不叠加装饰性标题，文字与图形均保持在载体范围内。",
+        "layout": "横版A4纸页，依次保留学校中英文名、硕士学位证书字样、授予信息及另造的持证人彩色照片、底部编号、校长与授予日期。四周水纹边框，中央浅色虚构校徽为双圆线与银杏叶，内部无文字，底部中央保留校牌图形。照片接缝处学校钢印使用授予单位文字，不另指定坐标与代表色用途。",
+        "rendering": "所有可见文字使用下方给定的完整值，逐字排印，保留原来的中文、英文、数字、标点和日期写法。字段标签与字段值清楚分开，不将说明中的文字角色名另印为标签，不把提示词指令印在证面上。三档共用同一载体、构图、字段集合、标签与成像条件，只在指定字段值中体现差异。文字随载体表面平面印刷，避免悬浮文字、额外说明、重影和过度锐化。保持自然的纸张或卡片质感，边缘与文字清晰，画面中没有手、桌面杂物或第二份证件。不增加未提供的号码、法律条款、背面内容、隐藏字段或可访问地址。已有印章、签名与照片只按各自说明呈现，不补造未核的防伪功能、字体规格或精确坐标。输出为一幅完整证面图，采用均匀照明和正面视角，让已列文字可以直接阅读。"
+      },
+      "template_version": "1007-reviewed-v2.1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-C10-graduation",
+      "entity_id": "C10-graduation",
+      "spec_id": "DRAFT-C10-CN-BYZ-2016-GEN1007",
+      "shared_prompt_sections": {
+        "object": "生成虚构高校的本科毕业证书内页文字候选，机构、持证人、印章与签名均使用给定值。",
+        "carrier": "以正面平扫方式呈现单份完整载体，放在浅色无文字背景上，四周保留边缘与适量空白。画面不旋转、不裁切，不叠加装饰性标题，文字与图形均保持在载体范围内。",
+        "layout": "纳入本人免冠正面彩色照片、学校印章及校长签名，照片为另造人像，照片与纸页接缝处保留学校钢印，钢印仅用指定学校文字。文字内容逐项列明，学习形式为普通全日制本科，编号按本批内部自编值显示。字段、照片位置与印章形态不另指定，不套用学位证编号布局。",
+        "rendering": "所有可见文字使用下方给定的完整值，逐字排印，保留原来的中文、英文、数字、标点和日期写法。字段标签与字段值清楚分开，不将说明中的文字角色名另印为标签，不把提示词指令印在证面上。三档共用同一载体、构图、字段集合、标签与成像条件，只在指定字段值中体现差异。文字随载体表面平面印刷，避免悬浮文字、额外说明、重影和过度锐化。保持自然的纸张或卡片质感，边缘与文字清晰，画面中没有手、桌面杂物或第二份证件。不增加未提供的号码、法律条款、背面内容、隐藏字段或可访问地址。已有印章、签名与照片只按各自说明呈现，不补造未核的防伪功能、字体规格或精确坐标。输出为一幅完整证面图，采用均匀照明和正面视角，让已列文字可以直接阅读。"
+      },
+      "template_version": "1007-reviewed-v2.1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-C12-main",
+      "entity_id": "C12-main",
+      "spec_id": "DRAFT-C12-CN-PTH-CERT-SUPP-V4",
+      "shared_prompt_sections": {
+        "object": "生成合成证件的单面文字候选，持证人、照片与机构采用给定虚构值。保留所选证件的字段范围和标题写法。",
+        "carrier": "以正面平扫方式呈现单份完整载体，放在浅色无文字背景上，四周保留边缘与适量空白。画面不旋转、不裁切，不叠加装饰性标题，文字与图形均保持在载体范围内。",
+        "layout": "只呈现单页内页的已核文字内容及另造的近期白底彩色免冠照片，国家测试机构印章使用给定虚构章文。测试、成绩、等级、编号、认定单位与发证信息完整显示，字段和照片的左右位置不作指定。标题仅用给定文字，不增加封套、国徽、认定号、逐题得分或电子查询网址。",
+        "rendering": "所有可见文字使用下方给定的完整值，逐字排印，保留原来的中文、英文、数字、标点和日期写法。字段标签与字段值清楚分开，不将说明中的文字角色名另印为标签，不把提示词指令印在证面上。三档共用同一载体、构图、字段集合、标签与成像条件，只在指定字段值中体现差异。文字随载体表面平面印刷，避免悬浮文字、额外说明、重影和过度锐化。保持自然的纸张或卡片质感，边缘与文字清晰，画面中没有手、桌面杂物或第二份证件。不增加未提供的号码、法律条款、背面内容、隐藏字段或可访问地址。已有印章、签名与照片只按各自说明呈现，不补造未核的防伪功能、字体规格或精确坐标。输出为一幅完整证面图，采用均匀照明和正面视角，让已列文字可以直接阅读。"
+      },
+      "template_version": "1007-supplement-v4",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-C15-main",
+      "entity_id": "C15-main",
+      "spec_id": "C15-CN-CORP-A-2022-GEN1007",
+      "shared_prompt_sections": {
+        "object": "生成虚构公司的营业执照正本照面文字候选，限于已接入的原字段合同，正文值逐项给定。",
+        "carrier": "以正面平扫方式呈现单份完整载体，放在浅色无文字背景上，四周保留边缘与适量空白。画面不旋转、不裁切，不叠加装饰性标题，文字与图形均保持在载体范围内。",
+        "layout": "横版正本含标题、国徽、边框、登记事项与登记机关公章，文字按给定清单列明。保留2022年调整后的字段集合，不另加营业期限、股东名单或发起人信息。机关与公司用虚构名称，公章用登记机关文字，形状、颜色不指定。字段、二维码、企业码和公章的位置不指定；两种码仅为无可读文字图形，不编码访问地址。",
+        "rendering": "所有可见文字使用下方给定的完整值，逐字排印，保留原来的中文、英文、数字、标点和日期写法。字段标签与字段值清楚分开，不将说明中的文字角色名另印为标签，不把提示词指令印在证面上。三档共用同一载体、构图、字段集合、标签与成像条件，只在指定字段值中体现差异。文字随载体表面平面印刷，避免悬浮文字、额外说明、重影和过度锐化。保持自然的纸张或卡片质感，边缘与文字清晰，画面中没有手、桌面杂物或第二份证件。不增加未提供的号码、法律条款、背面内容、隐藏字段或可访问地址。已有印章、签名与照片只按各自说明呈现，不补造未核的防伪功能、字体规格或精确坐标。输出为一幅完整证面图，采用均匀照明和正面视角，让已列文字可以直接阅读。"
+      },
+      "template_version": "1007-reviewed-v2.1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-C16-teacher",
+      "entity_id": "C16-teacher",
+      "spec_id": "DRAFT-C16-CN-JSZGZ-2001-SUPP-V4",
+      "shared_prompt_sections": {
+        "object": "生成合成证件的单面文字候选，持证人、照片与机构采用给定虚构值。保留所选证件的字段范围和标题写法。",
+        "carrier": "以正面平扫方式呈现单份完整载体，放在浅色无文字背景上，四周保留边缘与适量空白。画面不旋转、不裁切，不叠加装饰性标题，文字与图形均保持在载体范围内。",
+        "layout": "只呈现2001版内容范围内的内页文字候选，含另造的正面免冠照片，照片与页面接缝处钢印采用认定机构文字。姓名、性别、出生年月、民族、身份号码、资格种类、任教学科、证书号码及认定日期按给定值显示，不指定字段左右位置，不增加有效期限、二维码或新版元素。",
+        "rendering": "所有可见文字使用下方给定的完整值，逐字排印，保留原来的中文、英文、数字、标点和日期写法。字段标签与字段值清楚分开，不将说明中的文字角色名另印为标签，不把提示词指令印在证面上。三档共用同一载体、构图、字段集合、标签与成像条件，只在指定字段值中体现差异。文字随载体表面平面印刷，避免悬浮文字、额外说明、重影和过度锐化。保持自然的纸张或卡片质感，边缘与文字清晰，画面中没有手、桌面杂物或第二份证件。不增加未提供的号码、法律条款、背面内容、隐藏字段或可访问地址。已有印章、签名与照片只按各自说明呈现，不补造未核的防伪功能、字体规格或精确坐标。输出为一幅完整证面图，采用均匀照明和正面视角，让已列文字可以直接阅读。"
+      },
+      "template_version": "1007-supplement-v4",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-C17-food",
+      "entity_id": "C17-food",
+      "spec_id": "DRAFT-C17-CN-SPJYXKZ-2019-GEN1007",
+      "shared_prompt_sections": {
+        "object": "生成虚构经营者的食品经营许可证正本，采用2019年6月起调整式样，证面所有取值逐项给定。",
+        "carrier": "以正面平扫方式呈现单份完整载体，放在浅色无文字背景上，四周保留边缘与适量空白。画面不旋转、不裁切，不叠加装饰性标题，文字与图形均保持在载体范围内。",
+        "layout": "上部国徽与金黄色书法标题；左栏为经营者名称、社会信用代码、负责人、住所、经营场所、主体业态、经营项目，右栏为许可证编号、监督机构与人员、投诉电话、发证机关、签发人和签发日期。有效期在左下，虚构二维码在下部中央偏右，无访问地址；监制文字底部居中。仅呈现正本。",
+        "rendering": "所有可见文字使用下方给定的完整值，逐字排印，保留原来的中文、英文、数字、标点和日期写法。字段标签与字段值清楚分开，不将说明中的文字角色名另印为标签，不把提示词指令印在证面上。三档共用同一载体、构图、字段集合、标签与成像条件，只在指定字段值中体现差异。文字随载体表面平面印刷，避免悬浮文字、额外说明、重影和过度锐化。保持自然的纸张或卡片质感，边缘与文字清晰，画面中没有手、桌面杂物或第二份证件。不增加未提供的号码、法律条款、背面内容、隐藏字段或可访问地址。已有印章、签名与照片只按各自说明呈现，不补造未核的防伪功能、字体规格或精确坐标。输出为一幅完整证面图，采用均匀照明和正面视角，让已列文字可以直接阅读。"
+      },
+      "template_version": "1007-reviewed-v2.1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-C18-main",
+      "entity_id": "C18-main",
+      "spec_id": "DRAFT-C18-CN-TXZ-2010-SUPP-V4",
+      "shared_prompt_sections": {
+        "object": "生成合成证件的单面文字候选，持证人、照片与机构采用给定虚构值。保留所选证件的字段范围和标题写法。",
+        "carrier": "以正面平扫方式呈现单份完整载体，放在浅色无文字背景上，四周保留边缘与适量空白。画面不旋转、不裁切，不叠加装饰性标题，文字与图形均保持在载体范围内。",
+        "layout": "呈现APP展示样式的电子退休证明文字候选：标题单独显示，基本信息含姓名、性别、身份证号码和精确到年月的退休时间，保留另造的持证人照片及给定电子签章文字。注释为两条说明及查询时间，按给定值完整呈现；不增加系统版的打印时间、证件类型、社会保障号码、验真码或验真二维码。",
+        "rendering": "所有可见文字使用下方给定的完整值，逐字排印，保留原来的中文、英文、数字、标点和日期写法。字段标签与字段值清楚分开，不将说明中的文字角色名另印为标签，不把提示词指令印在证面上。三档共用同一载体、构图、字段集合、标签与成像条件，只在指定字段值中体现差异。文字随载体表面平面印刷，避免悬浮文字、额外说明、重影和过度锐化。保持自然的纸张或卡片质感，边缘与文字清晰，画面中没有手、桌面杂物或第二份证件。不增加未提供的号码、法律条款、背面内容、隐藏字段或可访问地址。已有印章、签名与照片只按各自说明呈现，不补造未核的防伪功能、字体规格或精确坐标。输出为一幅完整证面图，采用均匀照明和正面视角，让已列文字可以直接阅读。"
+      },
+      "template_version": "1007-supplement-v4",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-E02-us",
+      "entity_id": "E02-us",
+      "spec_id": "DRAFT-E02-US-PASSPORT-DATAPAGE-SUPP-V4",
+      "shared_prompt_sections": {
+        "object": "Create a synthetic sample-era document front with invented holder and issuer details.",
+        "carrier": "Show one complete document as an evenly lit flat scan on a plain pale background. Keep every edge visible and the view straight.",
+        "layout": "Use only the observed sample-era data page. Put the title and top type, issuing code and passport number above the invented portrait and personal fields. Retain the observed trilingual captions and date notation. Place two 44-character machine-readable lines below the fields. The facing signature page is outside this view; use the fictional authority and supplied endorsements text.",
+        "rendering": "Print every supplied visible value exactly, retaining spelling, capitals, punctuation and date notation. Separate labels and values; role names are not extra labels. Keep fields, layout and lighting fixed across variants. Print flat text with clear edges. Add no instructions, extra numbers, unlisted legal clauses, reverse-side content or working web addresses. Do not invent security functions, exact type sizes or coordinates."
+      },
+      "template_version": "1007-supplement-v4",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-E03-us",
+      "entity_id": "E03-us",
+      "spec_id": "DRAFT-E03-US-VISA-B1B2-R-SUPP-V4",
+      "shared_prompt_sections": {
+        "object": "Create a synthetic sample-era document front with invented holder and issuer details.",
+        "carrier": "Show one complete document as an evenly lit flat scan on a plain pale background. Keep every edge visible and the view straight.",
+        "layout": "Use the observed 2004 sample-era foil front: invented portrait at left, issuing post and control number above, holder and passport fields centrally, type/class and dates at right, annotation below. Include the observed unlabelled red visa number and gold-block number with supplied invented values. Place two 44-character machine-readable lines at the bottom.",
+        "rendering": "Print every supplied visible value exactly, retaining spelling, capitals, punctuation and date notation. Separate labels and values; role names are not extra labels. Keep fields, layout and lighting fixed across variants. Print flat text with clear edges. Add no instructions, extra numbers, unlisted legal clauses, reverse-side content or working web addresses. Do not invent security functions, exact type sizes or coordinates."
+      },
+      "template_version": "1007-supplement-v4",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-E08-uk",
+      "entity_id": "E08-uk",
+      "spec_id": "DRAFT-E08-UK-GB-DVLA-2025-LAYOUT-GEN1007",
+      "shared_prompt_sections": {
+        "object": "Create a synthetic GB full driving licence front using invented holder details and a fictional licensing authority, following INS57P 7/25.",
+        "carrier": "Show one complete document as an evenly lit flat scan on a plain pale background. Keep every edge visible and the view straight.",
+        "layout": "Use the post-2021 GB front zones: title above, UK flag at upper right, invented black-and-white portrait at left, numbered fields at right, supplied signature and secondary image below the portrait. Repeat the expiry date there. No EU flag.",
+        "rendering": "Print every supplied visible value exactly, retaining spelling, capitals, punctuation and date notation. Separate labels and values; role names are not extra labels. Keep fields, layout and lighting fixed across variants. Print flat text with clear edges. Add no instructions, extra numbers, unlisted legal clauses, reverse-side content or working web addresses. Do not invent security functions, exact type sizes or coordinates. Show one complete document with no hands, other documents, clutter, floating text or sharpening halos."
+      },
+      "template_version": "1007-gb-restored-v3",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-E08-us",
+      "entity_id": "E08-us",
+      "spec_id": "E08-US-CA-DL-2025-GEN1007",
+      "shared_prompt_sections": {
+        "object": "Create a synthetic California driver licence front using invented holder details and the selected official sample layout.",
+        "carrier": "Show one complete document as an evenly lit flat scan on a plain pale background. Keep every edge visible and the view straight.",
+        "layout": "Keep state and title above, portrait at left, signature below; DLN, EXP and DOB at upper right; name, address and classes centrally; ISS and DD at lower left, physical descriptors below. Invent the portrait. Add no agency or subtype claim.",
+        "rendering": "Print every supplied visible value exactly, retaining spelling, capitals, punctuation and date notation. Separate labels and values; role names are not extra labels. Keep fields, layout and lighting fixed across variants. Print flat text with clear edges. Add no instructions, extra numbers, unlisted legal clauses, reverse-side content or working web addresses. Do not invent security functions, exact type sizes or coordinates. Show one complete document with no hands, other documents, clutter, floating text or sharpening halos."
+      },
+      "template_version": "1007-reviewed-v2.1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-E09-uk",
+      "entity_id": "E09-uk",
+      "spec_id": "E09-UK-EW-LTD-SHARES-GEN1007",
+      "shared_prompt_sections": {
+        "object": "Create a synthetic certificate of incorporation for an invented private company limited by shares in England and Wales, with supplied registrar text.",
+        "carrier": "Show one complete document as an evenly lit flat scan on a plain pale background. Keep every edge visible and the view straight.",
+        "layout": "Show only the required incorporation certificate text for a private company limited by shares in England and Wales. Use the supplied fictional registrar seal text. Add no directors, good-standing claims or unverified positions.",
+        "rendering": "Print every supplied visible value exactly, retaining spelling, capitals, punctuation and date notation. Separate labels and values; role names are not extra labels. Keep fields, layout and lighting fixed across variants. Print flat text with clear edges. Add no instructions, extra numbers, unlisted legal clauses, reverse-side content or working web addresses. Do not invent security functions, exact type sizes or coordinates. Show one complete document with no hands, other documents, clutter, floating text or sharpening halos."
+      },
+      "template_version": "1007-reviewed-v2.1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V5-C02-household",
+      "entity_id": "C02-household",
+      "spec_id": "DRAFT-C02-CN-HKB-1996-V5-C02-household",
+      "shared_prompt_sections": {
+        "object": "生成给定虚构值的合成证件单页文字候选，只使用下方明确的文字槽。主体与签发机构名称按给定值呈现，字段范围服从选定参考页。",
+        "carrier": "以正面平扫方式呈现单份完整载体，放在浅色无文字背景上，四周保留边缘与适量空白。画面不旋转、不裁切，不叠加装饰性标题，文字与图形均保持在载体范围内。",
+        "layout": "仅展示户主本人常住人口登记卡，户主或与户主关系填户主。沿所见双列表格保留姓名、个人事项与底部承办人及登记日期。首页户号、住址变动登记和另页的变更更正表均不加入该卡。户别位于标题左侧；各填写格完整，不另造照片或二维码。",
+        "rendering": "所有可见文字使用下方给定的完整值，逐字排印，保留原来的中文、英文、数字、标点和日期写法。字段标签与字段值清楚分开，不将说明中的文字角色名另印为标签，不把提示词指令印在证面上。三档共用同一载体、构图、字段集合、标签与成像条件，只在指定字段值中体现差异。文字随载体表面平面印刷，避免悬浮文字、额外说明、重影和过度锐化。保持自然的纸张或卡片质感，边缘与文字清晰，画面中没有手、桌面杂物或第二份证件。不增加未提供的号码、法律条款、背面内容、隐藏字段或可访问地址。已有印章、签名与照片只按各自说明呈现，不补造未核的防伪功能、字体规格或精确坐标。输出为一幅完整证面图，采用均匀照明和正面视角，让已列文字可以直接阅读。"
+      },
+      "template_version": "1007-supplement-v5-20261006",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V5-C02-person",
+      "entity_id": "C02-person",
+      "spec_id": "DRAFT-C02-CN-HKB-1996-V5-C02-person",
+      "shared_prompt_sections": {
+        "object": "生成给定虚构值的合成证件单页文字候选，只使用下方明确的文字槽。主体与签发机构名称按给定值呈现，字段范围服从选定参考页。",
+        "carrier": "以正面平扫方式呈现单份完整载体，放在浅色无文字背景上，四周保留边缘与适量空白。画面不旋转、不裁切，不叠加装饰性标题，文字与图形均保持在载体范围内。",
+        "layout": "仅展示非户主的常住人口登记卡，按给定关系填写，不展示首页。采用所见双列表格，左列姓名、曾用名、出生地、籍贯等，右列关系、性别、民族、生日等；底部承办人和登记日期。住址变动和变更更正分别属独立页，不并入这一页。",
+        "rendering": "所有可见文字使用下方给定的完整值，逐字排印，保留原来的中文、英文、数字、标点和日期写法。字段标签与字段值清楚分开，不将说明中的文字角色名另印为标签，不把提示词指令印在证面上。三档共用同一载体、构图、字段集合、标签与成像条件，只在指定字段值中体现差异。文字随载体表面平面印刷，避免悬浮文字、额外说明、重影和过度锐化。保持自然的纸张或卡片质感，边缘与文字清晰，画面中没有手、桌面杂物或第二份证件。不增加未提供的号码、法律条款、背面内容、隐藏字段或可访问地址。已有印章、签名与照片只按各自说明呈现，不补造未核的防伪功能、字体规格或精确坐标。输出为一幅完整证面图，采用均匀照明和正面视角，让已列文字可以直接阅读。"
+      },
+      "template_version": "1007-supplement-v5-20261006",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V5-C07-main",
+      "entity_id": "C07-main",
+      "spec_id": "DRAFT-C07-CN-SBK-2021-V5-C07-main",
+      "shared_prompt_sections": {
+        "object": "生成给定虚构值的合成证件单页文字候选，只使用下方明确的文字槽。主体与签发机构名称按给定值呈现，字段范围服从选定参考页。",
+        "carrier": "以正面平扫方式呈现单份完整载体，放在浅色无文字背景上，四周保留边缘与适量空白。画面不旋转、不裁切，不叠加装饰性标题，文字与图形均保持在载体范围内。",
+        "layout": "只显示北京市第三代卡的个人信息面，沿官方示意图在左侧放另造人像，右侧为姓名、社会保障号码、卡号和发卡日期；左下机构章，下方银行卡号与服务电话；右侧芯片和非接触符号，右上银联标识。地方字头与银行用给定值，不增加医保条形码、有效期或全国统一名称。",
+        "rendering": "所有可见文字使用下方给定的完整值，逐字排印，保留原来的中文、英文、数字、标点和日期写法。字段标签与字段值清楚分开，不将说明中的文字角色名另印为标签，不把提示词指令印在证面上。三档共用同一载体、构图、字段集合、标签与成像条件，只在指定字段值中体现差异。文字随载体表面平面印刷，避免悬浮文字、额外说明、重影和过度锐化。保持自然的纸张或卡片质感，边缘与文字清晰，画面中没有手、桌面杂物或第二份证件。不增加未提供的号码、法律条款、背面内容、隐藏字段或可访问地址。已有印章、签名与照片只按各自说明呈现，不补造未核的防伪功能、字体规格或精确坐标。输出为一幅完整证面图，采用均匀照明和正面视角，让已列文字可以直接阅读。"
+      },
+      "template_version": "1007-supplement-v5-20261006",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V5-C08-student",
+      "entity_id": "C08-student",
+      "spec_id": "DRAFT-C08-SJTU-CARD-RULES-2026-V5-C08-student",
+      "shared_prompt_sections": {
+        "object": "生成给定虚构值的合成证件单页文字候选，只使用下方明确的文字槽。主体与签发机构名称按给定值呈现，字段范围服从选定参考页。",
+        "carrier": "以正面平扫方式呈现单份完整载体，放在浅色无文字背景上，四周保留边缘与适量空白。画面不旋转、不裁切，不叠加装饰性标题，文字与图形均保持在载体范围内。",
+        "layout": "只显示双件制样本的智能卡正面，上部红色题名区有校徽、给定中英文虚构校名及学生证标题，左侧另造人像，右侧列姓名、类别、学号、卡号，底部有效期至。背面130周年纪念图案、副证注册条与火车优惠卡属于另面或另一件，不放在这一面。",
+        "rendering": "所有可见文字使用下方给定的完整值，逐字排印，保留原来的中文、英文、数字、标点和日期写法。字段标签与字段值清楚分开，不将说明中的文字角色名另印为标签，不把提示词指令印在证面上。三档共用同一载体、构图、字段集合、标签与成像条件，只在指定字段值中体现差异。文字随载体表面平面印刷，避免悬浮文字、额外说明、重影和过度锐化。保持自然的纸张或卡片质感，边缘与文字清晰，画面中没有手、桌面杂物或第二份证件。不增加未提供的号码、法律条款、背面内容、隐藏字段或可访问地址。已有印章、签名与照片只按各自说明呈现，不补造未核的防伪功能、字体规格或精确坐标。输出为一幅完整证面图，采用均匀照明和正面视角，让已列文字可以直接阅读。"
+      },
+      "template_version": "1007-supplement-v5-20261006",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V5-C08-supplement",
+      "entity_id": "C08-supplement",
+      "spec_id": "C08-SJTU-SUPPLEMENT-2025-V5-C08-supplement",
+      "shared_prompt_sections": {
+        "object": "生成给定虚构值的合成证件单页文字候选，只使用下方明确的文字槽。主体与签发机构名称按给定值呈现，字段范围服从选定参考页。",
+        "carrier": "以正面平扫方式呈现单份完整载体，放在浅色无文字背景上，四周保留边缘与适量空白。画面不旋转、不裁切，不叠加装饰性标题，文字与图形均保持在载体范围内。",
+        "layout": "只显示副证信息页，上方为给定中英文虚构校名及副证题名。左列姓名、院系、学号、生日、入学日期；右列班号、性别、生源省市、发证日期；下部注册证区域按给定标题和学年文字排印，右侧学籍管理章，底部完整说明。优惠卡与乘车区间不在信息页。",
+        "rendering": "所有可见文字使用下方给定的完整值，逐字排印，保留原来的中文、英文、数字、标点和日期写法。字段标签与字段值清楚分开，不将说明中的文字角色名另印为标签，不把提示词指令印在证面上。三档共用同一载体、构图、字段集合、标签与成像条件，只在指定字段值中体现差异。文字随载体表面平面印刷，避免悬浮文字、额外说明、重影和过度锐化。保持自然的纸张或卡片质感，边缘与文字清晰，画面中没有手、桌面杂物或第二份证件。不增加未提供的号码、法律条款、背面内容、隐藏字段或可访问地址。已有印章、签名与照片只按各自说明呈现，不补造未核的防伪功能、字体规格或精确坐标。输出为一幅完整证面图，采用均匀照明和正面视角，让已列文字可以直接阅读。"
+      },
+      "template_version": "1007-supplement-v5-20261006",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V5-C09-main",
+      "entity_id": "C09-main",
+      "spec_id": "DRAFT-C09-CN-LQZ-2025-V5-C09-main",
+      "shared_prompt_sections": {
+        "object": "生成给定虚构值的合成证件单页文字候选，只使用下方明确的文字槽。主体与签发机构名称按给定值呈现，字段范围服从选定参考页。",
+        "carrier": "以正面平扫方式呈现单份完整载体，放在浅色无文字背景上，四周保留边缘与适量空白。画面不旋转、不裁切，不叠加装饰性标题，文字与图形均保持在载体范围内。",
+        "layout": "仅采用2017本科正文页参考：上方繁体校训与右上条形码编号，校徽、给定中英文虚构校名和年份同列；红色标题，正文依次为抬头、录取、欢迎、报到句，校长手写体印刷签名及学校圆章在下方，资格声明置左下细框，底部报到地点。保留回纹边框，不拼外封或其他年份文字。",
+        "rendering": "所有可见文字使用下方给定的完整值，逐字排印，保留原来的中文、英文、数字、标点和日期写法。字段标签与字段值清楚分开，不将说明中的文字角色名另印为标签，不把提示词指令印在证面上。三档共用同一载体、构图、字段集合、标签与成像条件，只在指定字段值中体现差异。文字随载体表面平面印刷，避免悬浮文字、额外说明、重影和过度锐化。保持自然的纸张或卡片质感，边缘与文字清晰，画面中没有手、桌面杂物或第二份证件。不增加未提供的号码、法律条款、背面内容、隐藏字段或可访问地址。已有印章、签名与照片只按各自说明呈现，不补造未核的防伪功能、字体规格或精确坐标。输出为一幅完整证面图，采用均匀照明和正面视角，让已列文字可以直接阅读。"
+      },
+      "template_version": "1007-supplement-v5-20261006",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V5-C14-main",
+      "entity_id": "C14-main",
+      "spec_id": "DRAFT-C14-CN-JDCDJZ-2022-V5-C14-main",
+      "shared_prompt_sections": {
+        "object": "生成给定虚构值的合成证件单页文字候选，只使用下方明确的文字槽。主体与签发机构名称按给定值呈现，字段范围服从选定参考页。",
+        "carrier": "以正面平扫方式呈现单份完整载体，放在浅色无文字背景上，四周保留边缘与适量空白。画面不旋转、不裁切，不叠加装饰性标题，文字与图形均保持在载体范围内。",
+        "layout": "只呈现GA369—2005图B.2对应的第2页，标题为注册登记机动车信息栏，字段按5至34编号完整排成表格，33发证机关章是跨行大格，34发证日期在其下。页脚第2页。单位依图保留，不添加第一页所有人、身份证明合并栏、登记机关、转移登记、页眉条码或证书编号。第33栏明确呈现发证机关章图形，使用给定的虚构机关文字；不指定未经核实的章形、颜色、内部徽记或防伪工艺。章图形只在第33栏呈现，第34栏发证日期保持原样。",
+        "rendering": "所有可见文字使用下方给定的完整值，逐字排印，保留原来的中文、英文、数字、标点和日期写法。字段标签与字段值清楚分开，不将说明中的文字角色名另印为标签，不把提示词指令印在证面上。三档共用同一载体、构图、字段集合、标签与成像条件，只在指定字段值中体现差异。文字随载体表面平面印刷，避免悬浮文字、额外说明、重影和过度锐化。保持自然的纸张或卡片质感，边缘与文字清晰，画面中没有手、桌面杂物或第二份证件。不增加未提供的号码、法律条款、背面内容、隐藏字段或可访问地址。已有印章、签名与照片只按各自说明呈现，不补造未核的防伪功能、字体规格或精确坐标。输出为一幅完整证面图，采用均匀照明和正面视角，让已列文字可以直接阅读。"
+      },
+      "template_version": "feedback-20261010-v2",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V5-C19-property",
+      "entity_id": "C19-property",
+      "spec_id": "DRAFT-C19-CN-BDCZ-2024-V5-C19-property",
+      "shared_prompt_sections": {
+        "object": "生成给定虚构值的合成证件单页文字候选，只使用下方明确的文字槽。主体与签发机构名称按给定值呈现，字段范围服从选定参考页。",
+        "carrier": "以正面平扫方式呈现单份完整载体，放在浅色无文字背景上，四周保留边缘与适量空白。画面不旋转、不裁切，不叠加装饰性标题，文字与图形均保持在载体范围内。",
+        "layout": "只显示单一版内页登记事项表，顶部为完整权证号，下方权利人、共有情况、坐落、不动产单元号及权利类型、性质、用途、面积、期限和其他状况。表头年度顺序号、28位单元号分开，不添加宣告页的登记日期、监制行、印制流水号或后续附记页文字。",
+        "rendering": "所有可见文字使用下方给定的完整值，逐字排印，保留原来的中文、英文、数字、标点和日期写法。字段标签与字段值清楚分开，不将说明中的文字角色名另印为标签，不把提示词指令印在证面上。三档共用同一载体、构图、字段集合、标签与成像条件，只在指定字段值中体现差异。文字随载体表面平面印刷，避免悬浮文字、额外说明、重影和过度锐化。保持自然的纸张或卡片质感，边缘与文字清晰，画面中没有手、桌面杂物或第二份证件。不增加未提供的号码、法律条款、背面内容、隐藏字段或可访问地址。已有印章、签名与照片只按各自说明呈现，不补造未核的防伪功能、字体规格或精确坐标。输出为一幅完整证面图，采用均匀照明和正面视角，让已列文字可以直接阅读。"
+      },
+      "template_version": "1007-supplement-v5-20261006",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V5-E05-us",
+      "entity_id": "E05-us",
+      "spec_id": "DRAFT-E05-US-OSU-BUCKID-V5-E05-us",
+      "shared_prompt_sections": {
+        "object": "Create a synthetic document front using the supplied invented holder and institution values. Keep the selected reference scope and render only the explicit text roles below.",
+        "carrier": "Show one complete document as an evenly lit flat scan on a plain pale background. Keep every edge visible and the view straight.",
+        "layout": "Show only the four holder text roles supported by BuckID official descriptions: legal last name, preferred first name, short number and long number. Keep the two numeric values separate and readable. Their relative positions have not been established; do not invent a portrait, an expiry date, a signature, a crest or additional printed slogans.",
+        "rendering": "Print every supplied value exactly, retaining case, spelling, punctuation and numeric notation. Keep letters sharp and evenly spaced, with no overlaps, clipping, glare or invented fine print. Show the complete document boundary on a neutral background. Use consistent baselines and a straight, evenly lit view. All signature shapes must be invented."
+      },
+      "template_version": "1007-supplement-v5-20261006",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V5-E07-us",
+      "entity_id": "E07-us",
+      "spec_id": "DRAFT-E07-US-PEAP-CERT-V5-E07-us",
+      "shared_prompt_sections": {
+        "object": "Create a synthetic document front using the supplied invented holder and institution values. Keep the selected reference scope and render only the explicit text roles below.",
+        "carrier": "Show one complete document as an evenly lit flat scan on a plain pale background. Keep every edge visible and the view straight.",
+        "layout": "Use the 2026 bordered PEAP certificate front: program heading above a central award emblem, then presented to, the invented student name, recognition phrase, award phrase and year. Place two invented signature shapes over the Secretary and President role captions, with principal and school values below. The ring follows the supplied award wording; use gold for Excellence and silver grey for Achievement. Do not add a score, certificate number or official stamp.",
+        "rendering": "Print every supplied value exactly, retaining case, spelling and punctuation. Keep all text sharp, evenly spaced and unclipped. Use an evenly lit flat view with no glare or added fine print. Invent all signature shapes, using only the given role captions."
+      },
+      "template_version": "1007-supplement-v5-20261006",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V6-C03-main",
+      "entity_id": "C03-main",
+      "spec_id": "EXEC-V6-C03-main",
+      "shared_prompt_sections": {
+        "object": "生成一幅完整、清晰的证件文字图像。画面围绕所列证件的文字角色和可见面展开，每一项内容都按随后给出的文字打印。姓名、机构、地址和编号均采用提供的值；仅在所选版面或给定文字角色明确要求的区域呈现照片和手写签名，相应人像和签名形状另行虚构。",
+        "carrier": "采用正面平视、边缘完整的展示方式。各资料区域分界清楚，文字与照片、章和背景图案保持距离。需要展开册页时让页缝可见，声明页与资料页分开；单页件只呈现指定页面。背景简洁，光线均匀，画面无手指、反光或遮挡。",
+        "layout": "声明独立页、资料另页；未知资料落位采用内部构图；两者不合并同页，不标未核页码。各字段名称和值保持对应，文字读取顺序清楚。未列出的区域不添加文字；已给出的段落保持原来的语序、标点和行文关系。",
+        "rendering": "图中文字以文字清单为准，保留所有数字、字母大小写和标点。中文笔画应清楚，英文字符间距均匀，不把相近字符连在一起。版面留出边缘空白，长句自然换行但不改字。仅在所选版面或给定文字角色明确要求时呈现手写签名和照片，相应形状与人像均为虚构；文字不要被装饰和印章挡住。细小标签与相邻字段值之间留出间隔，印刷基线稳定，避免错列。同一层级标签采用一致字形，各组资料对齐，行间留白适中。保持完整外边界和均匀亮度，使页面每个角落的文字都能辨认。背景纹理只作淡色衬底，文字始终与底纹有足够的明暗差。"
+      },
+      "template_version": "feedback-20261010-v1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V6-C06-l",
+      "entity_id": "C06-l",
+      "spec_id": "EXEC-V6-C06-l",
+      "shared_prompt_sections": {
+        "object": "生成一幅完整、清晰的证件文字图像。画面围绕所列证件的文字角色和可见面展开，每一项内容都按随后给出的文字打印。姓名、机构、地址和编号均采用提供的值；仅在所选版面或给定文字角色明确要求的区域呈现照片和手写签名，相应人像和签名形状另行虚构。",
+        "carrier": "采用正面平视、边缘完整的展示方式。各资料区域分界清楚，文字与照片、章和背景图案保持距离。需要展开册页时让页缝可见，声明页与资料页分开；单页件只呈现指定页面。背景简洁，光线均匀，画面无手指、反光或遮挡。",
+        "layout": "顶部中英标题、右上签证号；类别和次数上部；日期姓名护照号分栏；不写机读区、防伪或尺寸。各字段名称和值保持对应，文字读取顺序清楚。未列出的区域不添加文字；已给出的段落保持原来的语序、标点和行文关系。",
+        "rendering": "图中文字以文字清单为准，保留所有数字、字母大小写和标点。中文笔画应清楚，英文字符间距均匀，不把相近字符连在一起。版面留出边缘空白，长句自然换行但不改字。仅在所选版面或给定文字角色明确要求时呈现手写签名和照片，相应形状与人像均为虚构；文字不要被装饰和印章挡住。细小标签与相邻字段值之间留出间隔，印刷基线稳定，避免错列。同一层级标签采用一致字形，各组资料对齐，行间留白适中。保持完整外边界和均匀亮度，使页面每个角落的文字都能辨认。背景纹理只作淡色衬底，文字始终与底纹有足够的明暗差。"
+      },
+      "template_version": "feedback-20261010-v1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V6-C06-m",
+      "entity_id": "C06-m",
+      "spec_id": "EXEC-V6-C06-m",
+      "shared_prompt_sections": {
+        "object": "生成一幅完整、清晰的证件文字图像。画面围绕所列证件的文字角色和可见面展开，每一项内容都按随后给出的文字打印。姓名、机构、地址和编号均采用提供的值；仅在所选版面或给定文字角色明确要求的区域呈现照片和手写签名，相应人像和签名形状另行虚构。",
+        "carrier": "采用正面平视、边缘完整的展示方式。各资料区域分界清楚，文字与照片、章和背景图案保持距离。需要展开册页时让页缝可见，声明页与资料页分开；单页件只呈现指定页面。背景简洁，光线均匀，画面无手指、反光或遮挡。",
+        "layout": "沿用通用字段关系；类别M按使用者放行；停留天数为个案内部取值，不声称固定期限；不呈现机读区。各字段名称和值保持对应，文字读取顺序清楚。未列出的区域不添加文字；已给出的段落保持原来的语序、标点和行文关系。贴纸右侧明确呈现红色圆形国徽图案及长城图案，图形与给定文字保持可读间隔；只采用可见图案，不复制样例号码、个人值、编辑标注或机读区，不声称具备防伪效力。不因该图案补充而增加照片、性别、备注、号码槽或其他未列字段。",
+        "rendering": "图中文字以文字清单为准，保留所有数字、字母大小写和标点。中文笔画应清楚，英文字符间距均匀，不把相近字符连在一起。版面留出边缘空白，长句自然换行但不改字。仅在所选版面或给定文字角色明确要求时呈现手写签名和照片，相应形状与人像均为虚构；文字不要被装饰和印章挡住。细小标签与相邻字段值之间留出间隔，印刷基线稳定，避免错列。同一层级标签采用一致字形，各组资料对齐，行间留白适中。保持完整外边界和均匀亮度，使页面每个角落的文字都能辨认。背景纹理只作淡色衬底，文字始终与底纹有足够的明暗差。"
+      },
+      "template_version": "feedback-20261011-v3",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V6-C06-q2",
+      "entity_id": "C06-q2",
+      "spec_id": "EXEC-V6-C06-q2",
+      "shared_prompt_sections": {
+        "object": "生成一幅完整、清晰的证件文字图像。画面围绕所列证件的文字角色和可见面展开，每一项内容都按随后给出的文字打印。姓名、机构、地址和编号均采用提供的值；仅在所选版面或给定文字角色明确要求的区域呈现照片和手写签名，相应人像和签名形状另行虚构。",
+        "carrier": "采用正面平视、边缘完整的展示方式。各资料区域分界清楚，文字与照片、章和背景图案保持距离。需要展开册页时让页缝可见，声明页与资料页分开；单页件只呈现指定页面。背景简洁，光线均匀，画面无手指、反光或遮挡。",
+        "layout": "顶端中英抬头；类别Q2和次数栏在上；停留值030来自所选样例、不是所有Q2固定期限；姓名日期护照号分栏。各字段名称和值保持对应，文字读取顺序清楚。未列出的区域不添加文字；已给出的段落保持原来的语序、标点和行文关系。贴纸右侧明确呈现红色圆形国徽图案及长城图案，图形与给定文字保持可读间隔；只采用可见图案，不复制样例号码、个人值、编辑标注或机读区，不声称具备防伪效力。不因该图案补充而增加照片、性别、备注、号码槽或其他未列字段。",
+        "rendering": "图中文字以文字清单为准，保留所有数字、字母大小写和标点。中文笔画应清楚，英文字符间距均匀，不把相近字符连在一起。版面留出边缘空白，长句自然换行但不改字。仅在所选版面或给定文字角色明确要求时呈现手写签名和照片，相应形状与人像均为虚构；文字不要被装饰和印章挡住。细小标签与相邻字段值之间留出间隔，印刷基线稳定，避免错列。同一层级标签采用一致字形，各组资料对齐，行间留白适中。保持完整外边界和均匀亮度，使页面每个角落的文字都能辨认。"
+      },
+      "template_version": "feedback-20261011-v3",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V6-C06-x1",
+      "entity_id": "C06-x1",
+      "spec_id": "EXEC-V6-C06-x1",
+      "shared_prompt_sections": {
+        "object": "生成一幅完整、清晰的证件文字图像。画面围绕所列证件的文字角色和可见面展开，每一项内容都按随后给出的文字打印。姓名、机构、地址和编号均采用提供的值；仅在所选版面或给定文字角色明确要求的区域呈现照片和手写签名，相应人像和签名形状另行虚构。",
+        "carrier": "采用正面平视、边缘完整的展示方式。各资料区域分界清楚，文字与照片、章和背景图案保持距离。需要展开册页时让页缝可见，声明页与资料页分开；单页件只呈现指定页面。背景简洁，光线均匀，画面无手指、反光或遮挡。",
+        "layout": "类别X1按放行；保留入境次数、签发日地点、姓名生日、护照号等已知角色；不呈现停留值和机读区。各字段名称和值保持对应，文字读取顺序清楚。未列出的区域不添加文字；已给出的段落保持原来的语序、标点和行文关系。",
+        "rendering": "图中文字以文字清单为准，保留所有数字、字母大小写和标点。中文笔画应清楚，英文字符间距均匀，不把相近字符连在一起。版面留出边缘空白，长句自然换行但不改字。仅在所选版面或给定文字角色明确要求时呈现手写签名和照片，相应形状与人像均为虚构；文字不要被装饰和印章挡住。细小标签与相邻字段值之间留出间隔，印刷基线稳定，避免错列。同一层级标签采用一致字形，各组资料对齐，行间留白适中。保持完整外边界和均匀亮度，使页面每个角落的文字都能辨认。背景纹理只作淡色衬底，文字始终与底纹有足够的明暗差。"
+      },
+      "template_version": "feedback-20261010-v1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V6-C11-award",
+      "entity_id": "C11-award",
+      "spec_id": "EXEC-V6-C11-award",
+      "shared_prompt_sections": {
+        "object": "生成一幅完整、清晰的证件文字图像。画面围绕所列证件的文字角色和可见面展开，每一项内容都按随后给出的文字打印。姓名、机构、地址和编号均采用提供的值；仅在所选版面或给定文字角色明确要求的区域呈现照片和手写签名，相应人像和签名形状另行虚构。",
+        "carrier": "采用正面平视、边缘完整的展示方式。各资料区域分界清楚，文字与照片、章和背景图案保持距离。需要展开册页时让页缝可见，声明页与资料页分开；单页件只呈现指定页面。背景简洁，光线均匀，画面无手指、反光或遮挡。",
+        "layout": "红色获奖证书居中，正文同段含组别和奖项；编号左下，圆章右下压日期；姓名学校排列未核部分按内部构图。各字段名称和值保持对应，文字读取顺序清楚。未列出的区域不添加文字；已给出的段落保持原来的语序、标点和行文关系。",
+        "rendering": "图中文字以文字清单为准，保留所有数字、字母大小写和标点。中文笔画应清楚，英文字符间距均匀，不把相近字符连在一起。版面留出边缘空白，长句自然换行但不改字。仅在所选版面或给定文字角色明确要求时呈现手写签名和照片，相应形状与人像均为虚构；文字不要被装饰和印章挡住。细小标签与相邻字段值之间留出间隔，印刷基线稳定，避免错列。同一层级标签采用一致字形，各组资料对齐，行间留白适中。保持完整外边界和均匀亮度，使页面每个角落的文字都能辨认。背景纹理只作淡色衬底，文字始终与底纹有足够的明暗差。"
+      },
+      "template_version": "feedback-20261010-v1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V6-C11-honor",
+      "entity_id": "C11-honor",
+      "spec_id": "EXEC-V6-C11-honor",
+      "shared_prompt_sections": {
+        "object": "生成一幅完整、清晰的证件文字图像。画面围绕所列证件的文字角色和可见面展开，每一项内容都按随后给出的文字打印。姓名、机构、地址和编号均采用提供的值；仅在所选版面或给定文字角色明确要求的区域呈现照片和手写签名，相应人像和签名形状另行虚构。",
+        "carrier": "采用正面平视、边缘完整的展示方式。各资料区域分界清楚，文字与照片、章和背景图案保持距离。需要展开册页时让页缝可见，声明页与资料页分开；单页件只呈现指定页面。背景简洁，光线均匀，画面无手指、反光或遮挡。",
+        "layout": "竖版，顶部双徽标，荣誉证书和CERTIFICATE OF HONOR居中；机构受奖；红色团体一等奖；右下圆章日期；不把章边13位串当证书编号。各字段名称和值保持对应，文字读取顺序清楚。未列出的区域不添加文字；已给出的段落保持原来的语序、标点和行文关系。",
+        "rendering": "图中文字以文字清单为准，保留所有数字、字母大小写和标点。中文笔画应清楚，英文字符间距均匀，不把相近字符连在一起。版面留出边缘空白，长句自然换行但不改字。仅在所选版面或给定文字角色明确要求时呈现手写签名和照片，相应形状与人像均为虚构；文字不要被装饰和印章挡住。细小标签与相邻字段值之间留出间隔，印刷基线稳定，避免错列。同一层级标签采用一致字形，各组资料对齐，行间留白适中。保持完整外边界和均匀亮度，使页面每个角落的文字都能辨认。"
+      },
+      "template_version": "feedback-20261010-v1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V6-C13-main",
+      "entity_id": "C13-main",
+      "spec_id": "EXEC-V6-C13-main",
+      "shared_prompt_sections": {
+        "object": "生成一幅完整、清晰的证件文字图像。画面围绕所列证件的文字角色和可见面展开，每一项内容都按随后给出的文字打印。姓名、机构、地址和编号均采用提供的值；仅在所选版面或给定文字角色明确要求的区域呈现照片和手写签名，相应人像和签名形状另行虚构。",
+        "carrier": "采用正面平视、边缘完整的展示方式。各资料区域分界清楚，文字与照片、章和背景图案保持距离。需要展开册页时让页缝可见，声明页与资料页分开；单页件只呈现指定页面。背景简洁，光线均匀，画面无手指、反光或遮挡。",
+        "layout": "上方双语标题；证号姓名在上；性别国籍并排；左中章、右下照片；底部单一有效期限栏；不放档案编号或副页记录。各字段名称和值保持对应，文字读取顺序清楚。未列出的区域不添加文字；已给出的段落保持原来的语序、标点和行文关系。",
+        "rendering": "图中文字以文字清单为准，保留所有数字、字母大小写和标点。中文笔画应清楚，英文字符间距均匀，不把相近字符连在一起。版面留出边缘空白，长句自然换行但不改字。仅在所选版面或给定文字角色明确要求时呈现手写签名和照片，相应形状与人像均为虚构；文字不要被装饰和印章挡住。细小标签与相邻字段值之间留出间隔，印刷基线稳定，避免错列。同一层级标签采用一致字形，各组资料对齐，行间留白适中。保持完整外边界和均匀亮度，使页面每个角落的文字都能辨认。"
+      },
+      "template_version": "feedback-20261010-v1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V6-C16-legal",
+      "entity_id": "C16-legal",
+      "spec_id": "EXEC-V7-C16-legal",
+      "shared_prompt_sections": {
+        "object": "生成一幅完整、清晰的证件文字图像。画面围绕所列证件的文字角色和可见面展开，每一项内容都按随后给出的文字打印。姓名、机构、地址和编号均采用提供的值；仅在所选版面或给定文字角色明确要求的区域呈现照片和手写签名，相应人像和签名形状另行虚构。",
+        "carrier": "采用正面平视、边缘完整的展示方式。各资料区域分界清楚，文字与照片、章和背景图案保持距离。需要展开册页时让页缝可见，声明页与资料页分开；单页件只呈现指定页面。背景简洁，光线均匀，画面无手指、反光或遮挡。",
+        "layout": "顶部居中证书标题；其下为证类标签；姓名与证件号在左中；颁发机关与日期在右下；不添加图样、防伪、尺寸与编号算法。各字段名称和值保持对应，文字读取顺序清楚。未列出的区域不添加文字；已给出的段落保持原来的语序、标点和行文关系。",
+        "rendering": "图中文字以文字清单为准，保留所有数字、字母大小写和标点。中文笔画应清楚，英文字符间距均匀，不把相近字符连在一起。版面留出边缘空白，长句自然换行但不改字。仅在所选版面或给定文字角色明确要求时呈现手写签名和照片，相应形状与人像均为虚构；文字不要被装饰和印章挡住。细小标签与相邻字段值之间留出间隔，印刷基线稳定，避免错列。同一层级标签采用一致字形，各组资料对齐，行间留白适中。保持完整外边界和均匀亮度，使页面每个角落的文字都能辨认。"
+      },
+      "template_version": "feedback-20261010-v1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V6-C17-school",
+      "entity_id": "C17-school",
+      "spec_id": "EXEC-V6-C17-school",
+      "shared_prompt_sections": {
+        "object": "生成一幅完整、清晰的证件文字图像。画面围绕所列证件的文字角色和可见面展开，每一项内容都按随后给出的文字打印。姓名、机构、地址和编号均采用提供的值；仅在所选版面或给定文字角色明确要求的区域呈现照片和手写签名，相应人像和签名形状另行虚构。",
+        "carrier": "采用正面平视、边缘完整的展示方式。各资料区域分界清楚，文字与照片、章和背景图案保持距离。需要展开册页时让页缝可见，声明页与资料页分开；单页件只呈现指定页面。背景简洁，光线均匀，画面无手指、反光或遮挡。",
+        "layout": "正本29×40.1cm；双标题居中；右上教民15位号；左七项；右下发证机关和②颁发日期；底部教育部制和印制流水号；不加年检、举办者或备注到正本。各字段名称和值保持对应，文字读取顺序清楚。未列出的区域不添加文字；已给出的段落保持原来的语序、标点和行文关系。右下发证机关区域呈现红色圆形公章，章文使用给定的发证机关名称；“发证机关（章）”仍按给定标签显示，公章与该标签在同一区域自然重叠压印，不另造第二个机关栏。",
+        "rendering": "图中文字以文字清单为准，保留所有数字、字母大小写和标点。中文笔画应清楚，英文字符间距均匀，不把相近字符连在一起。版面留出边缘空白，长句自然换行但不改字。仅在所选版面或给定文字角色明确要求时呈现手写签名和照片，相应形状与人像均为虚构；文字不要被装饰和印章挡住。细小标签与相邻字段值之间留出间隔，印刷基线稳定，避免错列。同一层级标签采用一致字形，各组资料对齐，行间留白适中。保持完整外边界和均匀亮度，使页面每个角落的文字都能辨认。"
+      },
+      "template_version": "feedback-20261010-v2",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V6-E01-us",
+      "entity_id": "E01-us",
+      "spec_id": "EXEC-V6-E01-us",
+      "shared_prompt_sections": {
+        "object": "Create a clear, complete view of the specified document using the supplied text roles. Use the given names and institution values. Render portraits and handwritten signatures only in areas explicitly required by the selected layout or supplied text roles; invent those visual shapes.",
+        "carrier": "Show the designated face straight on, with its boundary visible. Use an even, neutral background and illumination. Separate printed text from the portrait and graphic elements. Keep the page free of glare, hands and occlusion.",
+        "layout": "Place the portrait on the left and abbreviated fields on the right. Set CALIFORNIA at upper left and the green two-line card title at upper right. Keep lower physical descriptors in three columns. Omit driving permission fields. Show an invented handwritten holder signature in the bottom signature area, based on the supplied holder name without adding a printed name or label. Place a text-free fictional state emblem in the upper-right emblem area of this historical front; do not reproduce the real emblem or add a REAL ID mark.",
+        "rendering": "Print all supplied values exactly, including case, dates, punctuation and numeric strings. Preserve each caption and its associated value. Keep letters sharp, baselines consistent and spacing even. Wrap long text without changing its words. Avoid clipping and invented fine print. Leave a clear outer margin and keep all text readable against the background."
+      },
+      "template_version": "feedback-20261010-v2",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V6-E02-uk",
+      "entity_id": "E02-uk",
+      "spec_id": "EXEC-V6-E02-uk",
+      "shared_prompt_sections": {
+        "object": "Create a clear, complete view of the specified document using the supplied text roles. Use the given names and institution values. Render portraits and handwritten signatures only in areas explicitly required by the selected layout or supplied text roles; invent those visual shapes.",
+        "carrier": "Show the designated face straight on, with its boundary visible. Use an even, neutral background and illumination. Separate printed text from the portrait and graphic elements. Keep the page free of glare, hands and occlusion.",
+        "layout": "Keep the country header and bilingual passport title above the portrait and numbered readable roles. Use only the data page, with the portrait at left. The separate observations page and machine-readable area are outside this view.",
+        "rendering": "Print all supplied values exactly, including case, dates, punctuation and numeric strings. Preserve each caption and its associated value. Keep letters sharp, baselines consistent and spacing even. Wrap long text without changing its words. Avoid clipping and invented fine print. Leave a clear outer margin and keep all text readable against the background."
+      },
+      "template_version": "feedback-20261010-v1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V6-E04-uk",
+      "entity_id": "E04-uk",
+      "spec_id": "EXEC-V8-E04-uk",
+      "shared_prompt_sections": {
+        "object": "Create a clear, complete view of the specified document using the supplied text roles. Use the given names and institution values. Render portraits and handwritten signatures only in areas explicitly required by the selected layout or supplied text roles; invent those visual shapes.",
+        "carrier": "Show the designated face straight on, with its boundary visible. Use an even, neutral background and illumination. Separate printed text from the portrait and graphic elements. Keep the page free of glare, hands and occlusion.",
+        "layout": "Green heading and Given line at top, application number upper right. One bordered register table: No., When married, Name and surname, Age, Condition, Rank or profession, Residence, Father’s name and surname, Rank or profession; groom above bride. Below: Married in sentence, signatures, witnesses, officiant. At foot: CERTIFIED and Given sentences, green seal, warnings.",
+        "rendering": "Print all supplied values exactly, including case, dates, punctuation and numeric strings. Preserve each caption and its associated value. Keep letters sharp, baselines consistent and spacing even. Wrap long text without changing its words. Avoid clipping and invented fine print."
+      },
+      "template_version": "feedback-20261010-v1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V6-E04-us",
+      "entity_id": "E04-us",
+      "spec_id": "EXEC-V6-E04-us",
+      "shared_prompt_sections": {
+        "object": "Create a clear, complete view of the specified document using the supplied text roles. Use the given names and institution values. Render portraits and handwritten signatures only in areas explicitly required by the selected layout or supplied text roles; invent those visual shapes.",
+        "carrier": "Show the designated face straight on, with its boundary visible. Use an even, neutral background and illumination. Separate printed text from the portrait and graphic elements. Keep the page free of glare, hands and occlusion.",
+        "layout": "Use one county heading throughout. Separate two applicant blocks, the affidavit, licence, witness rows, solemnisation, optional new names and local registrar. Keep the certification statement below the form and preserve its footer. In the existing certification area below the form, show an invented handwritten signature line above the supplied certifying role and retain the supplied certified-copy date and statements. Show a circular embossed seal at each lower corner, containing text-free fictional emblems; do not reproduce real seal wording, signatures or a barcode. Render the supplied SIGNATURE roles as invented handwriting in their corresponding form cells, using the supplied names without additional printed names or labels.",
+        "rendering": "Print all supplied values exactly, including case, dates, punctuation and numeric strings. Preserve each caption and its associated value. Keep letters sharp, baselines consistent and spacing even. Wrap long text without changing its words. Avoid clipping and invented fine print. Leave a clear outer margin and keep all text readable against the background."
+      },
+      "template_version": "feedback-20261010-v2",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V6-E05-uk",
+      "entity_id": "E05-uk",
+      "spec_id": "EXEC-V6-E05-uk",
+      "shared_prompt_sections": {
+        "object": "Create a clear, complete view of the specified document using the supplied text roles. Use the given names and institution values. Render portraits and handwritten signatures only in areas explicitly required by the selected layout or supplied text roles; invent those visual shapes.",
+        "carrier": "Show the designated face straight on, with its boundary visible. Use an even, neutral background and illumination. Separate printed text from the portrait and graphic elements. Keep the page free of glare, hands and occlusion.",
+        "layout": "Set the invented university emblem at upper left and university name at upper right. Keep identity roles below the name, portrait at lower right, Library barcode at lower left and Valid Until with Card No along the bottom.",
+        "rendering": "Print all supplied values exactly, including case, dates, punctuation and numeric strings. Preserve each caption and its associated value. Keep letters sharp, baselines consistent and spacing even. Wrap long text without changing its words. Avoid clipping and invented fine print. Leave a clear outer margin and keep all text readable against the background."
+      },
+      "template_version": "feedback-20261010-v1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V6-E06-uk",
+      "entity_id": "E06-uk",
+      "spec_id": "EXEC-V8-E06-uk",
+      "shared_prompt_sections": {
+        "object": "Create a clear, complete view of the specified document using the supplied text roles. Use the given names and institution values. Render portraits and handwritten signatures only in areas explicitly required by the selected layout or supplied text roles; invent those visual shapes.",
+        "carrier": "Show the designated face straight on, with its boundary visible. Use an even, neutral background and illumination. Separate printed text from the portrait and graphic elements. Keep the page free of glare, hands and occlusion.",
+        "layout": "Centre university name, crest, certification line, recipient, college, adjudication line, subject, dates sentence and degree. At foot set office, city and issue date left, crest centre, registrar signature and role right, small reference number lower left.",
+        "rendering": "Print all supplied values exactly, including case, dates, punctuation and numeric strings. Preserve each caption and its associated value. Keep letters sharp, baselines consistent and spacing even. Wrap long text without changing its words. Avoid clipping and invented fine print. Leave a clear outer margin and keep all text readable against the background."
+      },
+      "template_version": "feedback-20261010-v1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V6-E06-us",
+      "entity_id": "E06-us",
+      "spec_id": "EXEC-V6-E06-us",
+      "shared_prompt_sections": {
+        "object": "Create a clear, complete view of the specified document using the supplied text roles. Use the given names and institution values. Render portraits and handwritten signatures only in areas explicitly required by the selected layout or supplied text roles; invent those visual shapes.",
+        "carrier": "Show the designated face straight on, with its boundary visible. Use an even, neutral background and illumination. Separate printed text from the portrait and graphic elements. Keep the page free of glare, hands and occlusion.",
+        "layout": "Centre the conferral text, recipient and degree on separate lines. Arrange four signature roles below, with the university seal near the lower centre. Keep the outer university name and two inner inscriptions on separate circular bands.",
+        "rendering": "Print all supplied values exactly, including case, dates, punctuation and numeric strings. Preserve each caption and its associated value. Keep letters sharp, baselines consistent and spacing even. Wrap long text without changing its words. Avoid clipping and invented fine print. Leave a clear outer margin and keep all text readable against the background."
+      },
+      "template_version": "feedback-20261010-v1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V6-E07-uk",
+      "entity_id": "E07-uk",
+      "spec_id": "EXEC-V7-E07-uk",
+      "shared_prompt_sections": {
+        "object": "Create a clear, complete view of the specified document using the supplied text roles. Use the given names and institution values. Render portraits and handwritten signatures only in areas explicitly required by the selected layout or supplied text roles; invent those visual shapes.",
+        "carrier": "Show the designated face straight on, with its boundary visible. Use an even, neutral background and illumination. Separate printed text from the portrait and graphic elements. Keep the page free of glare, hands and occlusion.",
+        "layout": "Centre the competition and year, recipient, of, school, award introduction and award on separate lines. Place the support label and invented sponsor at lower left and the chair role at lower right. Use the selected gold or silver accent. Show an invented handwritten chair signature above the supplied chair role at lower right, with no additional printed signer name. At lower left, render the supplied sponsor name once as a fictional sponsor wordmark next to the supplied support label; add no real sponsor logo or additional award badge.",
+        "rendering": "Print all supplied values exactly, including case, dates, punctuation and numeric strings. Preserve each caption and its associated value. Keep letters sharp, baselines consistent and spacing even. Wrap long text without changing its words. Avoid clipping and invented fine print. Leave a clear outer margin and keep all text readable against the background."
+      },
+      "template_version": "feedback-20261010-v2",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V6-E10-cslb",
+      "entity_id": "E10-cslb",
+      "spec_id": "EXEC-V6-E10-cslb",
+      "shared_prompt_sections": {
+        "object": "Create a clear, complete view of the specified document using the supplied text roles. Use the given names and institution values. Render portraits and handwritten signatures only in areas explicitly required by the selected layout or supplied text roles; invent those visual shapes.",
+        "carrier": "Show the designated face straight on, with its boundary visible. Use an even, neutral background and illumination. Separate printed text from the portrait and graphic elements. Keep the page free of glare, hands and occlusion.",
+        "layout": "Arrange the five confirmed text roles in a simple ordered view: licensee, licence number, classification, issue date and expiry. Use restrained spacing and an unobstructed page boundary, with no additional printed text or fine print. Show a text-free fictional institutional mark at upper left and a large pale circular fictional state-emblem graphic behind the central text, keeping every supplied value readable. At lower left and lower right, show two separate invented handwritten signature shapes for the Board Chair and Registrar of Contractors respectively, without real names, real handwriting, printed signer names or additional role labels. Do not claim embossing or copy the reference certificate's seal wording, legal clauses, audit number, dates or additional text.",
+        "rendering": "Print all supplied values exactly, including case, dates, punctuation and numeric strings. Preserve each caption and its associated value. Keep letters sharp, baselines consistent and spacing even. Wrap long text without changing its words. Avoid clipping and invented fine print. Leave a clear outer margin and keep all text readable against the background."
+      },
+      "template_version": "feedback-20261011-v3",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V6-E10-gmc",
+      "entity_id": "E10-gmc",
+      "spec_id": "EXEC-V6-E10-gmc",
+      "shared_prompt_sections": {
+        "object": "Create a clear, complete view of the specified document using the supplied text roles. Use the given names and institution values. Render portraits and handwritten signatures only in areas explicitly required by the selected layout or supplied text roles; invent those visual shapes.",
+        "carrier": "Show the designated face straight on, with its boundary visible. Use an even, neutral background and illumination. Separate printed text from the portrait and graphic elements. Keep the page free of glare, hands and occlusion.",
+        "layout": "Arrange the confirmed identity, current status, registration history, restrictions and fitness information as readable text blocks. Keep identity roles together. Add no full-registration diploma wording, embossed seal or registrar signature.",
+        "rendering": "Print all supplied values exactly, including case, dates, punctuation and numeric strings. Preserve each caption and its associated value. Keep letters sharp, baselines consistent and spacing even. Wrap long text without changing its words. Avoid clipping and invented fine print. Leave a clear outer margin and keep all text readable against the background."
+      },
+      "template_version": "feedback-20261010-v1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V6-E10-hcpc",
+      "entity_id": "E10-hcpc",
+      "spec_id": "EXEC-V6-E10-hcpc",
+      "shared_prompt_sections": {
+        "object": "Create a clear, complete view of the specified document using the supplied text roles. Use the given names and institution values. Render portraits and handwritten signatures only in areas explicitly required by the selected layout or supplied text roles; invent those visual shapes.",
+        "carrier": "Show the designated face straight on, with its boundary visible. Use an even, neutral background and illumination. Separate printed text from the portrait and graphic elements. Keep the page free of glare, hands and occlusion.",
+        "layout": "Place the title and issue date above the opening statement. Use a ten-row table with labels at left. Leave deregistration and fitness sanction cells visibly blank. Put their explanations and the accuracy statement below, then the manager role. Place a text-free fictional institutional emblem at the top right, above the title; this replaces the reference document's text-bearing institutional mark. Do not print the reference mark's organisation text or add another label. Render an invented handwritten signature above the supplied Registration Manager role; use no real signature or additional printed signer name.",
+        "rendering": "Print all supplied values exactly, including case, dates, punctuation and numeric strings. Preserve each caption and its associated value. Keep letters sharp, baselines consistent and spacing even. Wrap long text without changing its words. Avoid clipping and invented fine print. Leave a clear outer margin and keep all text readable against the background."
+      },
+      "template_version": "feedback-20261010-v2",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    },
+    {
+      "profile_id": "P1007-V6-E10-nmc",
+      "entity_id": "E10-nmc",
+      "spec_id": "EXEC-V6-E10-nmc",
+      "shared_prompt_sections": {
+        "object": "Create a clear, complete view of the specified document using the supplied text roles. Use the given names and institution values. Render portraits and handwritten signatures only in areas explicitly required by the selected layout or supplied text roles; invent those visual shapes.",
+        "carrier": "Show the designated face straight on, with its boundary visible. Use an even, neutral background and illumination. Separate printed text from the portrait and graphic elements. Keep the page free of glare, hands and occlusion.",
+        "layout": "Arrange the six confirmed information groups in a simple electronic document view. Keep identity, address and registration identifier together, followed by birth, register dates, qualification and fitness information.",
+        "rendering": "Print all supplied values exactly, including case, dates, punctuation and numeric strings. Preserve each caption and its associated value. Keep letters sharp, baselines consistent and spacing even. Wrap long text without changing its words. Avoid clipping and invented fine print. Leave a clear outer margin and keep all text readable against the background."
+      },
+      "template_version": "feedback-20261010-v1",
+      "release_version": "codex-20261011-feedback-v4",
+      "scope": "Current shared descriptions; legacy templates remain baseline reference"
+    }
+  ]
+}

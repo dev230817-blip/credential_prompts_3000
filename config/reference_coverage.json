@@ -1,0 +1,314 @@
+{
+  "policy": "B_internal_reference_not_strict_real_photo",
+  "entities": [
+    {
+      "entity_id": "C01-authority",
+      "status": "sample_only",
+      "limitations": "官方样卡经 Commons 转载，credit 标公安部域名但不是官网直取；图上另有 SAMPLE／样本 叠印与红色斜线；字号、坐标、防伪待核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C01-portrait",
+      "status": "sample_only",
+      "limitations": "同上；人像面另涉人像不入项目目录的边界（本件为占位样本，无真人）",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C02-household",
+      "status": "partial",
+      "limitations": "两件均经二次编辑；页脚只在河北件可见且部分模糊。签章观察按②/③级记录，不推广为全国统一要求，不修改现有提示词字段与版面。",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C02-person",
+      "status": "partial",
+      "limitations": "非户主卡的独立公开件面未取得；不得与首页或住址变动页拼接；原件为二次编辑版（去标识／切除／标注）；按 2026-10-10 口径 B 仍计内部参考，文件候选存在；相机及未编辑状态未核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C03-main",
+      "status": "partial",
+      "limitations": "成品 2025 纸本资料页缺；业务专用章与登记员手写签名无公开件依据；电子件注明以实体证照原件为准；原件为二次编辑版（去标识／切除／标注）；按 2026-10-10 口径 B 仍计内部参考，文件候选存在；相机及未编辑状态未核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C04-main",
+      "status": "sample_only",
+      "limitations": "样式页属官方样张；内页 37 项图案与防伪、字号待核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C05-hkmo",
+      "status": "sample_only",
+      "limitations": "背面签注块几何与编号规则待核；本件为正面",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C05-taiwan",
+      "status": "sample_only",
+      "limitations": "同上",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C06-f",
+      "status": "sample_only",
+      "limitations": "页面发布逾七年，现行性未核；官方只公开这一张",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C06-l",
+      "status": "partial",
+      "limitations": "官方只公开 F 一张通用样张；旧版实物不能证明现行印法；原件为手持遮挡照，左上角被手指部分遮挡；原件为相机拍摄、未见二次编辑（口径 B）",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C06-m",
+      "status": "partial",
+      "limitations": "件面为第三方旅游站点图片，非官方样张；签发日期 2023-03-06，未见类别语义以外的官方印法依据；发布者遮挡照片与姓名；MRZ 不完整；字号、尺寸、防伪待核。官方仍只公开 F 一张通用样张，**不得用 F 反推 M**",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C06-q2",
+      "status": "partial",
+      "limitations": "该件 MRZ 与真实体例不完全吻合，存疑；官方无 Q2 专属样张；不得采其 MRZ 映射；原件为二次编辑版（去标识／切除／标注）；按 2026-10-10 口径 B 仍计内部参考，文件候选存在；相机及未编辑状态未核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C06-x1",
+      "status": "partial",
+      "limitations": "X1 专属官方样张未取得；所收实物停留栏为 000 或水印覆盖，不得据以判定期限；MRZ 映射未核；原件为二次编辑版（去标识／切除／标注）；按 2026-10-10 口径 B 仍计内部参考，文件候选存在；相机及未编辑状态未核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C07-main",
+      "status": "sample_only",
+      "limitations": "手册标注示意图，非打印标准图；第三代技术规范不公开，字号坐标待核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C08-student",
+      "status": "partial",
+      "limitations": "来源非官方；学号与卡号规则缺；卡面字段位置被遮罩不可核；原件为二次编辑版（去标识／切除／标注）；按 2026-10-10 口径 B 仍计内部参考，文件候选存在；相机及未编辑状态未核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C08-supplement",
+      "status": "partial",
+      "limitations": "该页见红色圆形公章压印在说明文字上；副证信息页字段版式与跨批次差异仍缺；原件为二次编辑版（去标识／切除／标注）；按 2026-10-10 口径 B 仍计内部参考，文件候选存在；相机及未编辑状态未核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C09-main",
+      "status": "partial",
+      "limitations": "为媒体转载实物照；报纸版式细节与编号规则未公开；原件为二次编辑版（去标识／切除／标注）；按 2026-10-10 口径 B 仍计内部参考，文件候选存在；相机及未编辑状态未核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C10-degree",
+      "status": "sample_only",
+      "limitations": "官方网页只给版式缩略图，无成品件；精确坐标、字号、纸张与防伪待核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C10-graduation",
+      "status": "sample_only",
+      "limitations": "同上；毕业证书编号规则无公开规定",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C11-award",
+      "status": "partial",
+      "limitations": "正文全文与签署细节未取得；奖项与证书图样历史两轮未命中；原件为二次编辑版（去标识／切除／标注）；按 2026-10-10 口径 B 仍计内部参考，文件候选存在；相机及未编辑状态未核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C11-honor",
+      "status": "obtained",
+      "limitations": "受奖单位为团体单位名（非个人）；字号与纸张待核；原件为相机拍摄、未见二次编辑（口径 B）",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C12-main",
+      "status": "partial",
+      "limitations": "版本不符：2018 版式不能作为 2022 新版的版式依据；电子证书说明页（D2010-002）只给渠道不给件面；字号、坐标与 2022 版的字段增删待核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C13-main",
+      "status": "partial",
+      "limitations": "官方空白式样非成品件；面别与字号待核；此外另有实物照两件（副页与主页副页对照，已遮罩）；原件为二次编辑版（去标识／切除／标注）；按 2026-10-10 口径 B 仍计内部参考，文件候选存在；相机及未编辑状态未核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C14-main",
+      "status": "partial",
+      "limitations": "33.发证机关章格内有内容但被遮罩；章文与形态待核；GA369—2005 现行性冲突保留；原件为二次编辑版（去标识／切除／标注）；按 2026-10-10 口径 B 仍计内部参考，无更干净版本；相机及未编辑状态未核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C15-main",
+      "status": "partial",
+      "limitations": "正本页面对上了，但版次仍是 2019 A 格式；发布者贴纸遮挡属二次编辑；2022-09-01 调整版的字段位置仍未取得",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C16-legal",
+      "status": "sample_only",
+      "limitations": "图件为第三方转载，未核官方原件；证面字段清单与编号取值仍缺；我批采用虚构主体",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C16-teacher",
+      "status": "partial",
+      "limitations": "版本不符：所见四件均为 2018／2020／2022 认定版，不能直接当 2001 历史版；**未见 2001 版特有的荧光位置与 8 页册子版式**；字号与钢印位置待核；U10 带「粤辰教育」水印、U12 有遮罩，均属二次编辑。**另需注意**：使用者另提供的两张「中小学教师资格考试合格证明」（NTCE）不是本实体，本批不计入",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C17-food",
+      "status": "sample_only",
+      "limitations": "附件图是带红色编辑标记的调整对照示意图，不是正式印样式样；正本是否盖章无公开依据",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C17-school",
+      "status": "obtained",
+      "limitations": "章与「发证机关（章）」文字在实物上是重叠压印；底部教育部制与流水号在所见图上不可辨；原件为二次编辑版（去标识／切除／标注）；按 2026-10-10 口径 B 仍计内部参考，仅PDF/渲染件；相机及未编辑状态未核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C18-main",
+      "status": "missing",
+      "limitations": "官方通告页的样式图为**演示／合成示意卡**（姓名「测试」、号码打星、人像为素材照），按规则不计真实件、也不得据以确定章形态。使用者 2026-10-11 确认公开渠道搜不到可核验的真实件面；纸质件与电子件面别不得混用。**同名的「退休证」纸质件（山东 2016 版、部级 2010 式样）属版本沿革，不并入本实体**",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "C19-property",
+      "status": "sample_only",
+      "limitations": "模板为官方式样；登记机构章处空白；编号为示例值不得当规则；编号规则待核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "E01-us",
+      "status": "sample_only",
+      "limitations": "样本非签发机关直接发布；2025 新版身份证明卡（非驾照）仍未取得；签名区被遮罩不可辨",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "E02-uk",
+      "status": "sample_only",
+      "limitations": "官方只给查验件不给字段清单；字号与坐标待核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "E02-us",
+      "status": "sample_only",
+      "limitations": "样例件含 CANCELLED 叠印，不是现行官方样卡；签名行为空白未签",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "E03-us",
+      "status": "sample_only",
+      "limitations": "样例为 2004 年签发；2026 现行版式未取得；机构徽记在所见贴纸上未见",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "E04-uk",
+      "status": "partial",
+      "limitations": "图上红色说明框是第三方叠加，不是证面内容；本件遮盖部分证面；成品核证副本复制受 Crown copyright 限制；原件为二次编辑版（去标识／切除／标注）；按 2026-10-10 口径 B 仍计内部参考，文件候选存在；相机及未编辑状态未核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "E04-us",
+      "status": "partial",
+      "limitations": "空白申请表不能代替成品件；涂黑处（签名与部分字段）不可读；章文字待核；原件为二次编辑版（去标识／切除／标注）；按 2026-10-10 口径 B 仍计内部参考，文件候选存在；相机及未编辑状态未核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "E05-uk",
+      "status": "sample_only",
+      "limitations": "官方只给卡面样图与号码格式；字号与坐标待核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "E05-us",
+      "status": "sample_only",
+      "limitations": "宣传样卡无字段标签；真实签发件版式、照片与有效期要求待核；不得复制真实校徽",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "E06-uk",
+      "status": "partial",
+      "limitations": "版本不符；签名区有白色遮罩块覆盖一部分；字号与防伪待核；原件为二次编辑版（去标识／切除／标注）；按 2026-10-10 口径 B 仍计内部参考，文件候选存在；相机及未编辑状态未核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "E06-us",
+      "status": "partial",
+      "limitations": "1992 纸张现行性不宣称；校印内环必要印文缺官方／可靠实物复核；署名四职务只见正文表述；原件为二次编辑版（去标识／切除／标注）；按 2026-10-10 口径 B 仍计内部参考，文件候选存在；相机及未编辑状态未核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "E07-uk",
+      "status": "obtained",
+      "limitations": "Best in Year 与 Best in School 两徽章并存已由官方页确认；Bronze 正文逐字仍缺；2026 版署名形态待核；原件为相机拍摄、未见二次编辑（口径 B）",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "E07-us",
+      "status": "sample_only",
+      "limitations": "金银任选一种（本行选金章）；编号、公章与分数均不追加；另一奖只记录存在",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "E08-uk",
+      "status": "sample_only",
+      "limitations": "图为 326×204 小图，字号与坐标不可核；credit 为行业协会新闻页转载，非 DVLA 官网直取；2015 版对照件带 EU 旗帜",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "E08-us",
+      "status": "sample_only",
+      "limitations": "新闻配图为驾照（非身份证明卡）；字号待核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "E09-uk",
+      "status": "partial",
+      "limitations": "图为 327×355 缩略图，字号与坐标不可核；第二张（CIC）只是改名证书＋Community Interest Company，**不能替代**本实体",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "E10-cslb",
+      "status": "obtained",
+      "limitations": "表次为 2015 年版式；未见 pocket card；字号、印章直径与「REV 03/15 与 2025 指南」的字段增删待核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "E10-gmc",
+      "status": "partial",
+      "limitations": "机构与字段骨架已到位，但**文书类型仍差一步**：本件是「Certificate of proof of entry on the register」，不是 GMC 的 **Certificate of Good Standing** 或 **Certificate of Current Professional Status**。命名也与本批规格不完全一致（本件用 Name／GMC reference number／Registration and licensing history；规格写 Full name／GMC number／Registration history），且**本件没有 Restrictions, suspension or removal 与 Fitness to practise information 两块**。**重要观察**：本件**无签名、无印章**（纯信件式）——这支持现 prompt「不添加 embossed seal 或 registrar signature」的边界，但只能说是这一类 GMC 证书如此，**不得推广到 CGS／CCPS**。使用者 2026-10-11 确认公开渠道搜不到 CGS／CCPS 件面；GMC 官网历史整站 403。另：GMC 完整注册证书属不同文书，其钢印不得迁移；荷兰 CIBG 与英国 GCC 的同类文书只是字段与形式参照。补交材料：原始图为 229×304 webp（哈希见绑定），链接系 Bing 缩略图直链，**原始发布页仍待使用者补**",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "E10-hcpc",
+      "status": "obtained",
+      "limitations": "现行性未核；职业代码全表未取得；字号、尺寸、纸张不推断；原件为二次编辑版（去标识／切除／标注）；按 2026-10-10 口径 B 仍计内部参考，仅PDF/渲染件；相机及未编辑状态未核",
+      "further_research": "stopped_with_limits_retained"
+    },
+    {
+      "entity_id": "E10-nmc",
+      "status": "missing",
+      "limitations": "NMC 明确不出纸质证书，CCPS 为电子件，官方只给六项信息文字，无件面图。使用者 2026-10-11 确认搜不到公开来源。检索命中的 nmc.org.in 是**印度** NMC、nmc.org.uk 为英国方，二者勿混。PIN 规则已放弃，不作编号校验",
+      "further_research": "stopped_with_limits_retained"
+    }
+  ],
+  "counts": {
+    "obtained": 5,
+    "partial": 22,
+    "sample_only": 21,
+    "missing": 2
+  },
+  "strict_original_candidates_reported": 3,
+  "strict_original_candidates_independently_accepted": 0,
+  "note": "Edited photos and samples are structural references; no reference images are shipped."
+}

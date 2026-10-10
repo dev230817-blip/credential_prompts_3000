@@ -29,6 +29,9 @@ def build(REPO, OUT):
     profiles = j(os.path.join(REPO, "config", "profiles.json"))["profiles"]
     templates = j(os.path.join(REPO, "config", "templates.json"))["templates"]
 
+    contract = j(os.path.join(REPO, "config", "review_contract.json"))
+    coverage = j(os.path.join(REPO, "config", "reference_coverage.json"))
+
     variants = collections.Counter(p["variant"] for p in prompts)
     per_group = collections.defaultdict(set)
     for p in prompts:
@@ -118,7 +121,9 @@ def build(REPO, OUT):
             "clean_fields_confirmed_groups": len(clean_conf_groups),
             "template_confirmed_groups": len(tpl_conf_groups),
             "template_confirmed_styles": len(tpl_styles),
-            "new_human_confirmations_in_this_release": 0,
+            "new_human_confirmations_in_this_release": contract["current_body_events"],
+            "newly_covered_body_ids_vs_historical": contract["newly_covered_body_ids_vs_historical"],
+            "confirmation_basis": contract["body_confirmation_basis"],
             "image_reviewed": 0,
             "ready_for_generation_true": sum(1 for p in prompts
                                              if p["ready_for_generation"]),
@@ -150,13 +155,15 @@ def build(REPO, OUT):
             "top_quota_units": dict(quota.most_common(12)),
         },
         "limits_retained": [
-            "2,603 prompt texts remain outside the human-confirmed scope.",
+            "All 2,986 current bodies were explicitly confirmed by the user; independent field/template and source statuses remain separate.",
             "218 inherited evidence-backed limitations remain unresolved limitations.",
             "Single-image detectability and difficulty have not been tested through image review.",
             "Unspecified coordinates, font sizes, materials and security features are not inferred.",
             "No license has been selected for this version.",
         ],
     }
+
+    report["reference_coverage"] = {"policy": coverage["policy"], "counts": coverage["counts"], "strict_original_candidates_reported": coverage["strict_original_candidates_reported"], "images_shipped": 0}
 
     # 发布文件哈希（用于报告自证）
     def sha(p):
@@ -171,7 +178,8 @@ def build(REPO, OUT):
         name: sha(os.path.join(REPO, name))
         for name in ("final/prompts.jsonl", "final/groups.jsonl", "final/review_status.jsonl",
                      "config/specs.json", "config/profiles.json", "config/templates.json",
-                     "config/sources.json")
+                     "config/sources.json", "config/active_templates.json", "config/review_contract.json",
+                     "config/reference_coverage.json", "config/feedback_sources.json")
     }
 
     with open(os.path.join(OUT, "qa_report.json"), "w", encoding="utf-8",
@@ -231,9 +239,7 @@ def build(REPO, OUT):
     md.append("| ready_for_generation = true | %d |" % rs["ready_for_generation_true"])
     md.append("| image_generated = true | %d |" % rs["image_generated_true"])
     md.append("")
-    md.append("Human confirmation was recorded earlier by the user for the selected "
-              "129 groups / 383 rows. This release only carries that state through verified "
-              "bindings; it adds none.")
+    md.append("On 2026-10-11 the user explicitly confirmed all 2,986 latest prompt bodies. The 2,986 confirmation events include reconfirmation; 2,603 IDs were outside the historical 383-body scope. Independent clean-field and template approvals retain their own bindings.")
     md.append("")
     md.append("## 4. Source publication")
     md.append("")
@@ -263,7 +269,7 @@ def build(REPO, OUT):
     md.append("")
     md.append("## 6. Data measured")
     md.append("")
-    md.append("The seven primary-data hashes are retained in `qa_report.json`. "
+    md.append("The primary-data hashes are retained in `qa_report.json`. "
               "For the complete file set, use `SHA256SUMS.txt` and `release_manifest.json` "
               "at the repository root.")
     md.append("")
