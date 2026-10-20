@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "checks": {
+    "4290 unique sample IDs": true,
+    "1430 bases and taxonomy coverage": true,
+    "5 first-level and 40 second-level": true,
+    "three rows per content group": true,
+    "physical and electronic modes": true,
+    "4254 physical and 36 electronic": true,
+    "content digest matches frozen payload": true,
+    "same fields and visible values in group": true,
+    "only capture paragraph changes": true,
+    "current prompt hashes": true,
+    "complete field values present": true,
+    "clean variants, no tamper groups": true,
+    "standard canvases, separate document proportions": true,
+    "electronic uses screen or native page, no scanner": true,
+    "photos do not inherit flatbed restrictions": true,
+    "new image state remains zero": true,
+    "CSV exact content and metadata": true,
+    "TXT exact content": true,
+    "Excel exact row values": true,
+    "reported counts computed from data": true,
+    "offline generation reproduces JSONL": true,
+    "CSV bytes reproducible": true
+  },
+  "scope": "generation, content invariance, exports; no category or source re-audit"
+}

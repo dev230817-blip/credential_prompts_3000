@@ -2,27 +2,24 @@
 
 [English](README_EN.md) | 中文
 
-用于 AI 生成的富文字图像来源检测研究的证件类提示词库，属于上海交通大学大创项目「面向主流文生图模型的生成图片检测算法研究」。
+用于AI生成富文字图像来源检测研究的证件类提示词库。仓库名称保留历史命名；**最新版本为[20261021_v1](releases/20261021_v1/README.md)，1430类、1430份基础内容、4290条提示词**，覆盖5个一级、40个二级分类。
 
-**最新版本：[20261020_v1](releases/20261020_v1/README.md)**。包含 1,000 组基础内容、3,000 条提示词，覆盖 5 个一级类别、29 个二级类型、50 个对象、54 套版式。图中姓名、号码等字段使用构造的虚构值；没有图片随包发布。
+实体1418类各有扫描、正拍、斜拍，共4254条；电子12类各有原生页面、屏幕正拍、屏幕斜拍，共36条。每组三条的完整文字相同，仅呈现方式变化。国内1524条、国外国家2490条、国际体系276条；全部clean，不含文字异常对照。
 
 | 文件 | 用途 |
 | --- | --- |
-| [团队 CSV](releases/20261020_v1/data/credential_prompts_3000_unified.csv) | 12 列统一格式，UTF-8 BOM |
-| [完整 TXT](releases/20261020_v1/data/prompts.txt) | 阅读和复制提示词 |
-| [Excel 筛选表](releases/20261020_v1/data/prompts_filter.xlsx) | 筛选提示词、对象和成像模板 |
-| [JSONL 主数据](releases/20261020_v1/data/prompts.jsonl) | 完整字段、正文哈希和追溯信息 |
-| [数据检查报告](releases/20261020_v1/reports/qa_report.md) | 数据统计及证据范围；实际校验结果见 Actions |
-
-## 版本怎么选
+| [团队CSV](releases/20261021_v1/data/credential_prompts_4290_unified.csv) | 固定12列，UTF-8 BOM |
+| [完整TXT](releases/20261021_v1/data/prompts.txt) | 阅读和复制 |
+| [Excel筛选](releases/20261021_v1/data/prompts_filter.xlsx) | 分类、国家、载体与成像方式 |
+| [JSONL主数据](releases/20261021_v1/data/prompts.jsonl) | 完整字段、正文哈希与追溯 |
+| [18条样例](releases/20261021_v1/docs/examples_18.md) | 六种文书各三成像 |
 
 | 版本 | 内容 | 状态 |
 | --- | --- | --- |
-| [20261020_v1](releases/20261020_v1/README.md) | 3,000 条，全部 clean，每组三种成像；980 条实体平扫加强为扫描件描述 | 当前研究版本；正文人工确认 0，图片生成 0，图片验收 0 |
-| [20261011_v4](releases/20261011_v4/README.md) | 2,986 条，clean/subtle/strong 三档 | 历史公开版；原数据、说明、工具和哈希清单完整保留 |
+| [20261021_v1](releases/20261021_v1/README.md) | 1430类，4290条；实体与电子分别三成像 | 当前版本；新正文逐条人工确认0，图片生成0、验收0 |
+| [20261020_v1](releases/20261020_v1/README.md) | 1000组，3000条，全clean三成像 | 历史公开版，完整保留 |
+| [20261011_v4](releases/20261011_v4/README.md) | 2986条，clean/subtle/strong三档 | 历史公开版，完整保留 |
 
-新版的三种成像改变呈现方式；旧版三档改变内容中的异常设计。新版并非在旧 2,986 条上补 14 条，而是从 1,000 组基础 clean 内容派生。旧版的正文确认不自动成为新版确认。
+本版采用已确定的1430类范围，不新增类别、不为中外比例补数。三成像通过extra_json.content_group_id关联；group_id不改作成像组。输出画布与文档本体比例分开保存。类别数不等于已核实的独立视觉模板数。
 
-各版本的数据、配置、说明和校验工具均放在自己的版本目录。原根目录的 final/config/docs/src/tests 已归入 releases/20261011_v4；原提交仍保留在 Git 历史中。各发布包的清单只校验该包内部文件。
-
-运行示例、导出和检查命令见[最新版说明](releases/20261020_v1/README.md)。[版本沿革](CHANGELOG.md)记录本次迁移。使用边界、来源继承和图片状态见[审核与限制](releases/20261020_v1/docs/review_and_limits.md)。许可证仍待项目组确定，当前未添加 LICENSE。
+每个发布目录包含自己的数据、配置、说明、离线构建和检查工具。旧目录与旧Git历史不改。[复现说明](releases/20261021_v1/docs/reproduction_scope.md)、[审核边界](releases/20261021_v1/docs/review_and_limits.md)、[版本沿革](CHANGELOG.md)。没有图片随包发布；许可证仍待项目组确定，未新增LICENSE。

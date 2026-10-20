@@ -1,0 +1,240 @@
+{
+  "identity_card": {
+    "label": "身份卡",
+    "aspect_ratio": "1.59:1",
+    "material": "card",
+    "layout": "照片在左，姓名与身份字段在右，国家或地区名称位于上缘，长字段在自身取值区域内换行。",
+    "seal_default": "none"
+  },
+  "campus_card": {
+    "label": "校园卡",
+    "aspect_ratio": "1.59:1",
+    "material": "card",
+    "layout": "校名和卡名位于上缘，左侧照片，右侧学生信息。背景标识低对比度，不干扰正文。",
+    "seal_default": "none"
+  },
+  "household": {
+    "label": "户籍登记册页",
+    "aspect_ratio": "1.45:1",
+    "material": "booklet",
+    "layout": "单张登记内页完整可见，左侧仅保留装订边。主体为字段和值严格对应的表格，页边轻微弯曲，不能出现第二张完整证面。",
+    "seal_default": "red"
+  },
+  "residence_extract": {
+    "label": "居住登记证明",
+    "aspect_ratio": "1:1.41",
+    "material": "paper",
+    "layout": "上方标题，中间为身份与登记地址，下方登记日期；按登记材料排版，不使用获奖证书式装饰。",
+    "seal_default": "conditional"
+  },
+  "passport": {
+    "label": "护照资料页",
+    "aspect_ratio": "1.42:1",
+    "material": "booklet",
+    "layout": "只呈现打开的护照资料页；肖像、姓名、国籍、出生日期、签发和到期日期分区，不增加签证页。",
+    "seal_default": "none"
+  },
+  "permit_card": {
+    "label": "居留与通行卡",
+    "aspect_ratio": "1.59:1",
+    "material": "card",
+    "layout": "姓名、证件类别和有效期形成紧凑卡片信息区，肖像独立，不把居留许可、工作授权和签证混称。",
+    "seal_default": "none"
+  },
+  "permit_letter": {
+    "label": "许可通知文书",
+    "aspect_ratio": "1:1.41",
+    "material": "paper",
+    "layout": "标题、持有人、许可对象和有效期分层呈现，版式接近许可函而非身份卡。",
+    "seal_default": "conditional"
+  },
+  "visa": {
+    "label": "签证贴纸",
+    "aspect_ratio": "1.45:1",
+    "material": "sticker",
+    "layout": "一张完整签证贴纸平面呈现，持有人、签证类别与有效期清楚分区；不增加护照封面或第二张证件。",
+    "seal_default": "none"
+  },
+  "electronic": {
+    "label": "电子身份或授权记录",
+    "aspect_ratio": "1:1.5",
+    "material": "electronic",
+    "layout": "国家标题、记录标题、姓名、状态及有效期采用单栏电子页面布局，细线分组。日期整值显示，必要时完整移到标签下一行。",
+    "seal_default": "none"
+  },
+  "admission": {
+    "label": "录取通知函",
+    "aspect_ratio": "1:1.41",
+    "material": "paper",
+    "layout": "页首机构，标题，称呼，连续录取正文，右下方落款日期；控制行宽，不出现单个汉字独占一行。",
+    "seal_default": "conditional"
+  },
+  "degree": {
+    "label": "学位授予证书",
+    "aspect_ratio": "1.41:1",
+    "material": "paper",
+    "layout": "大学名称位于上部，姓名、学位、专业和完整授予语句居中分层；下部日期与签署区。签署姓名与印刷职务分开。",
+    "seal_default": "conditional"
+  },
+  "graduation": {
+    "label": "毕业证书",
+    "aspect_ratio": "1.41:1",
+    "material": "paper",
+    "layout": "学校名称与证书标题在上，毕业者及学习起止时间和专业在中，落款日期在下；明确是毕业证明，不改写为学位授予。",
+    "seal_default": "red"
+  },
+  "award": {
+    "label": "竞赛获奖证书",
+    "aspect_ratio": "1.41:1",
+    "material": "paper",
+    "layout": "赛事或奖项名称位于页首，获奖者、奖项称谓和授予语句为核心，下方日期与签署区。获奖证明不自动赋予执业资格。",
+    "seal_default": "conditional"
+  },
+  "honour": {
+    "label": "学业荣誉证书",
+    "aspect_ratio": "1.41:1",
+    "material": "paper",
+    "layout": "突出荣誉名称、获授者和表彰语句，日期和落款位于下部，不加入赛事名次。",
+    "seal_default": "conditional"
+  },
+  "qualification": {
+    "label": "专业资格证书",
+    "aspect_ratio": "1.41:1",
+    "material": "paper",
+    "layout": "标题与资格名称居上，持有人和资格取得信息居中，授予日期及签署区在下；资格取得不等同于正在执业。",
+    "seal_default": "conditional"
+  },
+  "practice": {
+    "label": "执业与注册证明",
+    "aspect_ratio": "1:1.41",
+    "material": "paper",
+    "layout": "标题、注册或执业对象、持有人、记录日期分区；不把资格证、会员证明和执业许可写成同一含义。",
+    "seal_default": "conditional"
+  },
+  "membership": {
+    "label": "专业会员证明",
+    "aspect_ratio": "1.41:1",
+    "material": "paper",
+    "layout": "机构名称、会员身份和姓名居中，下方加入会员记录日期，保持会员证明的性质。",
+    "seal_default": "conditional"
+  },
+  "language": {
+    "label": "语言能力证书",
+    "aspect_ratio": "1:1.41",
+    "material": "paper",
+    "layout": "语言考试或文凭名称、考生、已给出的等级与日期分区，不自行补出未经给定的分项成绩。",
+    "seal_default": "conditional"
+  },
+  "technical": {
+    "label": "技术认证证书",
+    "aspect_ratio": "1.41:1",
+    "material": "paper",
+    "layout": "认证机构或品牌、认证全名、持有人和取得日期清楚分层。采用技术认证的简洁风格，不套用政府红章。",
+    "seal_default": "none"
+  },
+  "operator_card": {
+    "label": "操作资格卡",
+    "aspect_ratio": "1.59:1",
+    "material": "card",
+    "layout": "左侧照片，右侧姓名、作业类型和发证日期，明确作业范围，不混入企业经营范围。",
+    "seal_default": "none"
+  },
+  "driving": {
+    "label": "驾驶资格卡",
+    "aspect_ratio": "1.59:1",
+    "material": "card",
+    "layout": "肖像、持有人、出生日期、发证及到期日期分区。只呈现指定类别，不自动增加未经给定的准驾代码。",
+    "seal_default": "none"
+  },
+  "business": {
+    "label": "企业营业执照",
+    "aspect_ratio": "1.41:1",
+    "material": "paper",
+    "layout": "横版正本样例；标题居上，名称与短字段分区，住所及经营范围获得足够横向空间，右下方为登记机关、日期与盖章区。",
+    "seal_default": "red"
+  },
+  "incorporation": {
+    "label": "机构注册证书",
+    "aspect_ratio": "1:1.41",
+    "material": "paper",
+    "layout": "机构名称、注册对象、成立或登记日期分层；保持登记证明性质，不自动声称具有所有业务经营许可。",
+    "seal_default": "conditional"
+  },
+  "registry_extract": {
+    "label": "登记摘录",
+    "aspect_ratio": "1:1.41",
+    "material": "paper",
+    "layout": "标题、登记主体、记录事项与摘录日期组成清楚的登记信息表；不使用庆祝性证书边框。",
+    "seal_default": "conditional"
+  },
+  "operating": {
+    "label": "机构经营许可",
+    "aspect_ratio": "1:1.41",
+    "material": "paper",
+    "layout": "许可标题居上，持证机构、许可对象、场所与签发日期分区，下方签发区域；不得将个人资格写成企业许可。",
+    "seal_default": "conditional"
+  },
+  "project": {
+    "label": "工程项目许可",
+    "aspect_ratio": "1:1.41",
+    "material": "paper",
+    "layout": "项目名称、建设单位、项目地点和签发日期为主体；文书对象是工程项目，不把项目当自然人持证者。",
+    "seal_default": "conditional"
+  },
+  "accreditation": {
+    "label": "机构认可证书",
+    "aspect_ratio": "1:1.41",
+    "material": "paper",
+    "layout": "认可名称、机构名称、认可对象与日期分层，不把自愿认可写成法定营业许可。",
+    "seal_default": "conditional"
+  },
+  "marriage": {
+    "label": "婚姻与家庭关系证明",
+    "aspect_ratio": "1:1.41",
+    "material": "paper",
+    "layout": "登记标题下按关系记录组织人员和登记日期；双方姓名分别显示，不把关系证明都改写成婚姻登记。",
+    "seal_default": "conditional"
+  },
+  "vital": {
+    "label": "出生或死亡登记证明",
+    "aspect_ratio": "1:1.41",
+    "material": "paper",
+    "layout": "标题、当事人、事件日期和登记日期组成登记表。出生与死亡使用各自字段，不混淆事件性质。",
+    "seal_default": "conditional"
+  },
+  "social_card": {
+    "label": "社保与福利身份卡",
+    "aspect_ratio": "1.59:1",
+    "material": "card",
+    "layout": "国家或体系名称、卡名、持有人与记录信息紧凑排列。是否含照片按本样例明确设定，不统一补银行功能或芯片。",
+    "seal_default": "none"
+  },
+  "benefit": {
+    "label": "待遇资格证明",
+    "aspect_ratio": "1:1.41",
+    "material": "paper",
+    "layout": "标题、当事人、待遇或资格对象和出具日期分区，不自行写入待遇金额或法定评定等级。",
+    "seal_default": "conditional"
+  },
+  "property": {
+    "label": "不动产登记文书",
+    "aspect_ratio": "1:1.41",
+    "material": "paper",
+    "layout": "主体为权利人、登记对象、坐落、面积和登记日期表格；不生成未经给定的地图、边界坐标或法律条款。",
+    "seal_default": "conditional"
+  },
+  "vehicle": {
+    "label": "交通工具登记文书",
+    "aspect_ratio": "1:1.41",
+    "material": "paper",
+    "layout": "登记人或保管人、车辆船舶航空器的具体登记对象与登记日期分区，保持所有权与登记保管关系的语义区别。",
+    "seal_default": "conditional"
+  },
+  "civil": {
+    "label": "民事证明与公证文书",
+    "aspect_ratio": "1:1.41",
+    "material": "paper",
+    "layout": "标题、证明对象、当事人、简短证明记录和出具日期分层，不添加未经给定的法律依据或调查结论。",
+    "seal_default": "conditional"
+  }
+}

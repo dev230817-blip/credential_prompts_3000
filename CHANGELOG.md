@@ -1,3 +1,9 @@
+# Changelog
+
+## 20261021_v1
+
+Added 1,430 categories / 4,290 clean prompts, with physical and electronic capture modes handled separately. Frozen content, standard canvases, content-group provenance and offline rebuilding/export are included. Archived releases remain byte-for-byte unchanged. New image generation and acceptance remain zero.
+
 # 版本沿革
 
 ## 2026-10-20：20261020_v1

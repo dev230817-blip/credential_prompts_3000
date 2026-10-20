@@ -1,0 +1,39 @@
+{
+  "version": "credential-category-imaging-20261021-v1",
+  "base_content_count": 1430,
+  "category_count": 1430,
+  "prompt_count": 4290,
+  "l1": {
+    "身份与出入境": 930,
+    "教育与荣誉": 1188,
+    "资格与技能": 888,
+    "经营与机构许可": 720,
+    "民事、社保与财产": 564
+  },
+  "capture_modes": {
+    "scan": 1418,
+    "front_photo": 1418,
+    "oblique_photo": 1418,
+    "digital_flat": 12,
+    "screen_front_photo": 12,
+    "screen_oblique_photo": 12
+  },
+  "geography": {
+    "国内": 1524,
+    "国外国家": 2490,
+    "国际体系": 276
+  },
+  "material_kind": {
+    "card": 894,
+    "booklet": 228,
+    "paper": 2916,
+    "electronic": 36,
+    "sticker": 216
+  },
+  "all_clean": true,
+  "new_image_generated": 0,
+  "new_image_accepted": 0,
+  "manual_body_approved_count": 0,
+  "classification_review_repeated": false,
+  "source_research_performed": false
+}
