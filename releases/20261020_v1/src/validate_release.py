@@ -107,6 +107,10 @@ def validate(repo,check_hashes=True):
                         with zipfile.ZipFile(dest/name) as x,zipfile.ZipFile(repo/'data'/name) as y:
                             changed=[member for member in x.namelist() if member not in y.namelist() or x.read(member)!=y.read(member)]
                             details='; changed XML members='+','.join(changed) if changed else '; ZIP headers differ; XML content identical'
+                            if changed and changed[0] in y.namelist():
+                                a,b=x.read(changed[0]),y.read(changed[0])
+                                offset=next((i for i,(c,d) in enumerate(zip(a,b)) if c!=d),min(len(a),len(b)))
+                                details+=f'; first difference={offset}; rebuilt={a[max(0,offset-40):offset+100]!r}; published={b[max(0,offset-40):offset+100]!r}'
                     raise ValueError('Export mismatch: '+name+details)
         wb=load_workbook(repo/'data/prompts_filter.xlsx',read_only=True,data_only=False)
         require(wb.sheetnames==['提示词','对象分类','成像模板'])

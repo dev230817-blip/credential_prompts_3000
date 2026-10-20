@@ -2,7 +2,7 @@
   "schema": "credential-imaging-release-manifest-v1",
   "release_version": "credential-imaging-20261020-v1",
   "payload_file_count": 29,
-  "payload_bytes_total": 64229047,
+  "payload_bytes_total": 64229465,
   "payload_files": [
     {
       "path": "CHANGELOG.md",
@@ -136,8 +136,8 @@
     },
     {
       "path": "src/validate_release.py",
-      "bytes": 13159,
-      "sha256": "276b11e09196775814dd59967bbea2ad5a43bd232788414f956190543b2c0b46"
+      "bytes": 13577,
+      "sha256": "41f6679b7580da690ede1d3e001894a2981099d2be74bc015dfaf713c4e78793"
     },
     {
       "path": "src/verify_hashes.py",
