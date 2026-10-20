@@ -58,6 +58,7 @@ def export(repo,out):
     with zipfile.ZipFile(buf) as src,zipfile.ZipFile(out/'prompts_filter.xlsx','w',compression=zipfile.ZIP_STORED) as dest:
         for name in sorted(src.namelist()):
             data=src.read(name)
+            if name.endswith(('.xml','.rels')):data=data.replace(b'\r\n',b'\n').replace(b'\r',b'\n')
             if name=='docProps/core.xml':data=re.sub(rb'(<(?:[A-Za-z0-9_]+:)?modified\b[^>]*>).*?(</(?:[A-Za-z0-9_]+:)?modified>)',rb'\g<1>2026-10-20T00:00:00Z\g<2>',data)
             # Stored members avoid zlib-version differences between platforms.
             info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_STORED

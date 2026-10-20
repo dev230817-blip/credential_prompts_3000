@@ -71,6 +71,7 @@ class ReleaseChecks(unittest.TestCase):
             self.assertTrue(all(i.date_time==(2026,10,20,0,0,0) and i.compress_type==zipfile.ZIP_STORED and i.create_system==0 and i.external_attr==0o600<<16 for i in archive.infolist()))
             core=ElementTree.fromstring(archive.read('docProps/core.xml'))
             self.assertEqual(core.find('{http://purl.org/dc/terms/}modified').text,'2026-10-20T00:00:00Z')
+            self.assertTrue(all(b'\r' not in archive.read(n) for n in archive.namelist() if n.endswith(('.xml','.rels'))))
     def test_hashes_detect_extra_file(self):
         with tempfile.TemporaryDirectory() as temp:
             repo=Path(temp)/'repo';shutil.copytree(REPO,repo,ignore=shutil.ignore_patterns('__pycache__','*.pyc'))

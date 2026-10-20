@@ -2,12 +2,12 @@
   "schema": "credential-imaging-release-manifest-v1",
   "release_version": "credential-imaging-20261020-v1",
   "payload_file_count": 29,
-  "payload_bytes_total": 64229465,
+  "payload_bytes_total": 64205527,
   "payload_files": [
     {
       "path": "CHANGELOG.md",
-      "bytes": 1178,
-      "sha256": "92492f00ecd55340129b8229376fe938a9f4c5457b54d3a714d8037052c36448"
+      "bytes": 1194,
+      "sha256": "1df20965a48a3c3a88fceb2d0304cbfd6bafd94af502ffc3c542660f23e5ea69"
     },
     {
       "path": "README.md",
@@ -61,8 +61,8 @@
     },
     {
       "path": "data/prompts_filter.xlsx",
-      "bytes": 12923881,
-      "sha256": "35d88c1ac801cd85e953e9347cc649dc9591f5cbefbedd73dd1f2a5ab604a70f"
+      "bytes": 12899677,
+      "sha256": "4211fcb5d5760392395d2915d491ee31a1c0a3d8371d5b8adb946dc942a06d6f"
     },
     {
       "path": "docs/data_fields.md",
@@ -76,8 +76,8 @@
     },
     {
       "path": "docs/reproduction_scope.md",
-      "bytes": 1988,
-      "sha256": "3f34c4232144edd164313be26ca8ba71a2e9a71c6cea891eec8d82110c6f9df9"
+      "bytes": 2014,
+      "sha256": "3f71956482239f7ce352b1262c36b7fee7f82247c667af14af1ab0db62eb24ca"
     },
     {
       "path": "docs/review_and_limits.md",
@@ -126,8 +126,8 @@
     },
     {
       "path": "src/export_data.py",
-      "bytes": 4693,
-      "sha256": "575215674c92791386c5dec387628fc0155db63377a8b2c82574ceb8529c75c0"
+      "bytes": 4794,
+      "sha256": "98f6d1d2499bd622c43d09accff9005892a9a8d01b4008282c9be87a9b6e3422"
     },
     {
       "path": "src/read_example.py",
@@ -146,8 +146,8 @@
     },
     {
       "path": "tests/test_release.py",
-      "bytes": 4698,
-      "sha256": "09270ab8880cac6507499e0ef285ce01b55500fd5df2848be1dcbcf1974896a5"
+      "bytes": 4821,
+      "sha256": "442a4760f72a2c5d6ed6c0632de218193018169abdafbca7be0f05d87b6fb987"
     }
   ]
 }
