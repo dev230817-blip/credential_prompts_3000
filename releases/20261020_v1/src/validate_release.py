@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import re
 import tempfile
+import zipfile
 
 from build_qa_report import make_reports
 from export_data import export, COLUMNS
@@ -100,7 +101,13 @@ def validate(repo,check_hashes=True):
         with tempfile.TemporaryDirectory(prefix='credential_export_') as tmp:
             dest=Path(tmp)/'out';export(repo,dest)
             for name in ['credential_prompts_3000_unified.csv','prompts.txt','prompts_filter.xlsx']:
-                require((dest/name).read_bytes()==(repo/'data'/name).read_bytes(),'Export mismatch: '+name)
+                if (dest/name).read_bytes()!=(repo/'data'/name).read_bytes():
+                    details=''
+                    if name.endswith('.xlsx'):
+                        with zipfile.ZipFile(dest/name) as x,zipfile.ZipFile(repo/'data'/name) as y:
+                            changed=[member for member in x.namelist() if member not in y.namelist() or x.read(member)!=y.read(member)]
+                            details='; changed XML members='+','.join(changed) if changed else '; ZIP headers differ; XML content identical'
+                    raise ValueError('Export mismatch: '+name+details)
         wb=load_workbook(repo/'data/prompts_filter.xlsx',read_only=True,data_only=False)
         require(wb.sheetnames==['提示词','对象分类','成像模板'])
         require([wb[s].max_row for s in wb.sheetnames]==[3001,51,163]);wb.close()

@@ -68,7 +68,7 @@ class ReleaseChecks(unittest.TestCase):
         self.assertEqual(make_reports(REPO),make_reports(REPO))
     def test_portable_workbook_metadata(self):
         with zipfile.ZipFile(REPO/'data/prompts_filter.xlsx') as archive:
-            self.assertTrue(all(i.date_time==(2026,10,20,0,0,0) and i.compress_type==zipfile.ZIP_STORED for i in archive.infolist()))
+            self.assertTrue(all(i.date_time==(2026,10,20,0,0,0) and i.compress_type==zipfile.ZIP_STORED and i.create_system==0 and i.external_attr==0o600<<16 for i in archive.infolist()))
             core=ElementTree.fromstring(archive.read('docProps/core.xml'))
             self.assertEqual(core.find('{http://purl.org/dc/terms/}modified').text,'2026-10-20T00:00:00Z')
     def test_hashes_detect_extra_file(self):

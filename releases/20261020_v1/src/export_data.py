@@ -61,6 +61,7 @@ def export(repo,out):
             if name=='docProps/core.xml':data=re.sub(rb'(<(?:[A-Za-z0-9_]+:)?modified\b[^>]*>).*?(</(?:[A-Za-z0-9_]+:)?modified>)',rb'\g<1>2026-10-20T00:00:00Z\g<2>',data)
             # Stored members avoid zlib-version differences between platforms.
             info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_STORED
+            info.create_system=0;info.external_attr=0o600 << 16
             dest.writestr(info,data)
     return {'rows':len(rows),'files':sorted(p.name for p in out.iterdir())}
 
