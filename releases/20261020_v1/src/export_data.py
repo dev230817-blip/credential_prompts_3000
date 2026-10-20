@@ -4,9 +4,14 @@ import csv
 from datetime import datetime
 import io
 import json
+import os
 from pathlib import Path
 import re
 import zipfile
+
+# Use the same XML writer whether optional lxml happens to be installed or not.
+# Set this before openpyxl is imported by this CLI or its validator.
+os.environ['OPENPYXL_LXML']='False'
 
 COLUMNS=['sample_id','direction','category_l1','category_l2','variant','aspect_ratio','prompt','group_id','target_texts','tamper_types','tamper_details','extra_json']
 
@@ -50,11 +55,12 @@ def export(repo,out):
     wb.properties.created=datetime(2026,10,20);wb.properties.modified=datetime(2026,10,20)
     buf=io.BytesIO();wb.save(buf);wb.close()
     # Normalise ZIP timestamps and the OOXML modified property for reproducible bytes.
-    with zipfile.ZipFile(buf) as src,zipfile.ZipFile(out/'prompts_filter.xlsx','w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as dest:
+    with zipfile.ZipFile(buf) as src,zipfile.ZipFile(out/'prompts_filter.xlsx','w',compression=zipfile.ZIP_STORED) as dest:
         for name in sorted(src.namelist()):
             data=src.read(name)
-            if name=='docProps/core.xml':data=re.sub(rb'(<dcterms:modified[^>]*>).*?(</dcterms:modified>)',rb'\g<1>2026-10-20T00:00:00Z\g<2>',data)
-            info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED
+            if name=='docProps/core.xml':data=re.sub(rb'(<(?:[A-Za-z0-9_]+:)?modified\b[^>]*>).*?(</(?:[A-Za-z0-9_]+:)?modified>)',rb'\g<1>2026-10-20T00:00:00Z\g<2>',data)
+            # Stored members avoid zlib-version differences between platforms.
+            info=zipfile.ZipInfo(name,(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_STORED
             dest.writestr(info,data)
     return {'rows':len(rows),'files':sorted(p.name for p in out.iterdir())}
 

@@ -2,12 +2,12 @@
   "schema": "credential-imaging-release-manifest-v1",
   "release_version": "credential-imaging-20261020-v1",
   "payload_file_count": 29,
-  "payload_bytes_total": 51901812,
+  "payload_bytes_total": 64228366,
   "payload_files": [
     {
       "path": "CHANGELOG.md",
-      "bytes": 997,
-      "sha256": "64fc78ca6be923ca8cb43a7d6a5b15357a9fd998646c1aa3893f38e6cae9fb08"
+      "bytes": 1178,
+      "sha256": "92492f00ecd55340129b8229376fe938a9f4c5457b54d3a714d8037052c36448"
     },
     {
       "path": "README.md",
@@ -61,8 +61,8 @@
     },
     {
       "path": "data/prompts_filter.xlsx",
-      "bytes": 598455,
-      "sha256": "f6ea4f832967a317050af0dffb8c9c326c3efd83ea9f4cc132b55c1d6b0d03aa"
+      "bytes": 12923881,
+      "sha256": "35d88c1ac801cd85e953e9347cc649dc9591f5cbefbedd73dd1f2a5ab604a70f"
     },
     {
       "path": "docs/data_fields.md",
@@ -76,8 +76,8 @@
     },
     {
       "path": "docs/reproduction_scope.md",
-      "bytes": 1773,
-      "sha256": "83d0883ea7f4393e2da7ae910acda99b8e1474d194444a449905e4886c09996c"
+      "bytes": 1937,
+      "sha256": "4e49163ad072d5500bc3a6086c9afc09cd6cc4cfa6c2932f43129878fb3b3fb7"
     },
     {
       "path": "docs/review_and_limits.md",
@@ -116,8 +116,8 @@
     },
     {
       "path": "requirements.txt",
-      "bytes": 16,
-      "sha256": "06d28d69e958deafb09f0a44fcae9b548f15e4debc14ebc39aad5f0934856fbf"
+      "bytes": 34,
+      "sha256": "5ab8a239c1418483ead11ccd73008173fdd3af6ae97f912357ede24da823b30a"
     },
     {
       "path": "src/build_qa_report.py",
@@ -126,8 +126,8 @@
     },
     {
       "path": "src/export_data.py",
-      "bytes": 4350,
-      "sha256": "b7417017c4e57d88333e47647cf3cecc818ad65178ce377a5605813c5c4cadef"
+      "bytes": 4629,
+      "sha256": "412e63a68c2d9534cf18646ace5f24352a2a75adaa258b17147de12c262c081f"
     },
     {
       "path": "src/read_example.py",
@@ -146,8 +146,8 @@
     },
     {
       "path": "tests/test_release.py",
-      "bytes": 4158,
-      "sha256": "7d1465f3b76578db2c884e48b3e4d8c38ccaa5b8ed141ed05707b74cab830965"
+      "bytes": 4644,
+      "sha256": "7d0779b7e44723755dadf822e38d29d4e31fafb78c203bb9c64808d11b53416c"
     }
   ]
 }
