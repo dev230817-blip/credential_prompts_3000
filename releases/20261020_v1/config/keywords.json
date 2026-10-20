@@ -1,0 +1,3044 @@
+{
+  "version": "credential-imaging-20261020-v1",
+  "seed": 20261014,
+  "selection_policy": "enumerate exactly one of each of three modes, no random cross-country/content combination",
+  "country_options": [
+    "中国",
+    "美国",
+    "英国"
+  ],
+  "language_options": [
+    "中文",
+    "英文"
+  ],
+  "capture_modes": {
+    "scan": "平扫（扫描件样式）",
+    "front_photo": "正面自然拍摄",
+    "oblique_photo": "轻度斜拍"
+  },
+  "backgrounds": {
+    "scan": "实体为平板扫描仪输出的彩色扫描件，完整证面与窄中性留白、均匀照明；电子页面保持原平面呈现",
+    "front_photo": "浅色无文字木质桌面；电子件为中性屏幕周围环境",
+    "oblique_photo": "同组正拍背景意图相同"
+  },
+  "material_policies": {
+    "card": "原卡片材质；不套纸张/不增未核厚度",
+    "paper_document": "保留原底色/边框；适用纸本采用普通纸观感，避免夸张艺术纸纹理",
+    "page_or_booklet": "保留页别/册页约束，不添加另一面",
+    "visa_sticker": "保留原贴纸可见字段区，不擅加MRZ或护照页",
+    "electronic": "原电子版式；屏幕仅为通用呈现载体，不新增控件/品牌"
+  },
+  "fixed_content": "1000 inherited clean bundles; 3 bundles have user-approved corrections to second-applicant parent fields; original pending limits preserved",
+  "capture_notes": [
+    "纸页R1视觉起点；模型/实际设置未提供",
+    "约20°仅为设计目标，不能用数值替代出图判断",
+    "四角之外必须留余量，已观察R1斜拍边角贴框风险",
+    "卡片/电子件/正式证件/其他模型未完成图像验证",
+    "2026-10-20扫描件纪念页试验：使用者反馈效果不错；未提供新图、型号或参数，不扩大为980条图片验收"
+  ],
+  "profiles": [
+    {
+      "profile_id": "P1007-C01-authority",
+      "entity_id": "C01-authority",
+      "material_kind": "card",
+      "aspect_ratio": "4:3",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C01-authority-0c02ac455fb1bed7a7b9",
+        "G1007-C01-authority-15f5c310838107fab904",
+        "G1007-C01-authority-1a530b5c0c809b634bfa",
+        "G1007-C01-authority-2e9e8206aebdce1e73e0",
+        "G1007-C01-authority-35bee60e8cfe24cbbc02",
+        "G1007-C01-authority-35e0ed81076fdc146369",
+        "G1007-C01-authority-3a7fa553bfae6aa7bc91",
+        "G1007-C01-authority-3bd683de54cb339b2599",
+        "G1007-C01-authority-429d513c0652c12a5cd0",
+        "G1007-C01-authority-43d4113658b14b97af8f",
+        "G1007-C01-authority-55264271368df4a37465",
+        "G1007-C01-authority-5b2c9b317b4427dec69e",
+        "G1007-C01-authority-66c4d91e7ecf80d58402",
+        "G1007-C01-authority-6dcd4796334dbf836107",
+        "G1007-C01-authority-7374dfe5d28eb6cd5614",
+        "G1007-C01-authority-78de5f69b467dec07fb7",
+        "G1007-C01-authority-945f49a6932e516eba7d",
+        "G1007-C01-authority-992fcb4ec53448cb3b4b",
+        "G1007-C01-authority-9d025c04a1f6006523ae",
+        "G1007-C01-authority-bb5eadbfc41c9ebade60",
+        "G1007-C01-authority-bddf0f6d4c23a4036216",
+        "G1007-C01-authority-cdf1a18158d58682a9aa",
+        "G1007-C01-authority-d1dc9c9a9c9f958da989",
+        "G1007-C01-authority-d612bda198f63eeb5bbb",
+        "G1007-C01-authority-eac3df02a01d49272e58",
+        "G1007-C01-authority-f949395ed220bdfe38d5",
+        "G1007-C01-authority-fba2a2c587e2e1a777c9"
+      ],
+      "category_l1": "身份与出入境",
+      "category_l2": "居民身份证",
+      "country": "中国",
+      "surface": "国徽面",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "第二代居民身份证；公开示例图版次未标注，私有样本版次待核",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "CP1005-C01",
+      "entity_id": "C01-portrait",
+      "material_kind": "card",
+      "aspect_ratio": "4:3",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1005-C01-325284b6d36d",
+        "G1005-C01-3bcb1861ece2",
+        "G1005-C01-627581fdb1f6",
+        "G1005-C01-861b76ea00c6",
+        "G1005-C01-bdcc9e606fb6",
+        "G1005-C01-f06200f2fc91"
+      ],
+      "category_l1": "身份与出入境",
+      "category_l2": "居民身份证",
+      "country": "中国",
+      "surface": "人像面",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "第二代居民身份证；所见私有样本的具体版次待核",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-C01-portrait",
+      "entity_id": "C01-portrait",
+      "material_kind": "card",
+      "aspect_ratio": "4:3",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C01-portrait-02ac1e363c7c1c91150a",
+        "G1007-C01-portrait-06c0ff0e6c2c524597ef",
+        "G1007-C01-portrait-0b830077e5aafb5dfdd8",
+        "G1007-C01-portrait-10dc8d66564e4498274f",
+        "G1007-C01-portrait-167009cf0239a6b11189",
+        "G1007-C01-portrait-1fb4f101a4725f468f7a",
+        "G1007-C01-portrait-24aff1c702615e310398",
+        "G1007-C01-portrait-2749fb6d9c58cedeadc9",
+        "G1007-C01-portrait-4f5653b87a247e135fd1",
+        "G1007-C01-portrait-5092c056e61c0a7b6884",
+        "G1007-C01-portrait-529d59b8780799978f9a",
+        "G1007-C01-portrait-554b17ae539b07127322",
+        "G1007-C01-portrait-5e87cb8fb6a64973aa17",
+        "G1007-C01-portrait-5fc1edf8745e90e08c8f",
+        "G1007-C01-portrait-7800fc5df9cb7d6e22f2",
+        "G1007-C01-portrait-8b246de481bff32e6411",
+        "G1007-C01-portrait-9f3cfdb80bd1835e3007",
+        "G1007-C01-portrait-ab6460fa2073f474607c",
+        "G1007-C01-portrait-b6b40fb7cd0682197b34",
+        "G1007-C01-portrait-c9ed9f191b705249300e",
+        "G1007-C01-portrait-e62d16462eef1188e976",
+        "G1007-C01-portrait-f9e7ac84b2ba0d652d65"
+      ],
+      "category_l1": "身份与出入境",
+      "category_l2": "居民身份证",
+      "country": "中国",
+      "surface": "人像面",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "第二代居民身份证；所见私有样本的具体版次待核",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V5-C02-household",
+      "entity_id": "C02-household",
+      "material_kind": "paper_document",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C02-household-0a786ff63cf954dadc5a",
+        "G1007-C02-household-1c37ab9eb1429bbf0ce9",
+        "G1007-C02-household-303f06ba78ca7818c26f",
+        "G1007-C02-household-5388648b0ae1f5b7cae5",
+        "G1007-C02-household-93d1587ec7990b89d98e",
+        "G1007-C02-household-96af01201b8e665fc65f",
+        "G1007-C02-household-9a08f563ceacc9e356fa",
+        "G1007-C02-household-9f0c3e9ac87f169b4402",
+        "G1007-C02-household-ab3517527d167c124adc",
+        "G1007-C02-household-add584cf2bc7a0866482",
+        "G1007-C02-household-b67257cdcdf6bb3213bb",
+        "G1007-C02-household-b993ba9b3219a7adc2b2",
+        "G1007-C02-household-e81b8a3ff8daa91301ff"
+      ],
+      "category_l1": "身份与出入境",
+      "category_l2": "户口登记卡",
+      "country": "中国",
+      "surface": "常住人口登记卡（户主本人）",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "1996字段框架候选；四川/河北独立户主卡旁证，不视为辽宁同版整页复刻",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V5-C02-person",
+      "entity_id": "C02-person",
+      "material_kind": "paper_document",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C02-person-13439f6879ed79540038",
+        "G1007-C02-person-4291d20bb9ea01038e54",
+        "G1007-C02-person-48dcddbd8562c0b64456",
+        "G1007-C02-person-5ea33cda55ff2e3b92aa",
+        "G1007-C02-person-6f23a9107340f0c96905",
+        "G1007-C02-person-7d3ef7359555e375ce27",
+        "G1007-C02-person-b19942c5b2bf9d82113c",
+        "G1007-C02-person-bd0887627cbf20ad4d5f",
+        "G1007-C02-person-c4fe613f08cfc89b6ac2",
+        "G1007-C02-person-cc72927aaa6743260ecb",
+        "G1007-C02-person-ddc63b1f9dfe4c85da19",
+        "G1007-C02-person-e64c9a7d9c648585437d"
+      ],
+      "category_l1": "身份与出入境",
+      "category_l2": "户口登记卡",
+      "country": "中国",
+      "surface": "常住人口登记卡（非户主本人）",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "同一登记卡；不与首页或独立住址变动页拼接",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V6-C03-main",
+      "entity_id": "C03-main",
+      "material_kind": "page_or_booklet",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C03-main-015e2127f5a07fc41271",
+        "G1007-C03-main-11613d7d1f052cb55462",
+        "G1007-C03-main-120421ab4e71f0e9a69b",
+        "G1007-C03-main-1cde5ab5fa1354ed8240",
+        "G1007-C03-main-432e012171f31be24ae8",
+        "G1007-C03-main-470eac7b8c3c1af83ded",
+        "G1007-C03-main-47cc1f090fa9bfb61184",
+        "G1007-C03-main-4e31f0e355a5308efdaf",
+        "G1007-C03-main-506de0a911b3987fb89c",
+        "G1007-C03-main-5810eb8a9d33e142d785",
+        "G1007-C03-main-74a3f2894cbff4e6cb63",
+        "G1007-C03-main-78a76cfd6571e5f6335e",
+        "G1007-C03-main-7de3c1ab36cba90f3172",
+        "G1007-C03-main-86d6836fb51006880693",
+        "G1007-C03-main-90cd137264fb8b81e7a3",
+        "G1007-C03-main-9482391486aaef60c3dc",
+        "G1007-C03-main-a2c0d168726fcce29349",
+        "G1007-C03-main-a4f725f996c36fbdd317",
+        "G1007-C03-main-b5376b34608c71c93b1a",
+        "G1007-C03-main-de293f44a0920680ad3b",
+        "G1007-C03-main-df16cc9eb3cf81dab215",
+        "G1007-C03-main-e1b2ac230078842c1595",
+        "G1007-C03-main-e83f93300a51bfd835ca",
+        "G1007-C03-main-ef9fcb1fb1b6e9fa9a5e",
+        "G1007-C03-main-fef08e42c0052027fb61"
+      ],
+      "category_l1": "民事、社保与财产",
+      "category_l2": "婚姻证明",
+      "country": "中国",
+      "surface": "声明页与资料页分开展示",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "2025填写规范＋使用者选定长式民法典声明",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-C04-main",
+      "entity_id": "C04-main",
+      "material_kind": "page_or_booklet",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C04-main-05cc2c79963238bbfd6c",
+        "G1007-C04-main-074accf86ed567b52eff",
+        "G1007-C04-main-0988c00db412057ffaa5",
+        "G1007-C04-main-15558dea008ce47c58a7",
+        "G1007-C04-main-190b68b31caf19405b6e",
+        "G1007-C04-main-1f9fcdfa68856de9459b",
+        "G1007-C04-main-205d80fd814c7d49c80a",
+        "G1007-C04-main-2fe1c18048988a85d5d9",
+        "G1007-C04-main-52d3d3f179050d4608c4",
+        "G1007-C04-main-544a333d8b5e09f6a01e",
+        "G1007-C04-main-61b193d151c83c037696",
+        "G1007-C04-main-806a2d3e64f70826fdfa",
+        "G1007-C04-main-94215562b1cc7445ce73",
+        "G1007-C04-main-99cee62df547f423e629",
+        "G1007-C04-main-9a1b7e5da95c2c515059",
+        "G1007-C04-main-c5fda571b32ef62cea9c",
+        "G1007-C04-main-d82f92bc367096903910",
+        "G1007-C04-main-da8f00a7d02bdeb0e45a",
+        "G1007-C04-main-ea29476983be0a4c0e66",
+        "G1007-C04-main-f894bf34bacb7ee770f4"
+      ],
+      "category_l1": "身份与出入境",
+      "category_l2": "护照",
+      "country": "中国",
+      "surface": "资料页",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "2012年启用的电子普通护照；2019年3月起境内签发机关改为中华人民共和国国家移民管理局（自第EF6000001号起）；本规格所据样图为2019年3月后的资料页",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-C05-hkmo",
+      "entity_id": "C05-hkmo",
+      "material_kind": "card",
+      "aspect_ratio": "4:3",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C05-hkmo-2c35b7a113f851ed57c7",
+        "G1007-C05-hkmo-527e733e556e499b527e",
+        "G1007-C05-hkmo-539c8600ff11c2d2f80e",
+        "G1007-C05-hkmo-6231bfb04bf87e9d99f4",
+        "G1007-C05-hkmo-7ac2fdd011f32670660a",
+        "G1007-C05-hkmo-7d07b7de6dab19260453",
+        "G1007-C05-hkmo-8ec9c1c6c268eb7c119d",
+        "G1007-C05-hkmo-a71ebe2811ba3161438f",
+        "G1007-C05-hkmo-b4baac85e620b7321fd2",
+        "G1007-C05-hkmo-df3d4ebfff9bb93a99b5",
+        "G1007-C05-hkmo-e492215853311baf79d9",
+        "G1007-C05-hkmo-eddb51855562e85fcf23"
+      ],
+      "category_l1": "身份与出入境",
+      "category_l2": "出入境通行证",
+      "country": "中国",
+      "surface": "正面",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "2014年5月启用的电子往来港澳通行证；2019年6月起签发机关为中华人民共和国出入境管理局；本规格按正面与背面两面的现有官方样图建立",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-C05-taiwan",
+      "entity_id": "C05-taiwan",
+      "material_kind": "card",
+      "aspect_ratio": "4:3",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C05-taiwan-1d708af90c1dd605fc37",
+        "G1007-C05-taiwan-2779a396860e2fbf5c8d",
+        "G1007-C05-taiwan-30131d199fe2f538a03c",
+        "G1007-C05-taiwan-406bc154f56c890b9fb7",
+        "G1007-C05-taiwan-41b7870b3ad880565188",
+        "G1007-C05-taiwan-e2127677dbf0777a8175",
+        "G1007-C05-taiwan-eb689a8180a5907ef7db",
+        "G1007-C05-taiwan-f2a9f845bbd4add3c63c"
+      ],
+      "category_l1": "身份与出入境",
+      "category_l2": "出入境通行证",
+      "country": "中国",
+      "surface": "正面",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "2016年12月启用的电子往来台湾通行证；2019年6月起签发机关为中华人民共和国出入境管理局；本规格按正面与背面两面的现有官方样图建立",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-C06-f",
+      "entity_id": "C06-f",
+      "material_kind": "visa_sticker",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C06-f-2f57b9aff48c857188a2",
+        "G1007-C06-f-3e25efc54636ca13d9bc",
+        "G1007-C06-f-5a6ccbf23bc0fad30ed5",
+        "G1007-C06-f-8034c2978aa7cf1136c2",
+        "G1007-C06-f-80e42796a0ad1c42657c"
+      ],
+      "category_l1": "身份与出入境",
+      "category_l2": "签证",
+      "country": "中国",
+      "surface": "正面",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "国家移民管理局公开的普通签证式样页（页面发布2018-09-29，样图顶部标注“访问（F）”）；签发依据为国务院令第637号第六条与外交部、驻外使馆现行须知",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V6-C06-l",
+      "entity_id": "C06-l",
+      "material_kind": "visa_sticker",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C06-l-10231ff58a2e679d6105",
+        "G1007-C06-l-42cda1e27da07f96f8f0",
+        "G1007-C06-l-a162ef2e0d934a7016ab",
+        "G1007-C06-l-c09c7f098668c51a6345",
+        "G1007-C06-l-debae08d9943886eb349"
+      ],
+      "category_l1": "身份与出入境",
+      "category_l2": "签证",
+      "country": "中国",
+      "surface": "贴纸可读字段区；不呈现机读区",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "通用贴纸＋2006 L类双语标签参考；非现行认定",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V6-C06-m",
+      "entity_id": "C06-m",
+      "material_kind": "visa_sticker",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C06-m-1d8d1e250eebe7148f65",
+        "G1007-C06-m-4bc5a0d23ea5d3be56df",
+        "G1007-C06-m-8f5fdcc9804d3c8371a8",
+        "G1007-C06-m-a3b2922e20a7611864ca",
+        "G1007-C06-m-ed0907a5cc93ef7d5a9d"
+      ],
+      "category_l1": "身份与出入境",
+      "category_l2": "签证",
+      "country": "中国",
+      "surface": "贴纸可读字段区；不呈现机读区",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "通用贴纸；M字据使用者放行推定",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V6-C06-q2",
+      "entity_id": "C06-q2",
+      "material_kind": "visa_sticker",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C06-q2-2694ef05231b6a91ea84",
+        "G1007-C06-q2-5e99fa4506448d8c0303",
+        "G1007-C06-q2-645a0df5f497b11bab37",
+        "G1007-C06-q2-6f2bc25004d730816c2f",
+        "G1007-C06-q2-ff21c8520fb644a99df3"
+      ],
+      "category_l1": "身份与出入境",
+      "category_l2": "签证",
+      "country": "中国",
+      "surface": "贴纸可读字段区；不呈现机读区",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "Q2示范数据件；非号码规则",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V6-C06-x1",
+      "entity_id": "C06-x1",
+      "material_kind": "visa_sticker",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C06-x1-0871771a6054daab7bad",
+        "G1007-C06-x1-23e63127d93a90afadcc",
+        "G1007-C06-x1-83548c99f53a80a5544c",
+        "G1007-C06-x1-b8183ecb752aebf14bb1",
+        "G1007-C06-x1-c53c16665daccbdf2c74"
+      ],
+      "category_l1": "身份与出入境",
+      "category_l2": "签证",
+      "country": "中国",
+      "surface": "贴纸已知文字区；停留值和机读区不呈现",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "通用字段标注＋使用者放行X1字；不写停留值",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V5-C07-main",
+      "entity_id": "C07-main",
+      "material_kind": "card",
+      "aspect_ratio": "4:3",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C07-main-046b1ef3736cbc96a2e0",
+        "G1007-C07-main-0dff58869301372c3f48",
+        "G1007-C07-main-12ddbdafdd7bf97e4e00",
+        "G1007-C07-main-13d7a86b52cf3724c1ac",
+        "G1007-C07-main-2045ac3be02203226e69",
+        "G1007-C07-main-28da6e8fc3a46b5bdd13",
+        "G1007-C07-main-439490138c10fe2eab27",
+        "G1007-C07-main-59bce6a09f0bcb811e4d",
+        "G1007-C07-main-5fac2d3db4f8f64ea4f8",
+        "G1007-C07-main-683cd53e13ba5ac59fb9",
+        "G1007-C07-main-6dcd6d5a8afaa3fc5126",
+        "G1007-C07-main-782416ada487f730bc5b",
+        "G1007-C07-main-7f66eea60cf81890f31b",
+        "G1007-C07-main-8097f94ac729ab79ea8f",
+        "G1007-C07-main-965547b10f474ea7543a",
+        "G1007-C07-main-9a2252ef50a29177c031",
+        "G1007-C07-main-c760181f75e2656d0afe",
+        "G1007-C07-main-cb4313c131de4f575240",
+        "G1007-C07-main-cc6a566fc69905f73b9d",
+        "G1007-C07-main-d964f4c014508f9af49a",
+        "G1007-C07-main-ee38c31bbc3a870413f3",
+        "G1007-C07-main-f17433b83f16deba021d",
+        "G1007-C07-main-f263193c6f37e94b6c80",
+        "G1007-C07-main-f904eee3fb0cf18dc429",
+        "G1007-C07-main-fd2700f1e9f261f1771b"
+      ],
+      "category_l1": "民事、社保与财产",
+      "category_l2": "社保卡",
+      "country": "中国",
+      "surface": "背面（个人信息面）",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "北京市第三代卡用户手册示意图；只作北京文字候选，不宣称全国样卡",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V5-C08-student",
+      "entity_id": "C08-student",
+      "material_kind": "card",
+      "aspect_ratio": "4:3",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C08-student-03326bee62f1d6809cd5",
+        "G1007-C08-student-0894af7cc3c96f990167",
+        "G1007-C08-student-23abdf590d3602816363",
+        "G1007-C08-student-240a8c91f2be85508cf5",
+        "G1007-C08-student-257f37295fac0a383508",
+        "G1007-C08-student-3888057b589793bc0cc8",
+        "G1007-C08-student-4173275480edb1e144cd",
+        "G1007-C08-student-5a7774ee189e9d7e815a",
+        "G1007-C08-student-6184f6f223d377a94418",
+        "G1007-C08-student-6df2fec55185aaf4c819",
+        "G1007-C08-student-70fbc2a43a9c1b1ffc61",
+        "G1007-C08-student-722a2ca6727a27026821",
+        "G1007-C08-student-802367cb5a42940ac6e5",
+        "G1007-C08-student-99b3ffac5c1f03a3dbca",
+        "G1007-C08-student-a0aafd9bab0adbace3ad",
+        "G1007-C08-student-a8e25d071fa0053bb3d1",
+        "G1007-C08-student-ac0403c5abe1064bc876",
+        "G1007-C08-student-ba28488bf8ef847b7f83",
+        "G1007-C08-student-bc3309be38475de24603",
+        "G1007-C08-student-d049b6e659b61db0bf24",
+        "G1007-C08-student-d9dc495006879671851d",
+        "G1007-C08-student-dc2c5cb5eb9ddf75a72f",
+        "G1007-C08-student-e1f1d3b5f359d4475877",
+        "G1007-C08-student-f02911b071c8fc319271",
+        "G1007-C08-student-f7d202e7eaddf237bee6"
+      ],
+      "category_l1": "教育与荣誉",
+      "category_l2": "学生证与校园卡",
+      "country": "中国",
+      "surface": "智能卡正面（学生证本体）",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "使用者2026-10-05去标识结构摘录；对应130周年双件制样本；背面不进入正面",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V5-C08-supplement",
+      "entity_id": "C08-supplement",
+      "material_kind": "page_or_booklet",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C08-supplement-028fdbd3566ff64afc25",
+        "G1007-C08-supplement-02f72d38ef5e83133c13",
+        "G1007-C08-supplement-123b180bd904628eed38",
+        "G1007-C08-supplement-1cfe7d3550be1707faa7",
+        "G1007-C08-supplement-21c1bb8d6e67ccf3868d",
+        "G1007-C08-supplement-3d0f4a13f884635cc8eb",
+        "G1007-C08-supplement-4afbc5c4c23b43446c32",
+        "G1007-C08-supplement-5792bf0a08b337c23ce9",
+        "G1007-C08-supplement-6044b218eec271f9a009",
+        "G1007-C08-supplement-61df905a89ce77f72876",
+        "G1007-C08-supplement-688a80314c66e6a172ef",
+        "G1007-C08-supplement-6b401375f8c4c112b065",
+        "G1007-C08-supplement-71a019a768ba4dda3db7",
+        "G1007-C08-supplement-81e2ecf88a895395be4d",
+        "G1007-C08-supplement-8797a4a0fc6534742ee2",
+        "G1007-C08-supplement-98ca2c283a5297784f8a",
+        "G1007-C08-supplement-a33064303d32a378dfb5",
+        "G1007-C08-supplement-a8402751f3eff2685822",
+        "G1007-C08-supplement-a8d6a74272112c3916d1",
+        "G1007-C08-supplement-d3751e48c6e1832f77a1",
+        "G1007-C08-supplement-da0fc7d6a00801b409a2",
+        "G1007-C08-supplement-def055a0cf48d594a2c5",
+        "G1007-C08-supplement-e7548a68a8e3f418e535",
+        "G1007-C08-supplement-eca124f0df922c8bba31",
+        "G1007-C08-supplement-eec3b3da86bd9f311ab4"
+      ],
+      "category_l1": "教育与荣誉",
+      "category_l2": "学生证与校园卡",
+      "country": "中国",
+      "surface": "副证信息页",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "同一双件制实物；页脚说明和注册证文字另版补齐；旧25组不冒充完整当前样本",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V5-C09-main",
+      "entity_id": "C09-main",
+      "material_kind": "paper_document",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C09-main-078c71a712746ebeb21f",
+        "G1007-C09-main-0ad1f7f6b605a1f194da",
+        "G1007-C09-main-0fd484fc51ec95a1a0e8",
+        "G1007-C09-main-1714238db7b22ab6888c",
+        "G1007-C09-main-182455814508557c4cf5",
+        "G1007-C09-main-19733d4005d1f1b488d4",
+        "G1007-C09-main-21cae72f06fe932d3172",
+        "G1007-C09-main-2523af264b47afd03585",
+        "G1007-C09-main-2b284b278bcbbfe423c5",
+        "G1007-C09-main-38430c4c591aa79102ed",
+        "G1007-C09-main-39520eb460cc523a869f",
+        "G1007-C09-main-3b192d2690d5acc5911b",
+        "G1007-C09-main-3f5614c0f66fb3029e90",
+        "G1007-C09-main-42f689b421478dfa1eb9",
+        "G1007-C09-main-484fb78aff585bfe69b5",
+        "G1007-C09-main-4ef525533589f2fb14f2",
+        "G1007-C09-main-5f42e5c4d9df39259aa9",
+        "G1007-C09-main-699545daf37a03c6fe9f",
+        "G1007-C09-main-702c2f8f26de8ac0ab65",
+        "G1007-C09-main-9930f53a0aae19d1b764",
+        "G1007-C09-main-9e50e13f6c6929ba75fb",
+        "G1007-C09-main-a39b75d5c632633c42b8",
+        "G1007-C09-main-aa26741da16d5464cd28",
+        "G1007-C09-main-b629594a3dde56264a5b",
+        "G1007-C09-main-b86f11f90a3a103701b9",
+        "G1007-C09-main-bced501bc1f5dd546572",
+        "G1007-C09-main-c08fe292d3aeb02dd1aa",
+        "G1007-C09-main-c11b5ca30aaa7305ebd8",
+        "G1007-C09-main-c28457ca097d53ad746c",
+        "G1007-C09-main-c49a8938f0cf482bcb08",
+        "G1007-C09-main-c8baffd93b15e50193c3",
+        "G1007-C09-main-ce5a4864801955c674a0",
+        "G1007-C09-main-d0cc5eae8ebc828c0b41",
+        "G1007-C09-main-d835a839a2da9c67d0d3",
+        "G1007-C09-main-dd4969aff4e1636f4ee9",
+        "G1007-C09-main-ed54740f3eea167ca3a1",
+        "G1007-C09-main-f2f375ae0cbe7afed4ba",
+        "G1007-C09-main-f8d97de31790d59f3cb5",
+        "G1007-C09-main-fe1785cf3eec5689f6e6",
+        "G1007-C09-main-ff252107dd7e5d0894b0"
+      ],
+      "category_l1": "教育与荣誉",
+      "category_l2": "录取通知书",
+      "country": "中国",
+      "surface": "本科录取通知书正文页（2017参考）",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "选2017中国青年网公开件，不拼2024欢迎句、不升级2025/2026；校名/校长/院系/地址按内部约定虚构",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-C10-degree",
+      "entity_id": "C10-degree",
+      "material_kind": "paper_document",
+      "aspect_ratio": "4:3",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C10-degree-1504639c1ccc431b0dc9",
+        "G1007-C10-degree-20e4aff207742ece4e15",
+        "G1007-C10-degree-255e3df3de36e856efb5",
+        "G1007-C10-degree-2a06cd87b88a03491faf",
+        "G1007-C10-degree-2d5a552f833eaa0f3c33",
+        "G1007-C10-degree-3e18eb4763199aeccbf6",
+        "G1007-C10-degree-50a986484685f130e0c1",
+        "G1007-C10-degree-61fbfea13e413822327c",
+        "G1007-C10-degree-680ab20f2e908d7e5aec",
+        "G1007-C10-degree-75e038784eb5fcf09116",
+        "G1007-C10-degree-7716bd2962d078d77a83",
+        "G1007-C10-degree-77da2d2f96679c3466ce",
+        "G1007-C10-degree-8181fa5ccb95bdbc998a",
+        "G1007-C10-degree-85d13f866ffb7027340a",
+        "G1007-C10-degree-8f20ecc541eb365ad7bd",
+        "G1007-C10-degree-9a8bb883a6a075b2bc27",
+        "G1007-C10-degree-a1f9781604b31319819e",
+        "G1007-C10-degree-c0fbbc5fde0e6a76b98c",
+        "G1007-C10-degree-d573bc92755bb472aefc",
+        "G1007-C10-degree-ffd4f840323d876e8d2e"
+      ],
+      "category_l1": "教育与荣誉",
+      "category_l2": "学位证书",
+      "country": "中国",
+      "surface": "证书正文面（横版 A4）",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "学位〔2015〕18号（2016-01-01 起各学位授予单位自主设计印制，不再使用带国徽的统一印制证书）；参考对象＝湖南师范大学 2016 年自制版（校行发〔2016〕16号）",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-C10-graduation",
+      "entity_id": "C10-graduation",
+      "material_kind": "paper_document",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C10-graduation-180a0d05e7d6db79cdbc",
+        "G1007-C10-graduation-20d5b8341027c2b4fcf2",
+        "G1007-C10-graduation-27d8a3c169c6fed731f6",
+        "G1007-C10-graduation-2cf1f55fd88b0ebc836e",
+        "G1007-C10-graduation-4a483ffe80ac4d4a5b89",
+        "G1007-C10-graduation-4d579798d53888bb1e3a",
+        "G1007-C10-graduation-5aef99fbd4481a6e6786",
+        "G1007-C10-graduation-617a8db6487b97f848d5",
+        "G1007-C10-graduation-71c1e9668464db913420",
+        "G1007-C10-graduation-754a2c1bc3064a3ab117",
+        "G1007-C10-graduation-87f9866f95950266434f",
+        "G1007-C10-graduation-9f0da79526f465723b1a",
+        "G1007-C10-graduation-a29c3f44d4aed365f59d",
+        "G1007-C10-graduation-a3ac868083680703a177",
+        "G1007-C10-graduation-a837ac8100298e320479",
+        "G1007-C10-graduation-b6e27d341c4b78cdeb08",
+        "G1007-C10-graduation-bae7426bea3adf6d79a8",
+        "G1007-C10-graduation-bc468b6501f9a6f0c7f9",
+        "G1007-C10-graduation-c25505626630f3381ea3",
+        "G1007-C10-graduation-fe9dc5e3d984739f8e1e"
+      ],
+      "category_l1": "教育与荣誉",
+      "category_l2": "毕业证书",
+      "country": "中国",
+      "surface": "内页",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "内容要求依据教学〔2002〕15号（2003 年起统一规范；2000 年起毕业证书逐步由高校自行印制）；参考对象选定为湖南师范大学（校行发〔2016〕16号公布的自制版式，与该校学位证书统一为横版 A4）",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V6-C11-award",
+      "entity_id": "C11-award",
+      "material_kind": "paper_document",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C11-award-09274f5534941d69b2d6",
+        "G1007-C11-award-4f9e83d12441c93594b3",
+        "G1007-C11-award-57f3298a6c229783d6be",
+        "G1007-C11-award-58c4d652504e42c44370",
+        "G1007-C11-award-89b17b6d52af55830448",
+        "G1007-C11-award-8a1da2c5d3fad33a5c3a",
+        "G1007-C11-award-9d0e7a486a0b659c3038",
+        "G1007-C11-award-adb3cf0e36d00433d584",
+        "G1007-C11-award-af07c851c8deb95c94d9",
+        "G1007-C11-award-dd23f7c747f222f22837",
+        "G1007-C11-award-e4b057472d92da48d52b",
+        "G1007-C11-award-fca0f68df04c3cc16d74"
+      ],
+      "category_l1": "教育与荣誉",
+      "category_l2": "获奖证书",
+      "country": "中国",
+      "surface": "证书正文面",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "第十六届决赛2025实物参考；机构虚构适配",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V6-C11-honor",
+      "entity_id": "C11-honor",
+      "material_kind": "paper_document",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C11-honor-054f64f5600bf0710af3",
+        "G1007-C11-honor-13523e9c8279b6a28e1c",
+        "G1007-C11-honor-3199d61ae6c9421b1f04",
+        "G1007-C11-honor-346d29318c7180d04318",
+        "G1007-C11-honor-7462518eed09fc4bac35",
+        "G1007-C11-honor-8edca78f5429e0ba7b6c",
+        "G1007-C11-honor-8f5710c64b2620e2a2be",
+        "G1007-C11-honor-afc3952acd0fcf09b059",
+        "G1007-C11-honor-bb646b13b4e75ad48eba",
+        "G1007-C11-honor-c2b3217c5a6cbb45e173",
+        "G1007-C11-honor-c56b0f58d6f89a1501e5",
+        "G1007-C11-honor-dd64e4a4d093cc504507",
+        "G1007-C11-honor-e6bd9e85695592696c8b"
+      ],
+      "category_l1": "教育与荣誉",
+      "category_l2": "荣誉证书",
+      "country": "中国",
+      "surface": "证书正文面",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "2025团体一等奖机构件",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-C12-main",
+      "entity_id": "C12-main",
+      "material_kind": "paper_document",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C12-main-12341d758c31ed1999c2",
+        "G1007-C12-main-2c651539974de0eab5a9",
+        "G1007-C12-main-4b21872e4a342ddbfe23",
+        "G1007-C12-main-4cd2790de1233c0c4507",
+        "G1007-C12-main-856502aa1e1a9f2bcf24",
+        "G1007-C12-main-9afcd24b8177c2cffcde",
+        "G1007-C12-main-a70dbc29ea3e3ff53f7e",
+        "G1007-C12-main-c08df5987c8c0fd26754",
+        "G1007-C12-main-e4aacfac13c670fad652",
+        "G1007-C12-main-e6c011d30a2dcee847da"
+      ],
+      "category_l1": "资格与技能",
+      "category_l2": "普通话等级证书",
+      "country": "中国",
+      "surface": "内页",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "2022-01-01（含）以后测试使用的2022年新版等级证书；管理办法为国语函〔2022〕2号",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V6-C13-main",
+      "entity_id": "C13-main",
+      "material_kind": "paper_document",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C13-main-016eba258886ffa9af63",
+        "G1007-C13-main-04d31edd8d05c6841c5c",
+        "G1007-C13-main-04d478df9ae42b4432e2",
+        "G1007-C13-main-096649ce335be4dd4fa2",
+        "G1007-C13-main-0a919952f2cd03753e0a",
+        "G1007-C13-main-0d28633f47f69dca0514",
+        "G1007-C13-main-1ffa365b4a7584a6deab",
+        "G1007-C13-main-25d150fb47c73b0b4e5e",
+        "G1007-C13-main-25fd04999802936b5090",
+        "G1007-C13-main-27bf69007cc928300bb2",
+        "G1007-C13-main-2adde26562f35cb49beb",
+        "G1007-C13-main-2d6876f156264b1d7e18",
+        "G1007-C13-main-2e7cf3536f8746b0e378",
+        "G1007-C13-main-2fa958b4bb6103e42e71",
+        "G1007-C13-main-304eb8401332d6b9ab12",
+        "G1007-C13-main-30a2841f0fecd69eff88",
+        "G1007-C13-main-3b118ef405c2e2f92eec",
+        "G1007-C13-main-3b2e6c1c6c202599c29d",
+        "G1007-C13-main-3d10b9ca13608d1407cb",
+        "G1007-C13-main-47c72d1a005b724913e5",
+        "G1007-C13-main-498e36be5541f68305d2",
+        "G1007-C13-main-4c933c12bf5e32a4394e",
+        "G1007-C13-main-4ebb5b7248c92a97a47c",
+        "G1007-C13-main-52de720614bf9f014c56",
+        "G1007-C13-main-568a1d28712705302ec6",
+        "G1007-C13-main-5a85445ca54c0f6d14b0",
+        "G1007-C13-main-5c4a5fcca7190b625b07",
+        "G1007-C13-main-6007b23331bd6c5f8560",
+        "G1007-C13-main-66b155052b69a447dcf0",
+        "G1007-C13-main-66ca7c0212f8c96c8b5d",
+        "G1007-C13-main-6c5820e50c73a6db2b2f",
+        "G1007-C13-main-6fe97bab8a8b65b7d6d5",
+        "G1007-C13-main-78c6ba9e29058561c002",
+        "G1007-C13-main-79a4a6d403a3ededf53b",
+        "G1007-C13-main-8095bf9ffb5ce830d8b7",
+        "G1007-C13-main-87052e2fcb01caf59a77",
+        "G1007-C13-main-9271496b0cbb73545010",
+        "G1007-C13-main-938448ecb8ec438972fb",
+        "G1007-C13-main-9a17fdebb02c4ce32615",
+        "G1007-C13-main-9a617047408a0b5183a3",
+        "G1007-C13-main-9a81132d51e1d43a2b73",
+        "G1007-C13-main-9bd888b675f73e253522",
+        "G1007-C13-main-a077adbb05486f4753a2",
+        "G1007-C13-main-a1e7509b8903bc077ce4",
+        "G1007-C13-main-ab23db8cf6af073cb10a",
+        "G1007-C13-main-ac80564d6ca238299e52",
+        "G1007-C13-main-c0ba82203de967c7a144",
+        "G1007-C13-main-c5dd601045122e0a7539",
+        "G1007-C13-main-cab7e17ba5556776f0eb",
+        "G1007-C13-main-d15e2f499a3a7c598a8e",
+        "G1007-C13-main-d40266ebb6cf7c20ff34",
+        "G1007-C13-main-e0f7e9bab60803d21257",
+        "G1007-C13-main-e4f957155c407df3c056",
+        "G1007-C13-main-e613fe7954862bba4fd5",
+        "G1007-C13-main-ee5ec43089e2ec326cc5",
+        "G1007-C13-main-f5ad844e1f3aacc15ce0",
+        "G1007-C13-main-fd20c7255a935bfa07c0"
+      ],
+      "category_l1": "资格与技能",
+      "category_l2": "驾驶证",
+      "country": "中国",
+      "surface": "主页正面",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "沈阳2025官方空白式样；未依GA482—2026正文",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V5-C14-main",
+      "entity_id": "C14-main",
+      "material_kind": "page_or_booklet",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C14-main-037d2bb3f94f68ef0cd8",
+        "G1007-C14-main-042aa536e3551d0575c8",
+        "G1007-C14-main-068d2c5cbb7684575ae8",
+        "G1007-C14-main-0a03f907aac1ebef03b8",
+        "G1007-C14-main-0a27db939c8103ce3c1e",
+        "G1007-C14-main-0a4461f232cd355a80a6",
+        "G1007-C14-main-2d5a8c26a7c6e93164de",
+        "G1007-C14-main-2e90852593c1e7e96d2e",
+        "G1007-C14-main-573365e4a60646285f70",
+        "G1007-C14-main-5847a56ca9b598886c32",
+        "G1007-C14-main-712bb2093fe4293ae517",
+        "G1007-C14-main-9818a90e6403f662500c",
+        "G1007-C14-main-9a17d6d28d539c2d7ec4",
+        "G1007-C14-main-a5166f3d0f44c3535590",
+        "G1007-C14-main-b3beafc119af17fcaa36",
+        "G1007-C14-main-beee9075363241577e39",
+        "G1007-C14-main-cc892cd910451cbafbc6",
+        "G1007-C14-main-d262a22033b898d09aac",
+        "G1007-C14-main-dab987376e8408c5f82d",
+        "G1007-C14-main-ee6e235cb9861a35eaa1"
+      ],
+      "category_l1": "民事、社保与财产",
+      "category_l2": "机动车登记证",
+      "country": "中国",
+      "surface": "第2页注册登记机动车信息栏",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "GA369—2005图B.2；历史参考候选，不宣称现行；选第二页不拼第一页所有人或登记日期",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "CP1005-C15",
+      "entity_id": "C15-main",
+      "material_kind": "paper_document",
+      "aspect_ratio": "4:3",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1005-C15-5335611a4f45",
+        "G1005-C15-59a50ad328e0",
+        "G1005-C15-6d8161cf9133",
+        "G1005-C15-7976f3cba2b2",
+        "G1005-C15-c2f580695b32",
+        "G1005-C15-ce7f255461e5"
+      ],
+      "category_l1": "经营与机构许可",
+      "category_l2": "营业执照",
+      "country": "中国",
+      "surface": "正本照面",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "2019年A格式基础上，自2022-09-01新核发采用调整版；字段相对位置依据市监注发〔2022〕71号附件格式A正本示意图",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-C15-main",
+      "entity_id": "C15-main",
+      "material_kind": "paper_document",
+      "aspect_ratio": "4:3",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C15-main-031948dadcdcea9f1450",
+        "G1007-C15-main-0404f76ceb52693dbdb9",
+        "G1007-C15-main-06535f9c6ea65ba18903",
+        "G1007-C15-main-080a9da4049130e49a0b",
+        "G1007-C15-main-1808afe19a879091cdf3",
+        "G1007-C15-main-1c8b49601ed15773dd1a",
+        "G1007-C15-main-20b2f9c560d15d062da6",
+        "G1007-C15-main-27102c2b422458e0a104",
+        "G1007-C15-main-28d0947facc163609edd",
+        "G1007-C15-main-32b4998f04d9e21c9a25",
+        "G1007-C15-main-3605559c2c5c3a9ea402",
+        "G1007-C15-main-36c099ae6b1bdc2018d4",
+        "G1007-C15-main-41d9553b137e676544f2",
+        "G1007-C15-main-4622dd743c58a730f7f2",
+        "G1007-C15-main-6367ca36d544816804c2",
+        "G1007-C15-main-64a6194b3d90fa0220a4",
+        "G1007-C15-main-657324118d3e3c6bd0db",
+        "G1007-C15-main-66958c7d3c2789a869f1",
+        "G1007-C15-main-723eb6ae33c021b30777",
+        "G1007-C15-main-85a3ce51ca17ea15db89",
+        "G1007-C15-main-8e786ca1ded42e5f0f72",
+        "G1007-C15-main-9ab7683b4ca4e95a738f",
+        "G1007-C15-main-a2709dcf367b6f080f44",
+        "G1007-C15-main-a70548d6503585a08112",
+        "G1007-C15-main-a8c38a7ec9d8303aace1",
+        "G1007-C15-main-a8c4ce7b3652fc94b46a",
+        "G1007-C15-main-adcf0e7d1228704405c3",
+        "G1007-C15-main-b4067658753ca1c78bac",
+        "G1007-C15-main-b4ba5193fd98ccf942c2",
+        "G1007-C15-main-bd0bce6bb349b8368b8b",
+        "G1007-C15-main-cc35329563203426970a",
+        "G1007-C15-main-cfb05db9ce1c93c7cf8a",
+        "G1007-C15-main-de400ac0f93dd5c96724",
+        "G1007-C15-main-de4780f4d59ed1065f53",
+        "G1007-C15-main-de92c187f4caf868dfba",
+        "G1007-C15-main-e1681618d3b1869d955c",
+        "G1007-C15-main-e49b1254ed8ca9d8db67",
+        "G1007-C15-main-e964fb25e45bc8654294",
+        "G1007-C15-main-fb581ee31eb53755f57e"
+      ],
+      "category_l1": "经营与机构许可",
+      "category_l2": "营业执照",
+      "country": "中国",
+      "surface": "正本照面",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "2019年A格式基础上，自2022-09-01新核发采用调整版；字段相对位置依据市监注发〔2022〕71号附件格式A正本示意图",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V6-C16-legal",
+      "entity_id": "C16-legal",
+      "material_kind": "paper_document",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C16-legal-039738e97395d0f906f5",
+        "G1007-C16-legal-053624cd8882cdf5c8e3",
+        "G1007-C16-legal-1438a4b47c6bca77589a",
+        "G1007-C16-legal-19e0e48ef6ea7977563d",
+        "G1007-C16-legal-1f58188e71ea275f0c67",
+        "G1007-C16-legal-222daf4051411685dbec",
+        "G1007-C16-legal-23d4ccb6bfc03e12a6cb",
+        "G1007-C16-legal-2770de068f9253086aa2",
+        "G1007-C16-legal-2b13383559517c270eb2",
+        "G1007-C16-legal-3911bb5bc07a667061bd",
+        "G1007-C16-legal-3cb864e5a8538ee33d04",
+        "G1007-C16-legal-3e6e57ca84cdf525864b",
+        "G1007-C16-legal-3f5063c90d125c9da4c9",
+        "G1007-C16-legal-4ccc63dc8127396a98a8",
+        "G1007-C16-legal-55b4ce612a84b7d95eee",
+        "G1007-C16-legal-5bebebb45c899ee399a4",
+        "G1007-C16-legal-5cf0eda415ce0063ea46",
+        "G1007-C16-legal-63d37f66142676dfbe7e",
+        "G1007-C16-legal-7c9aa5bde9506faf5445",
+        "G1007-C16-legal-8d7b5bff600864c68d8f",
+        "G1007-C16-legal-b6af7f705fdedb790644",
+        "G1007-C16-legal-c5c1c1ec2e633907df31",
+        "G1007-C16-legal-ccaf84d9bd52e6e2602b",
+        "G1007-C16-legal-da327c690a2e79e83985",
+        "G1007-C16-legal-e4abeaef1149439f4dbf",
+        "G1007-C16-legal-effabefb04984cd55ab5",
+        "G1007-C16-legal-f077c353eba2dcd58b84",
+        "G1007-C16-legal-f4dd2f5d8d8afcbc480d"
+      ],
+      "category_l1": "资格与技能",
+      "category_l2": "法律职业资格证书",
+      "country": "中国",
+      "surface": "证书正文面",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "司法部令第146号；样式由司法部统一制定（未公开）",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-C16-teacher",
+      "entity_id": "C16-teacher",
+      "material_kind": "page_or_booklet",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C16-teacher-1512692cad887e97c767",
+        "G1007-C16-teacher-1d06d6704e16223a5dab",
+        "G1007-C16-teacher-29833fbe5d7a24a1bc55",
+        "G1007-C16-teacher-327749e151c2eefd020a",
+        "G1007-C16-teacher-3c25fcf6a3f49bc4d7f7",
+        "G1007-C16-teacher-48a16a38b27ade909319",
+        "G1007-C16-teacher-59b6588f5d89d2e74332",
+        "G1007-C16-teacher-6749c3c743cd65c3095b",
+        "G1007-C16-teacher-68f20a0f33185dd2ec57",
+        "G1007-C16-teacher-6e5069e2c43bd8031928",
+        "G1007-C16-teacher-91a77fed62f95b627efb",
+        "G1007-C16-teacher-92e619c905d148428e78",
+        "G1007-C16-teacher-9feb403b0c7b67d8e0bf",
+        "G1007-C16-teacher-a86a909df5745cebd9bb",
+        "G1007-C16-teacher-b2450cbcaf81f6637e4f",
+        "G1007-C16-teacher-c8f7cbb6abcc7a121368",
+        "G1007-C16-teacher-ce16747a94e7d9925057",
+        "G1007-C16-teacher-ce7675962a208466cf6c",
+        "G1007-C16-teacher-d1225e19c77e83fd8f39",
+        "G1007-C16-teacher-e06646e0f27cb8da90a5",
+        "G1007-C16-teacher-e2dcbcd331ffaa556c27",
+        "G1007-C16-teacher-f66db6b166e6c570330b",
+        "G1007-C16-teacher-fc77bf7972374963fb03"
+      ],
+      "category_l1": "资格与技能",
+      "category_l2": "教师资格证书",
+      "country": "中国",
+      "surface": "内页（2001历史版内容）",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "教人〔2001〕6 号（2001 年版，按历史版本锁定；现行性未核）",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-C17-food",
+      "entity_id": "C17-food",
+      "material_kind": "paper_document",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C17-food-0650ffd28f5f4b66f538",
+        "G1007-C17-food-0b6cf9be337551eb1783",
+        "G1007-C17-food-1fc85b55d9753a415048",
+        "G1007-C17-food-39cc32215fb9140b520a",
+        "G1007-C17-food-487c7f42517776e01c3d",
+        "G1007-C17-food-5263586cfce9caf04fcd",
+        "G1007-C17-food-6446bfe4725098c3c015",
+        "G1007-C17-food-6ed5955e09d0e89422f6",
+        "G1007-C17-food-74c6f17fe024eee0bfda",
+        "G1007-C17-food-a3d233e3c7dc9131a985",
+        "G1007-C17-food-ad946b87c363da77ddb8",
+        "G1007-C17-food-b81adb19097ae4ee3ccc",
+        "G1007-C17-food-bef535a9aaa407040568",
+        "G1007-C17-food-db922da78a858b2b8b2c",
+        "G1007-C17-food-ddcdb1b0300763861243",
+        "G1007-C17-food-e1e86d2bc341ecac3af7",
+        "G1007-C17-food-ed2e438ffe75c00070d0",
+        "G1007-C17-food-f7a83eb317339a28f88c"
+      ],
+      "category_l1": "经营与机构许可",
+      "category_l2": "食品经营许可证",
+      "country": "中国",
+      "surface": "正本",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "2019-06-01 起调整版式（市场监管总局公告 2019 年第 14 号）；2019-06-01 前已发原式样证在有效期内继续有效",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V6-C17-school",
+      "entity_id": "C17-school",
+      "material_kind": "paper_document",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C17-school-03183d34801cdad1b98b",
+        "G1007-C17-school-05018169dc4ed71b3225",
+        "G1007-C17-school-0c6a2d21bf6c7f7adc78",
+        "G1007-C17-school-0c98d8c525c0d20fe562",
+        "G1007-C17-school-0d544c3b24922e286447",
+        "G1007-C17-school-274e7688847f9a5948b4",
+        "G1007-C17-school-2e52e9c48bbce51c35ef",
+        "G1007-C17-school-3a1f8ef10e613f0158c0",
+        "G1007-C17-school-48e5f08dc96d3b58c816",
+        "G1007-C17-school-4ced90d6be46fc998a9e",
+        "G1007-C17-school-50c542817939d78154e4",
+        "G1007-C17-school-6061cfad16ea41273940",
+        "G1007-C17-school-6548d6866829f15ddc7d",
+        "G1007-C17-school-65a96f585c258b6a5297",
+        "G1007-C17-school-7cee2d1ea67cd28261b2",
+        "G1007-C17-school-908d91cb417d90b14888",
+        "G1007-C17-school-94f0bfa8d9f7b167f29e",
+        "G1007-C17-school-b03872cdd0fce9868b9d",
+        "G1007-C17-school-b2e7a6e52fd5afe1f3a2",
+        "G1007-C17-school-e664777ceec68af21546",
+        "G1007-C17-school-e755536c09890dcb42e4",
+        "G1007-C17-school-f302cc6352000d1d474d",
+        "G1007-C17-school-f677039ec15a3f581fb3"
+      ],
+      "category_l1": "经营与机构许可",
+      "category_l2": "办学许可证",
+      "country": "中国",
+      "surface": "许可证正本",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "教发厅〔2020〕5号正本；日期行为②观察",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-C18-main",
+      "entity_id": "C18-main",
+      "material_kind": "electronic",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C18-main-118c79a375c36c0a8541",
+        "G1007-C18-main-11aef12028951895f75c",
+        "G1007-C18-main-1f6235041e9163dae347",
+        "G1007-C18-main-3d2db7ccb7143ea5b7c6",
+        "G1007-C18-main-49b59c1c9bed9660cb30",
+        "G1007-C18-main-513c494e7c065e9bffd6",
+        "G1007-C18-main-6aae289396ac6d97d0ad",
+        "G1007-C18-main-6cee6249461279ea2696",
+        "G1007-C18-main-73f2e20bf8039f3c79f9",
+        "G1007-C18-main-750555a73ba76f2ea0e0",
+        "G1007-C18-main-7ed91c990ef5650cb286",
+        "G1007-C18-main-96b6a812f61f261c4188",
+        "G1007-C18-main-afb8ac051199f2f1fc3b",
+        "G1007-C18-main-bb5571c0a0ad612c81ea",
+        "G1007-C18-main-ce37130e79ad329e5b81"
+      ],
+      "category_l1": "民事、社保与财产",
+      "category_l2": "退休证明",
+      "country": "中国",
+      "surface": "APP展示样式",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "选定实体＝威海市市本级企业职工电子退休证明（2025-12 起启用，依据 S185）",
+      "capture_labels": {
+        "scan": "电子平面呈现",
+        "front_photo": "屏幕正拍",
+        "oblique_photo": "屏幕斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V5-C19-property",
+      "entity_id": "C19-property",
+      "material_kind": "page_or_booklet",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-C19-property-17b62d6ebc95a68ca0fd",
+        "G1007-C19-property-2e1bb1ae7b293f81b6a4",
+        "G1007-C19-property-32ae6ad0c0ee1b9a9c38",
+        "G1007-C19-property-3aa52aa48816e383ca66",
+        "G1007-C19-property-3cbf3539b60958525392",
+        "G1007-C19-property-50e285ccf75252860f92",
+        "G1007-C19-property-5ea02ac5527654477927",
+        "G1007-C19-property-79d0555cc8ec1fccf79f",
+        "G1007-C19-property-9a39f95612ab080db729",
+        "G1007-C19-property-a716adb1c10982e8a8ce",
+        "G1007-C19-property-c91b5ba9216f89ce5808",
+        "G1007-C19-property-cc594ed73b82aa9909ff",
+        "G1007-C19-property-d98cd71f02ccdb4f19ca",
+        "G1007-C19-property-e478b6848ddfb507e788",
+        "G1007-C19-property-f4efab09d569e7020ba8"
+      ],
+      "category_l1": "民事、社保与财产",
+      "category_l2": "不动产权证",
+      "country": "中国",
+      "surface": "内页登记事项表",
+      "instruction_language": "中文",
+      "visible_language": "中文",
+      "selected_edition": "单一版现有主规格选定登记事项表＋表头补证；日期/监制/编号位于宣告页，不塞进所选页",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V6-E01-us",
+      "entity_id": "E01-us",
+      "material_kind": "card",
+      "aspect_ratio": "4:3",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-E01-us-01885d8b1f54607cc387",
+        "G1007-E01-us-0355f60bdd18cfd17c78",
+        "G1007-E01-us-05c9dbc6a16b96e3b9ae",
+        "G1007-E01-us-060b9e57bbeaa9022447",
+        "G1007-E01-us-19577bda15c0ba7999a6",
+        "G1007-E01-us-1b6ccbbbf26787bbf1b2",
+        "G1007-E01-us-215672d938cbd926eba4",
+        "G1007-E01-us-27f2940afd2528add63a",
+        "G1007-E01-us-304e8715b7f392cb3521",
+        "G1007-E01-us-33a171b8053179f90032",
+        "G1007-E01-us-370488e572fb062354e9",
+        "G1007-E01-us-38f51f69b2a09fd7ceb9",
+        "G1007-E01-us-3f6214c2f16eb4574d60",
+        "G1007-E01-us-4433aabd6e8475ad65f0",
+        "G1007-E01-us-4a346b90333adbe048ba",
+        "G1007-E01-us-4ce5f1640ed99e0a7a7f",
+        "G1007-E01-us-502d60a9cce664b36b20",
+        "G1007-E01-us-5617c6389787e7750788",
+        "G1007-E01-us-5805ee678b6a3d21ac67",
+        "G1007-E01-us-63a4f094a2a875508a53",
+        "G1007-E01-us-716937ac776706fb9118",
+        "G1007-E01-us-74d92b2d15744b2639cb",
+        "G1007-E01-us-79441fe23c864a615f3c",
+        "G1007-E01-us-7a0add313dbf25f057fc",
+        "G1007-E01-us-7bce9cfa042dbc539133",
+        "G1007-E01-us-8625042f4d55c00e69fb",
+        "G1007-E01-us-8ef65f2b077815a2db43",
+        "G1007-E01-us-8f953b2d234658962802",
+        "G1007-E01-us-9ccf43409973e311fa2e",
+        "G1007-E01-us-aca322a54ef31147a7b3",
+        "G1007-E01-us-ade6aa13a45157656e6e",
+        "G1007-E01-us-b1bf318b0c3340e13f27",
+        "G1007-E01-us-c3282d9b102d18929a1a",
+        "G1007-E01-us-c41f8e79d89c0a4829df",
+        "G1007-E01-us-ca38fbb80b3113d9026e",
+        "G1007-E01-us-d6b2df28a49def30d6c7",
+        "G1007-E01-us-d86cff42b5e44dab5b59",
+        "G1007-E01-us-d9140470a05d550dc859",
+        "G1007-E01-us-d982fcb8472599b80cfd",
+        "G1007-E01-us-e10692bf6440bfc34079",
+        "G1007-E01-us-f1b3f4d4f615d49f2ac8",
+        "G1007-E01-us-f7484028369249c283c5",
+        "G1007-E01-us-f8a90b39015529a2f2a2",
+        "G1007-E01-us-fcb44de1e1e2661c16e4",
+        "G1007-E01-us-fef881f2af92b117bd25"
+      ],
+      "category_l1": "身份与出入境",
+      "category_l2": "身份证明卡",
+      "country": "美国",
+      "surface": "身份证明卡正面",
+      "instruction_language": "英文",
+      "visible_language": "英文",
+      "selected_edition": "2010 Secure Card；历史样式",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V6-E02-uk",
+      "entity_id": "E02-uk",
+      "material_kind": "page_or_booklet",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-E02-uk-226357cba8ec1849fad5",
+        "G1007-E02-uk-25bf908892f8121432c8",
+        "G1007-E02-uk-309341814ca6761001de",
+        "G1007-E02-uk-339e9c4107b165807477",
+        "G1007-E02-uk-4f73383cef54ad9dfd8d",
+        "G1007-E02-uk-6c0d0033f93786d3bac3",
+        "G1007-E02-uk-74debb79a40fbef0277e",
+        "G1007-E02-uk-a350991c858e136b225c",
+        "G1007-E02-uk-a65b3620ef0613768259",
+        "G1007-E02-uk-a911a7d13946bbcce68c",
+        "G1007-E02-uk-bbdf92df315c90f5538e",
+        "G1007-E02-uk-c0a32504cccc033ee960",
+        "G1007-E02-uk-cb0417835dc19267d0d6",
+        "G1007-E02-uk-d02b1fadcfce4005a21e",
+        "G1007-E02-uk-dd47d15a6e9ac68cbd41",
+        "G1007-E02-uk-f66e9b83441f52b4cdaa",
+        "G1007-E02-uk-fbfd58e47ecd6cd39849"
+      ],
+      "category_l1": "身份与出入境",
+      "category_l2": "护照",
+      "country": "英国",
+      "surface": "资料页可读字段区；观察页和MRZ不呈现",
+      "instruction_language": "英文",
+      "visible_language": "英文",
+      "selected_edition": "2025 Series D specimen资料页；仅文字结构",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-E02-us",
+      "entity_id": "E02-us",
+      "material_kind": "page_or_booklet",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-E02-us-0c8bd638bd25d733a7a7",
+        "G1007-E02-us-10a177b7a7844199f4bb",
+        "G1007-E02-us-1af9d3d898c5da9e446c",
+        "G1007-E02-us-1c5dfc2989a06aab2869",
+        "G1007-E02-us-20ae9f7672566f30b4b2",
+        "G1007-E02-us-2146f1af6b1bb737fb27",
+        "G1007-E02-us-220fd07fab6e273678e7",
+        "G1007-E02-us-22ea2860196ab3ccb98c",
+        "G1007-E02-us-28464afcbc4ee6ba24c6",
+        "G1007-E02-us-2e8b942dac8c666b3df1",
+        "G1007-E02-us-3ef87c4bcdb92e6e39e6",
+        "G1007-E02-us-54eb6edcde8e19ee311d",
+        "G1007-E02-us-5908ba9954eff066ef70",
+        "G1007-E02-us-60b75d14d6a9f939b4fa",
+        "G1007-E02-us-882c6a1eb2ff1a679b3f",
+        "G1007-E02-us-919fc77e420e950b2c6c",
+        "G1007-E02-us-94e26821a47204276237",
+        "G1007-E02-us-cc842b884bbee303b9b0"
+      ],
+      "category_l1": "身份与出入境",
+      "category_l2": "护照",
+      "country": "美国",
+      "surface": "资料页",
+      "instruction_language": "英文",
+      "visible_language": "英文",
+      "selected_edition": "样例签发日期 2016-08-07，载于 ICE M-396（2018-02 版）执法识别指南",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-E03-us",
+      "entity_id": "E03-us",
+      "material_kind": "visa_sticker",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-E03-us-0c0a232da631982898ce",
+        "G1007-E03-us-1b22b5724eb9b2ea9312",
+        "G1007-E03-us-282449aad5d667a6095c",
+        "G1007-E03-us-285a1cfe0e245dce1629",
+        "G1007-E03-us-2b2f632ef4356d7c9f6e",
+        "G1007-E03-us-37ee6dd6923aa494c89a",
+        "G1007-E03-us-391908c314e47a4b4389",
+        "G1007-E03-us-4539b1da6b07e0cb2e80",
+        "G1007-E03-us-45b319bc4d12492e709d",
+        "G1007-E03-us-48551de6a98180616b75",
+        "G1007-E03-us-4980a89ad4f865c14859",
+        "G1007-E03-us-53842d51b05e5ab0ce90",
+        "G1007-E03-us-9045038fe85adb7dd3f2",
+        "G1007-E03-us-9ad851069fccb2b4cd47",
+        "G1007-E03-us-9b41848018f3c80e5535",
+        "G1007-E03-us-9c791a6484aad9587350",
+        "G1007-E03-us-a0311939db3c976bc52c",
+        "G1007-E03-us-afc708464334fc5d8775",
+        "G1007-E03-us-bfa79e35d86152787e69",
+        "G1007-E03-us-bfd56d64a1df74584238",
+        "G1007-E03-us-d01339e19d0db00981bc",
+        "G1007-E03-us-d30d39b460c15b4521cc",
+        "G1007-E03-us-d357049e38ebecce43a0",
+        "G1007-E03-us-eb06c091e96d50800881",
+        "G1007-E03-us-f41744c3606806afbb8f"
+      ],
+      "category_l1": "身份与出入境",
+      "category_l2": "签证",
+      "country": "美国",
+      "surface": "正面",
+      "instruction_language": "英文",
+      "visible_language": "英文",
+      "selected_edition": "样例版式：2004-08-17 签发的 R 类 B1/B2 样例贴纸（图版载于 ICE M-396《Guide to Selected U.S. Travel and Identity Documents》2018-02 版）；2026 年现行贴纸版式未取得依据",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V6-E04-uk",
+      "entity_id": "E04-uk",
+      "material_kind": "paper_document",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-E04-uk-27fcfb418dba301a466f",
+        "G1007-E04-uk-2bfc98caa64fb164d419",
+        "G1007-E04-uk-3191631555ed765795e3",
+        "G1007-E04-uk-33edf3133a5129ff3b41",
+        "G1007-E04-uk-4301d66363a86ecee1bd",
+        "G1007-E04-uk-6fdf3175c155c16507dc",
+        "G1007-E04-uk-8cb04423cfd2c21ff37c",
+        "G1007-E04-uk-9808bc64cb038d3c4648",
+        "G1007-E04-uk-b25c6b8994e0170cad45",
+        "G1007-E04-uk-da55aa4c7b485fae3e41",
+        "G1007-E04-uk-e13fb3a33bf47141fb69",
+        "G1007-E04-uk-e5476c240ee4de0fff8e",
+        "G1007-E04-uk-eb3f48e04adbbc306376",
+        "G1007-E04-uk-f9e4b41772c355b07510",
+        "G1007-E04-uk-fbfdf4bd11fc00f77415"
+      ],
+      "category_l1": "民事、社保与财产",
+      "category_l2": "婚姻证明",
+      "country": "英国",
+      "surface": "核证副本正文面",
+      "instruction_language": "英文",
+      "visible_language": "英文",
+      "selected_edition": "GRO 核证副本旧式（1907 栏名）；十项标注版实物",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V6-E04-us",
+      "entity_id": "E04-us",
+      "material_kind": "paper_document",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-E04-us-0432d8f8b0a8ef10958c",
+        "G1007-E04-us-0f9b1d96605905676079",
+        "G1007-E04-us-138523303b900b0e1daf",
+        "G1007-E04-us-20bb31cda9a7994e8376",
+        "G1007-E04-us-2d6e8e9777b02826ba04",
+        "G1007-E04-us-39c90e874f16ae9a5b72",
+        "G1007-E04-us-42db34519a77f8b37973",
+        "G1007-E04-us-46d816e98c07b9c86128",
+        "G1007-E04-us-642a288b73b36dbb531b",
+        "G1007-E04-us-666c871e6e3162b37a42",
+        "G1007-E04-us-80aff583611f13c88299",
+        "G1007-E04-us-81e3032d0ecddd844056",
+        "G1007-E04-us-82afafa305d179307fa5",
+        "G1007-E04-us-bc592c7445624e55e0f1",
+        "G1007-E04-us-f1cf1077c49496f8276d"
+      ],
+      "category_l1": "民事、社保与财产",
+      "category_l2": "婚姻证明",
+      "country": "美国",
+      "surface": "核证副本正文面",
+      "instruction_language": "英文",
+      "visible_language": "英文",
+      "selected_edition": "San Diego VS-117 (01/15/2015)成品核证副本；县机构虚构适配",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V6-E05-uk",
+      "entity_id": "E05-uk",
+      "material_kind": "card",
+      "aspect_ratio": "4:3",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-E05-uk-01d82c35e37f271f5be8",
+        "G1007-E05-uk-07a1b38915b36b53e6d8",
+        "G1007-E05-uk-0873afa04853291d9c33",
+        "G1007-E05-uk-1fad1f9fda71436eda12",
+        "G1007-E05-uk-26213298f097365c05bd",
+        "G1007-E05-uk-2c7e2a38562d10c8e0e4",
+        "G1007-E05-uk-32f34f3e3f687d9bd467",
+        "G1007-E05-uk-545bc377eb5fd45d58b8",
+        "G1007-E05-uk-571833bcc05dd79f57af",
+        "G1007-E05-uk-7eb34d3894912ff8e0c6",
+        "G1007-E05-uk-853b15186edce8d77445",
+        "G1007-E05-uk-8adcfcd616b8375878e3",
+        "G1007-E05-uk-8f2b15481e5ac52b9631",
+        "G1007-E05-uk-93b2da74fff0473135dd",
+        "G1007-E05-uk-94b56b37108ade8ac577",
+        "G1007-E05-uk-94ba08c3d93dae0833d7",
+        "G1007-E05-uk-9cb3bfd480b1c44cb4a6",
+        "G1007-E05-uk-9e4a229c6d7121776605",
+        "G1007-E05-uk-b477ceb654e7d2a0aa1b",
+        "G1007-E05-uk-e08e951e49e93b68f9c0",
+        "G1007-E05-uk-eaede04b7a2ed05a43f8",
+        "G1007-E05-uk-ec55f3f14bfcf5e4d71a",
+        "G1007-E05-uk-ef79670e4c6a76dd32fd",
+        "G1007-E05-uk-f268eba0a6823a3d62fe",
+        "G1007-E05-uk-fa040e523952a7308000"
+      ],
+      "category_l1": "教育与荣誉",
+      "category_l2": "学生证与校园卡",
+      "country": "英国",
+      "surface": "学生卡正面",
+      "instruction_language": "英文",
+      "visible_language": "英文",
+      "selected_edition": "官方卡面样图；版次未标",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V5-E05-us",
+      "entity_id": "E05-us",
+      "material_kind": "card",
+      "aspect_ratio": "4:3",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-E05-us-06e87b027b069650a79d",
+        "G1007-E05-us-0edc67d03940eba4a39d",
+        "G1007-E05-us-286a2ba1c15d1fe29a4b",
+        "G1007-E05-us-2ed2b99186ecf64e97e2",
+        "G1007-E05-us-513319e85f1ea6202713",
+        "G1007-E05-us-55a254655202d1ea49d6",
+        "G1007-E05-us-6ef05ea9a40bd0261c28",
+        "G1007-E05-us-73f76092ab741317ab63",
+        "G1007-E05-us-77eabb424e8a1d3a64ee",
+        "G1007-E05-us-7f9682cf1f19132f5223",
+        "G1007-E05-us-909d39567c51e472b95a",
+        "G1007-E05-us-93de91f36d3df294176b",
+        "G1007-E05-us-989654d8da5c790b424f",
+        "G1007-E05-us-9ff83e69aefb6a4456e4",
+        "G1007-E05-us-aaa81e79cfbdedbd5d7d",
+        "G1007-E05-us-bbd8a3adfbed04cb275c",
+        "G1007-E05-us-c3ce3cfa460080a949ca",
+        "G1007-E05-us-c65a61ccfa7c97a8d3cb",
+        "G1007-E05-us-ca873c72de4e6e9edb09",
+        "G1007-E05-us-db91bf36eb601a2b36fa",
+        "G1007-E05-us-e28355516f4f5184bd90",
+        "G1007-E05-us-ecac64f6d126fa208108",
+        "G1007-E05-us-f179e9368bd96546ceb4",
+        "G1007-E05-us-f770972a5096a10d09fc",
+        "G1007-E05-us-ff477991bcad57a0d3ea"
+      ],
+      "category_l1": "教育与荣誉",
+      "category_l2": "学生证与校园卡",
+      "country": "美国",
+      "surface": "卡面文字候选",
+      "instruction_language": "英文",
+      "visible_language": "英文",
+      "selected_edition": "BuckID官方文字定义的法定姓、首选名、短号、长号；没有样图，不添加照片/有效期/版面位置",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V6-E06-uk",
+      "entity_id": "E06-uk",
+      "material_kind": "paper_document",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-E06-uk-1beaaffa11ccf8ed5f0a",
+        "G1007-E06-uk-2205f7dcef86875680f9",
+        "G1007-E06-uk-3e2a6510e050c2625b26",
+        "G1007-E06-uk-51a6179650f89116b2a3",
+        "G1007-E06-uk-51daf57bd82728370475",
+        "G1007-E06-uk-53a165de2408bc4b04e2",
+        "G1007-E06-uk-6b58c72b1f70c834faf9",
+        "G1007-E06-uk-6ecad5764f4bc7d741f7",
+        "G1007-E06-uk-7f5e5eddf881d5fd9e09",
+        "G1007-E06-uk-893b3c0b1e3cce3dfdba",
+        "G1007-E06-uk-9e36a70b5309dd652c3c",
+        "G1007-E06-uk-d2505c2fefa5048f4054",
+        "G1007-E06-uk-d276d4a9c54801c937cb",
+        "G1007-E06-uk-d6959051049e56db3f55",
+        "G1007-E06-uk-e7e1317d67a6fcce3671",
+        "G1007-E06-uk-ebc67f7fdfa6c01ed38b",
+        "G1007-E06-uk-f69addccd0c278305f60"
+      ],
+      "category_l1": "教育与荣誉",
+      "category_l2": "学位证书",
+      "country": "英国",
+      "surface": "学位证书正面",
+      "instruction_language": "英文",
+      "visible_language": "英文",
+      "selected_edition": "2021 授予版；持证人公开帖所摄",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V6-E06-us",
+      "entity_id": "E06-us",
+      "material_kind": "paper_document",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-E06-us-09983710eaf9f25a925f",
+        "G1007-E06-us-155b9ed652a20796cbca",
+        "G1007-E06-us-1b8bf40368612542ff40",
+        "G1007-E06-us-1c278eb23006abda9ac9",
+        "G1007-E06-us-2e85dd5c62e14d3c05c4",
+        "G1007-E06-us-306cf99cb9697eb12284",
+        "G1007-E06-us-62842064b153ce8ea48e",
+        "G1007-E06-us-6285fc0f286c5e699bb4",
+        "G1007-E06-us-6ec3ea028e3696097224",
+        "G1007-E06-us-7fa3e22106035ea7dbcd",
+        "G1007-E06-us-84167c47591b57427576",
+        "G1007-E06-us-8765c659e02a1fc3e457",
+        "G1007-E06-us-8c1e6a2fcfacb3f28a80",
+        "G1007-E06-us-b63b089cec8bf90cf7f6",
+        "G1007-E06-us-b870f5314d51375f8d06",
+        "G1007-E06-us-c474a9f4fe5840078c1d",
+        "G1007-E06-us-c49b5f9934f8e0e18cd9",
+        "G1007-E06-us-d1e0845fc7b547762fc6",
+        "G1007-E06-us-d3f5a13ce1df11db4481",
+        "G1007-E06-us-dd5df10f8889b8aa777e",
+        "G1007-E06-us-e47aafe3f3666d118b5f",
+        "G1007-E06-us-ea94a17ee1c970f083cc",
+        "G1007-E06-us-f0b8784c0648e8a9da21",
+        "G1007-E06-us-f978b7890921ac9a7db2"
+      ],
+      "category_l1": "教育与荣誉",
+      "category_l2": "学位证书",
+      "country": "美国",
+      "surface": "学位证书正面",
+      "instruction_language": "英文",
+      "visible_language": "英文",
+      "selected_edition": "1992正文参考＋2023校印规范；不宣称1992纸张现行",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V6-E07-uk",
+      "entity_id": "E07-uk",
+      "material_kind": "paper_document",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-E07-uk-183a68be92c6246a4a4c",
+        "G1007-E07-uk-29bc0ec3ff0d6dc45b2c",
+        "G1007-E07-uk-44f7de02890d663bbb50",
+        "G1007-E07-uk-794be4567ec07d78141c",
+        "G1007-E07-uk-b562b7010e75291a8472",
+        "G1007-E07-uk-d42fabbe3369375343d1",
+        "G1007-E07-uk-d5d94073a7b97ce7bd85"
+      ],
+      "category_l1": "教育与荣誉",
+      "category_l2": "竞赛证书",
+      "country": "英国",
+      "surface": "证书正文面",
+      "instruction_language": "英文",
+      "visible_language": "英文",
+      "selected_edition": "2025 IMC金奖或JMC银奖实物；clean only",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V5-E07-us",
+      "entity_id": "E07-us",
+      "material_kind": "paper_document",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-E07-us-1e6621ae164f64e7d6f0",
+        "G1007-E07-us-2a62a20876787329a8b5",
+        "G1007-E07-us-3dc20d90fef44db87a97",
+        "G1007-E07-us-47149cc23ecf4b7a9d99",
+        "G1007-E07-us-6853891a4e4eb9a3d76a",
+        "G1007-E07-us-7cbbfff2995ce152f9b1",
+        "G1007-E07-us-a5c4c21b47bba9d3ab2d",
+        "G1007-E07-us-e5f1d7db797ae8780655"
+      ],
+      "category_l1": "教育与荣誉",
+      "category_l2": "学业表彰证书",
+      "country": "美国",
+      "surface": "2026有边框金/银模板正面",
+      "instruction_language": "英文",
+      "visible_language": "英文",
+      "selected_edition": "PEAP两份官方PDF与本地图像辨认；同版两种奖，不追加编号/公章/分数",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-E08-uk",
+      "entity_id": "E08-uk",
+      "material_kind": "card",
+      "aspect_ratio": "4:3",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-E08-uk-046433752bad1d2146f4",
+        "G1007-E08-uk-08af48d1c4a556b53967",
+        "G1007-E08-uk-0ac6a7169943fbff8a8a",
+        "G1007-E08-uk-0b60de4ea5e21e98850e",
+        "G1007-E08-uk-1af9b3d910f39c264bc7",
+        "G1007-E08-uk-24646c5a2f2b32fd9290",
+        "G1007-E08-uk-25e4712945957ad05b0b",
+        "G1007-E08-uk-292c0779816f57b6935e",
+        "G1007-E08-uk-2b4bcaa9805effbdc47a",
+        "G1007-E08-uk-2c044a324bf59f39bc14",
+        "G1007-E08-uk-37f82ee442f181e15044",
+        "G1007-E08-uk-3878b78837da9fef319e",
+        "G1007-E08-uk-3d81ed496de6c74da4c0",
+        "G1007-E08-uk-45d3f1e500f0c988879d",
+        "G1007-E08-uk-4743df2806401c117909",
+        "G1007-E08-uk-4e6f0ff95492901de1dd",
+        "G1007-E08-uk-4f3e0f1af5d59fd97750",
+        "G1007-E08-uk-52694fd3bf939701745e",
+        "G1007-E08-uk-6497164d513d13132a46",
+        "G1007-E08-uk-6f28b564e67834f51c61",
+        "G1007-E08-uk-76839020f8c0847d8958",
+        "G1007-E08-uk-7c70a6dadd7ae0e421cb",
+        "G1007-E08-uk-7ffbdeb5fc482f1bbc90",
+        "G1007-E08-uk-830fcc56da0f92378566",
+        "G1007-E08-uk-89175fa96940dc6ac317",
+        "G1007-E08-uk-8ce628ea37de4226c46e",
+        "G1007-E08-uk-9420d7d33856d95b1ec3",
+        "G1007-E08-uk-95c922da065483af4fa5",
+        "G1007-E08-uk-97809a9409d80e343ac8",
+        "G1007-E08-uk-98bc0b0e8d3d0c9e21e7",
+        "G1007-E08-uk-9a39ca8be4f81aa17684",
+        "G1007-E08-uk-9b1383767c2f0c002047",
+        "G1007-E08-uk-9e5d7c78d193f1ce0d0e",
+        "G1007-E08-uk-a0de1bd59cdae82b19c4",
+        "G1007-E08-uk-b4e6587ed3d0bfc29db1",
+        "G1007-E08-uk-d605f6514ca8d503f5b2",
+        "G1007-E08-uk-dba06b68d19bce7187ba",
+        "G1007-E08-uk-e43d17e8084465d5dd65",
+        "G1007-E08-uk-e6a6edbefc0432be0742",
+        "G1007-E08-uk-ff73836e71c17c1e15e6"
+      ],
+      "category_l1": "资格与技能",
+      "category_l2": "驾驶证",
+      "country": "英国",
+      "surface": "正面",
+      "instruction_language": "英文",
+      "visible_language": "英文",
+      "selected_edition": "DVLA INS57P 7/25（2025年7月）所载样例，正面标题为UK DRIVING LICENCE、无EU旗帜，对应2021年起版式",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "CP1005-E08",
+      "entity_id": "E08-us",
+      "material_kind": "card",
+      "aspect_ratio": "4:3",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1005-E08-15776e982db9",
+        "G1005-E08-2a2d75af0735",
+        "G1005-E08-370be227a667",
+        "G1005-E08-8498d29d884f",
+        "G1005-E08-9fd9b2abd2c7",
+        "G1005-E08-e975163b4348"
+      ],
+      "category_l1": "资格与技能",
+      "category_l2": "驾驶证",
+      "country": "美国",
+      "surface": "正面",
+      "instruction_language": "英文",
+      "visible_language": "英文",
+      "selected_edition": "2025-09-30起新版（DMV行业通告）；新闻稿2025-10-01称当日起发布；本规格采用新版成人横版正面样卡",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-E08-us",
+      "entity_id": "E08-us",
+      "material_kind": "card",
+      "aspect_ratio": "4:3",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-E08-us-048ab22c07bdd70bbb1e",
+        "G1007-E08-us-090a1c26aeb08815bcbb",
+        "G1007-E08-us-18bb4f9a5f522205133b",
+        "G1007-E08-us-43893709e5f1a3463b47",
+        "G1007-E08-us-446b8ccba885e4330e92",
+        "G1007-E08-us-453d57df279504da5ac7",
+        "G1007-E08-us-5ce322e388a71728a7fe",
+        "G1007-E08-us-5e5f4a70be8097afbf7e",
+        "G1007-E08-us-65ea6a6c362f5a2de467",
+        "G1007-E08-us-6c729493f5d45ab90e12",
+        "G1007-E08-us-71bfe144a74557848a36",
+        "G1007-E08-us-753586f537ad32effc1f",
+        "G1007-E08-us-7b01850e2cd27b03e237",
+        "G1007-E08-us-7de32ec05477148ca596",
+        "G1007-E08-us-991734beb7bfb014927d",
+        "G1007-E08-us-a35857db6d53f4165ea1",
+        "G1007-E08-us-a49ae89cd9fe4cd158fd",
+        "G1007-E08-us-ae0ff78966e485c21218",
+        "G1007-E08-us-b6158c0bdb2ec64a59b3",
+        "G1007-E08-us-ba8d1256b8f11b28a6dc",
+        "G1007-E08-us-c3def7681357394ea343",
+        "G1007-E08-us-c6806f2181e237ef21c3",
+        "G1007-E08-us-ca0061cbfa5f8350ed67",
+        "G1007-E08-us-cb64ca346e3f04de96a7",
+        "G1007-E08-us-d86ed4cda5346a21e2be",
+        "G1007-E08-us-de6d092ae75e8064bfd6",
+        "G1007-E08-us-e026124624080b2cf2c6",
+        "G1007-E08-us-e494397906d252a8adfe",
+        "G1007-E08-us-ea0b47899eb580f47371",
+        "G1007-E08-us-eef7d5ec675bae7d92b4",
+        "G1007-E08-us-f166dd495ca7cf92cfe0",
+        "G1007-E08-us-f2c50e72858eaa336237",
+        "G1007-E08-us-fd805daaf8d3cb503a91",
+        "G1007-E08-us-ff2d0baa93416186510c"
+      ],
+      "category_l1": "资格与技能",
+      "category_l2": "驾驶证",
+      "country": "美国",
+      "surface": "正面",
+      "instruction_language": "英文",
+      "visible_language": "英文",
+      "selected_edition": "2025-09-30起新版（DMV行业通告）；新闻稿2025-10-01称当日起发布；本规格采用新版成人横版正面样卡",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "CP1005-E09",
+      "entity_id": "E09-uk",
+      "material_kind": "paper_document",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1005-E09-022b4455a483",
+        "G1005-E09-1564469eb46a",
+        "G1005-E09-3b819ae036d5",
+        "G1005-E09-604cb64c400f",
+        "G1005-E09-9f44f590aadd",
+        "G1005-E09-c5d391607068"
+      ],
+      "category_l1": "经营与机构许可",
+      "category_l2": "公司成立证书",
+      "country": "英国",
+      "surface": "证书正面",
+      "instruction_language": "英文",
+      "visible_language": "英文",
+      "selected_edition": "private company limited by shares；具体证书印制版次待核",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-E09-uk",
+      "entity_id": "E09-uk",
+      "material_kind": "paper_document",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-E09-uk-04483c2d96a7c6764279",
+        "G1007-E09-uk-07629c1f96dd9bcb2c85",
+        "G1007-E09-uk-0b8bb1d888fd0c96b412",
+        "G1007-E09-uk-16c108ab63bc28dc7911",
+        "G1007-E09-uk-1e27f4d97db661f16a42",
+        "G1007-E09-uk-23149615ad97eb7e4790",
+        "G1007-E09-uk-2602a7764d324f964370",
+        "G1007-E09-uk-27e5f5dcb017524ce749",
+        "G1007-E09-uk-3b7c1cd063ac801ccbca",
+        "G1007-E09-uk-4734a53cc612c68791cb",
+        "G1007-E09-uk-474507a30a8f5f04369d",
+        "G1007-E09-uk-4cc1d21760a033547ec1",
+        "G1007-E09-uk-53f5d59b89fbe80d8a72",
+        "G1007-E09-uk-54007510b1a3d4702650",
+        "G1007-E09-uk-569713d647c8c8ed3020",
+        "G1007-E09-uk-5ae4ca2d7cda14d2a9df",
+        "G1007-E09-uk-5b813bb328efca03ffdd",
+        "G1007-E09-uk-5e913c06f654bd89b5d3",
+        "G1007-E09-uk-5f7475ad5d6bcf60ab14",
+        "G1007-E09-uk-653313f8b98cfbec5df7",
+        "G1007-E09-uk-69e4e1929eb1ca9fc30c",
+        "G1007-E09-uk-9052f4ffcbc3c86faff3",
+        "G1007-E09-uk-920ab11d8c57b13f940d",
+        "G1007-E09-uk-92ffd5bc4e74a7e54a36",
+        "G1007-E09-uk-99370b1620239c8aa031",
+        "G1007-E09-uk-ae805d988b83e1a95060",
+        "G1007-E09-uk-c0b579c81f519ac1a5dc",
+        "G1007-E09-uk-c58b477c99b38abb87d5",
+        "G1007-E09-uk-c6b7144b1dbe0bc59ceb",
+        "G1007-E09-uk-c71f04cddfd9ab4ad0ce",
+        "G1007-E09-uk-d32bda47a89b9c8c8d9d",
+        "G1007-E09-uk-de2b923fda0bdfbfb995",
+        "G1007-E09-uk-df12ed0a120b4b8ca7b9",
+        "G1007-E09-uk-e43e259e554d095a34a4",
+        "G1007-E09-uk-e5b5d6d8efd0110a4b88",
+        "G1007-E09-uk-e8d01d296262f4c14a42",
+        "G1007-E09-uk-e9f4e13aa48f92016a69",
+        "G1007-E09-uk-ef814e88bcf27d141573",
+        "G1007-E09-uk-f1df2313be59b54db4ea",
+        "G1007-E09-uk-f211224b91c8d88a2f34",
+        "G1007-E09-uk-f9a4c0bd79b8b05c12ee",
+        "G1007-E09-uk-fcbe2a02d6a9f2d25b55",
+        "G1007-E09-uk-fcc11d2e62801e16044a",
+        "G1007-E09-uk-fffb3d3b100601e5028b"
+      ],
+      "category_l1": "经营与机构许可",
+      "category_l2": "公司成立证书",
+      "country": "英国",
+      "surface": "证书正面",
+      "instruction_language": "英文",
+      "visible_language": "英文",
+      "selected_edition": "private company limited by shares；具体证书印制版次待核",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V6-E10-cslb",
+      "entity_id": "E10-cslb",
+      "material_kind": "paper_document",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-E10-cslb-37860a1b4a99743b0145",
+        "G1007-E10-cslb-3b3144883a2a78a53628",
+        "G1007-E10-cslb-708b8d84d089b53a4565",
+        "G1007-E10-cslb-c87943f4d8938af0e2a3",
+        "G1007-E10-cslb-dae0b44319fcb87c7a5f"
+      ],
+      "category_l1": "资格与技能",
+      "category_l2": "承包商执照",
+      "country": "美国",
+      "surface": "挂墙文字候选",
+      "instruction_language": "英文",
+      "visible_language": "英文",
+      "selected_edition": "2025官方指南字段；选挂墙件",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V6-E10-gmc",
+      "entity_id": "E10-gmc",
+      "material_kind": "paper_document",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-E10-gmc-1ef4d114c1f2421553bf",
+        "G1007-E10-gmc-2367a6e8fda5b9fa1ef5",
+        "G1007-E10-gmc-5421429042e3d374296d",
+        "G1007-E10-gmc-5525d838bee4b6d208ec",
+        "G1007-E10-gmc-6556b86f1de0b4b1c65f",
+        "G1007-E10-gmc-72372315b0c76c0cf0ae",
+        "G1007-E10-gmc-7cef1fddc8c9c60f961f",
+        "G1007-E10-gmc-7e6126f7ca14ff6fec25",
+        "G1007-E10-gmc-c875a0bfcc6bea7f976c",
+        "G1007-E10-gmc-de99fb86e58df8b4bebe"
+      ],
+      "category_l1": "资格与技能",
+      "category_l2": "医疗专业注册或状态证明",
+      "country": "英国",
+      "surface": "CGS/CCPS文字候选",
+      "instruction_language": "英文",
+      "visible_language": "英文",
+      "selected_edition": "GMC官方CGS/CCPS说明字段；不套完整注册证书",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V6-E10-hcpc",
+      "entity_id": "E10-hcpc",
+      "material_kind": "paper_document",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-E10-hcpc-21dcb9d56bfd29299b83",
+        "G1007-E10-hcpc-40f839b9b3fded211864",
+        "G1007-E10-hcpc-5443e023158a7f0abbe8",
+        "G1007-E10-hcpc-c63f665b049752d7717e",
+        "G1007-E10-hcpc-fd21f0821e3c45d0f9b8"
+      ],
+      "category_l1": "资格与技能",
+      "category_l2": "医疗专业注册或状态证明",
+      "country": "英国",
+      "surface": "单页状态确认书",
+      "instruction_language": "英文",
+      "visible_language": "英文",
+      "selected_edition": "2025 Confirmation of registration status实物",
+      "capture_labels": {
+        "scan": "平扫（扫描件样式）",
+        "front_photo": "正面自然拍摄",
+        "oblique_photo": "轻度斜拍"
+      }
+    },
+    {
+      "profile_id": "P1007-V6-E10-nmc",
+      "entity_id": "E10-nmc",
+      "material_kind": "electronic",
+      "aspect_ratio": "3:4",
+      "allowed_modes": [
+        "scan",
+        "front_photo",
+        "oblique_photo"
+      ],
+      "source_bundle_ids": [
+        "G1007-E10-nmc-6959e9fb4009d9e5bd73",
+        "G1007-E10-nmc-82103ac1d3fe8691ff42",
+        "G1007-E10-nmc-9463693d30e26cd123bf",
+        "G1007-E10-nmc-d438cf430d7fc2311033",
+        "G1007-E10-nmc-f2500a3f248df1bded0f"
+      ],
+      "category_l1": "资格与技能",
+      "category_l2": "医疗专业注册或状态证明",
+      "country": "英国",
+      "surface": "电子CCPS文字候选",
+      "instruction_language": "英文",
+      "visible_language": "英文",
+      "selected_edition": "官方六项CCPS信息；电子件；未知PIN仅内部虚构",
+      "capture_labels": {
+        "scan": "电子平面呈现",
+        "front_photo": "屏幕正拍",
+        "oblique_photo": "屏幕斜拍"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "identity_and_travel",
+      "name_zh": "身份与出入境",
+      "subcategory_count": 6,
+      "current_object_count": 16,
+      "subcategories": [
+        {
+          "id": "resident_identity_card",
+          "name_zh": "居民身份证",
+          "entity_ids": [
+            "C01-authority",
+            "C01-portrait"
+          ],
+          "current_object_count": 2,
+          "current_examples": [
+            {
+              "entity_id": "C01-authority",
+              "name_zh": "居民身份证国徽面",
+              "selected_edition": "第二代居民身份证；公开示例图版次未标注，私有样本版次待核",
+              "surface": "国徽面"
+            },
+            {
+              "entity_id": "C01-portrait",
+              "name_zh": "居民身份证人像面",
+              "selected_edition": "第二代居民身份证；所见私有样本的具体版次待核",
+              "surface": "人像面"
+            }
+          ]
+        },
+        {
+          "id": "identity_card",
+          "name_zh": "身份证明卡",
+          "entity_ids": [
+            "E01-us"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "E01-us",
+              "name_zh": "加州身份证明卡 2010 历史版",
+              "selected_edition": "2010 Secure Card；历史样式",
+              "surface": "身份证明卡正面"
+            }
+          ]
+        },
+        {
+          "id": "household_registration_card",
+          "name_zh": "户口登记卡",
+          "entity_ids": [
+            "C02-household",
+            "C02-person"
+          ],
+          "current_object_count": 2,
+          "current_examples": [
+            {
+              "entity_id": "C02-household",
+              "name_zh": "户主常住人口登记卡",
+              "selected_edition": "1996字段框架候选；四川/河北独立户主卡旁证，不视为辽宁同版整页复刻",
+              "surface": "常住人口登记卡（户主本人）"
+            },
+            {
+              "entity_id": "C02-person",
+              "name_zh": "非户主常住人口登记卡",
+              "selected_edition": "同一登记卡；不与首页或独立住址变动页拼接",
+              "surface": "常住人口登记卡（非户主本人）"
+            }
+          ]
+        },
+        {
+          "id": "passport",
+          "name_zh": "护照",
+          "entity_ids": [
+            "C04-main",
+            "E02-uk",
+            "E02-us"
+          ],
+          "current_object_count": 3,
+          "current_examples": [
+            {
+              "entity_id": "C04-main",
+              "name_zh": "中国电子普通护照资料页",
+              "selected_edition": "2012年启用的电子普通护照；2019年3月起境内签发机关改为中华人民共和国国家移民管理局（自第EF6000001号起）；本规格所据样图为2019年3月后的资料页",
+              "surface": "资料页"
+            },
+            {
+              "entity_id": "E02-uk",
+              "name_zh": "英国 Series D 护照资料页",
+              "selected_edition": "2025 Series D specimen资料页；仅文字结构",
+              "surface": "资料页可读字段区；观察页和MRZ不呈现"
+            },
+            {
+              "entity_id": "E02-us",
+              "name_zh": "美国护照样例时代资料页",
+              "selected_edition": "样例签发日期 2016-08-07，载于 ICE M-396（2018-02 版）执法识别指南",
+              "surface": "资料页"
+            }
+          ]
+        },
+        {
+          "id": "travel_permit",
+          "name_zh": "出入境通行证",
+          "entity_ids": [
+            "C05-hkmo",
+            "C05-taiwan"
+          ],
+          "current_object_count": 2,
+          "current_examples": [
+            {
+              "entity_id": "C05-hkmo",
+              "name_zh": "往来港澳通行证",
+              "selected_edition": "2014年5月启用的电子往来港澳通行证；2019年6月起签发机关为中华人民共和国出入境管理局；本规格按正面与背面两面的现有官方样图建立",
+              "surface": "正面"
+            },
+            {
+              "entity_id": "C05-taiwan",
+              "name_zh": "往来台湾通行证",
+              "selected_edition": "2016年12月启用的电子往来台湾通行证；2019年6月起签发机关为中华人民共和国出入境管理局；本规格按正面与背面两面的现有官方样图建立",
+              "surface": "正面"
+            }
+          ]
+        },
+        {
+          "id": "visa",
+          "name_zh": "签证",
+          "entity_ids": [
+            "C06-f",
+            "C06-l",
+            "C06-m",
+            "C06-q2",
+            "C06-x1",
+            "E03-us"
+          ],
+          "current_object_count": 6,
+          "current_examples": [
+            {
+              "entity_id": "C06-f",
+              "name_zh": "中国普通签证 F",
+              "selected_edition": "国家移民管理局公开的普通签证式样页（页面发布2018-09-29，样图顶部标注“访问（F）”）；签发依据为国务院令第637号第六条与外交部、驻外使馆现行须知",
+              "surface": "正面"
+            },
+            {
+              "entity_id": "C06-l",
+              "name_zh": "中国普通签证 L",
+              "selected_edition": "通用贴纸＋2006 L类双语标签参考；非现行认定",
+              "surface": "贴纸可读字段区；不呈现机读区"
+            },
+            {
+              "entity_id": "C06-m",
+              "name_zh": "中国普通签证 M",
+              "selected_edition": "通用贴纸；M字据使用者放行推定",
+              "surface": "贴纸可读字段区；不呈现机读区"
+            },
+            {
+              "entity_id": "C06-q2",
+              "name_zh": "中国普通签证 Q2",
+              "selected_edition": "Q2示范数据件；非号码规则",
+              "surface": "贴纸可读字段区；不呈现机读区"
+            },
+            {
+              "entity_id": "C06-x1",
+              "name_zh": "中国普通签证 X1",
+              "selected_edition": "通用字段标注＋使用者放行X1字；不写停留值",
+              "surface": "贴纸已知文字区；停留值和机读区不呈现"
+            },
+            {
+              "entity_id": "E03-us",
+              "name_zh": "美国 R 类 B1/B2 签证贴纸",
+              "selected_edition": "样例版式：2004-08-17 签发的 R 类 B1/B2 样例贴纸（图版载于 ICE M-396《Guide to Selected U.S. Travel and Identity Documents》2018-02 版）；2026 年现行贴纸版式未取得依据",
+              "surface": "正面"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "education_and_honors",
+      "name_zh": "教育与荣誉",
+      "subcategory_count": 8,
+      "current_object_count": 13,
+      "subcategories": [
+        {
+          "id": "student_and_campus_card",
+          "name_zh": "学生证与校园卡",
+          "entity_ids": [
+            "C08-student",
+            "C08-supplement",
+            "E05-uk",
+            "E05-us"
+          ],
+          "current_object_count": 4,
+          "current_examples": [
+            {
+              "entity_id": "C08-student",
+              "name_zh": "校园智能卡学生证",
+              "selected_edition": "使用者2026-10-05去标识结构摘录；对应130周年双件制样本；背面不进入正面",
+              "surface": "智能卡正面（学生证本体）"
+            },
+            {
+              "entity_id": "C08-supplement",
+              "name_zh": "学生证副证信息页",
+              "selected_edition": "同一双件制实物；页脚说明和注册证文字另版补齐；旧25组不冒充完整当前样本",
+              "surface": "副证信息页"
+            },
+            {
+              "entity_id": "E05-uk",
+              "name_zh": "爱丁堡大学学生卡",
+              "selected_edition": "官方卡面样图；版次未标",
+              "surface": "学生卡正面"
+            },
+            {
+              "entity_id": "E05-us",
+              "name_zh": "俄亥俄州立大学 BuckID",
+              "selected_edition": "BuckID官方文字定义的法定姓、首选名、短号、长号；没有样图，不添加照片/有效期/版面位置",
+              "surface": "卡面文字候选"
+            }
+          ]
+        },
+        {
+          "id": "admission_letter",
+          "name_zh": "录取通知书",
+          "entity_ids": [
+            "C09-main"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C09-main",
+              "name_zh": "2017 本科录取通知书正文页",
+              "selected_edition": "选2017中国青年网公开件，不拼2024欢迎句、不升级2025/2026；校名/校长/院系/地址按内部约定虚构",
+              "surface": "本科录取通知书正文页（2017参考）"
+            }
+          ]
+        },
+        {
+          "id": "degree_certificate",
+          "name_zh": "学位证书",
+          "entity_ids": [
+            "C10-degree",
+            "E06-uk",
+            "E06-us"
+          ],
+          "current_object_count": 3,
+          "current_examples": [
+            {
+              "entity_id": "C10-degree",
+              "name_zh": "硕士学位证书",
+              "selected_edition": "学位〔2015〕18号（2016-01-01 起各学位授予单位自主设计印制，不再使用带国徽的统一印制证书）；参考对象＝湖南师范大学 2016 年自制版（校行发〔2016〕16号）",
+              "surface": "证书正文面（横版 A4）"
+            },
+            {
+              "entity_id": "E06-uk",
+              "name_zh": "牛津 2021 授予版 MSc 学位证书",
+              "selected_edition": "2021 授予版；持证人公开帖所摄",
+              "surface": "学位证书正面"
+            },
+            {
+              "entity_id": "E06-us",
+              "name_zh": "天普大学学位证书",
+              "selected_edition": "1992正文参考＋2023校印规范；不宣称1992纸张现行",
+              "surface": "学位证书正面"
+            }
+          ]
+        },
+        {
+          "id": "graduation_certificate",
+          "name_zh": "毕业证书",
+          "entity_ids": [
+            "C10-graduation"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C10-graduation",
+              "name_zh": "本科毕业证书",
+              "selected_edition": "内容要求依据教学〔2002〕15号（2003 年起统一规范；2000 年起毕业证书逐步由高校自行印制）；参考对象选定为湖南师范大学（校行发〔2016〕16号公布的自制版式，与该校学位证书统一为横版 A4）",
+              "surface": "内页"
+            }
+          ]
+        },
+        {
+          "id": "award_certificate",
+          "name_zh": "获奖证书",
+          "entity_ids": [
+            "C11-award"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C11-award",
+              "name_zh": "获奖证书",
+              "selected_edition": "第十六届决赛2025实物参考；机构虚构适配",
+              "surface": "证书正文面"
+            }
+          ]
+        },
+        {
+          "id": "honor_certificate",
+          "name_zh": "荣誉证书",
+          "entity_ids": [
+            "C11-honor"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C11-honor",
+              "name_zh": "荣誉证书",
+              "selected_edition": "2025团体一等奖机构件",
+              "surface": "证书正文面"
+            }
+          ]
+        },
+        {
+          "id": "competition_certificate",
+          "name_zh": "竞赛证书",
+          "entity_ids": [
+            "E07-uk"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "E07-uk",
+              "name_zh": "UKMT 竞赛证书",
+              "selected_edition": "2025 IMC金奖或JMC银奖实物；clean only",
+              "surface": "证书正文面"
+            }
+          ]
+        },
+        {
+          "id": "academic_recognition_certificate",
+          "name_zh": "学业表彰证书",
+          "entity_ids": [
+            "E07-us"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "E07-us",
+              "name_zh": "2026 PEAP 金银模板证书",
+              "selected_edition": "PEAP两份官方PDF与本地图像辨认；同版两种奖，不追加编号/公章/分数",
+              "surface": "2026有边框金/银模板正面"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qualifications_and_skills",
+      "name_zh": "资格与技能",
+      "subcategory_count": 6,
+      "current_object_count": 10,
+      "subcategories": [
+        {
+          "id": "mandarin_proficiency_certificate",
+          "name_zh": "普通话等级证书",
+          "entity_ids": [
+            "C12-main"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C12-main",
+              "name_zh": "普通话水平测试等级证书",
+              "selected_edition": "2022-01-01（含）以后测试使用的2022年新版等级证书；管理办法为国语函〔2022〕2号",
+              "surface": "内页"
+            }
+          ]
+        },
+        {
+          "id": "driving_license",
+          "name_zh": "驾驶证",
+          "entity_ids": [
+            "C13-main",
+            "E08-uk",
+            "E08-us"
+          ],
+          "current_object_count": 3,
+          "current_examples": [
+            {
+              "entity_id": "C13-main",
+              "name_zh": "沈阳驾驶证主页正面",
+              "selected_edition": "沈阳2025官方空白式样；未依GA482—2026正文",
+              "surface": "主页正面"
+            },
+            {
+              "entity_id": "E08-uk",
+              "name_zh": "GB DVLA 驾照正面",
+              "selected_edition": "DVLA INS57P 7/25（2025年7月）所载样例，正面标题为UK DRIVING LICENCE、无EU旗帜，对应2021年起版式",
+              "surface": "正面"
+            },
+            {
+              "entity_id": "E08-us",
+              "name_zh": "加州驾驶证正面",
+              "selected_edition": "2025-09-30起新版（DMV行业通告）；新闻稿2025-10-01称当日起发布；本规格采用新版成人横版正面样卡",
+              "surface": "正面"
+            }
+          ]
+        },
+        {
+          "id": "legal_professional_qualification",
+          "name_zh": "法律职业资格证书",
+          "entity_ids": [
+            "C16-legal"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C16-legal",
+              "name_zh": "法律职业资格证书",
+              "selected_edition": "司法部令第146号；样式由司法部统一制定（未公开）",
+              "surface": "证书正文面"
+            }
+          ]
+        },
+        {
+          "id": "teacher_qualification",
+          "name_zh": "教师资格证书",
+          "entity_ids": [
+            "C16-teacher"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C16-teacher",
+              "name_zh": "教师资格证书 2001 历史版内容",
+              "selected_edition": "教人〔2001〕6 号（2001 年版，按历史版本锁定；现行性未核）",
+              "surface": "内页（2001历史版内容）"
+            }
+          ]
+        },
+        {
+          "id": "contractor_license",
+          "name_zh": "承包商执照",
+          "entity_ids": [
+            "E10-cslb"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "E10-cslb",
+              "name_zh": "CSLB 承包商挂墙执照",
+              "selected_edition": "2025官方指南字段；选挂墙件",
+              "surface": "挂墙文字候选"
+            }
+          ]
+        },
+        {
+          "id": "medical_professional_registration",
+          "name_zh": "医疗专业注册或状态证明",
+          "entity_ids": [
+            "E10-gmc",
+            "E10-hcpc",
+            "E10-nmc"
+          ],
+          "current_object_count": 3,
+          "current_examples": [
+            {
+              "entity_id": "E10-gmc",
+              "name_zh": "GMC CGS/CCPS 证明件",
+              "selected_edition": "GMC官方CGS/CCPS说明字段；不套完整注册证书",
+              "surface": "CGS/CCPS文字候选"
+            },
+            {
+              "entity_id": "E10-hcpc",
+              "name_zh": "HCPC 单页注册状态确认书",
+              "selected_edition": "2025 Confirmation of registration status实物",
+              "surface": "单页状态确认书"
+            },
+            {
+              "entity_id": "E10-nmc",
+              "name_zh": "NMC 电子 CCPS",
+              "selected_edition": "官方六项CCPS信息；电子件；未知PIN仅内部虚构",
+              "surface": "电子CCPS文字候选"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "business_and_institutional_licensing",
+      "name_zh": "经营与机构许可",
+      "subcategory_count": 4,
+      "current_object_count": 4,
+      "subcategories": [
+        {
+          "id": "business_license",
+          "name_zh": "营业执照",
+          "entity_ids": [
+            "C15-main"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C15-main",
+              "name_zh": "公司法人 A 格式营业执照正本",
+              "selected_edition": "2019年A格式基础上，自2022-09-01新核发采用调整版；字段相对位置依据市监注发〔2022〕71号附件格式A正本示意图",
+              "surface": "正本照面"
+            }
+          ]
+        },
+        {
+          "id": "food_business_license",
+          "name_zh": "食品经营许可证",
+          "entity_ids": [
+            "C17-food"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C17-food",
+              "name_zh": "食品经营许可证正本",
+              "selected_edition": "2019-06-01 起调整版式（市场监管总局公告 2019 年第 14 号）；2019-06-01 前已发原式样证在有效期内继续有效",
+              "surface": "正本"
+            }
+          ]
+        },
+        {
+          "id": "school_operation_license",
+          "name_zh": "办学许可证",
+          "entity_ids": [
+            "C17-school"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C17-school",
+              "name_zh": "2020 民办学校办学许可证正本",
+              "selected_edition": "教发厅〔2020〕5号正本；日期行为②观察",
+              "surface": "许可证正本"
+            }
+          ]
+        },
+        {
+          "id": "certificate_of_incorporation",
+          "name_zh": "公司成立证书",
+          "entity_ids": [
+            "E09-uk"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "E09-uk",
+              "name_zh": "英格兰与威尔士私人股份有限公司成立证书",
+              "selected_edition": "private company limited by shares；具体证书印制版次待核",
+              "surface": "证书正面"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "civil_social_security_and_property",
+      "name_zh": "民事、社保与财产",
+      "subcategory_count": 5,
+      "current_object_count": 7,
+      "subcategories": [
+        {
+          "id": "marriage_certificate",
+          "name_zh": "婚姻证明",
+          "entity_ids": [
+            "C03-main",
+            "E04-uk",
+            "E04-us"
+          ],
+          "current_object_count": 3,
+          "current_examples": [
+            {
+              "entity_id": "C03-main",
+              "name_zh": "结婚证长式声明与资料页",
+              "selected_edition": "2025填写规范＋使用者选定长式民法典声明",
+              "surface": "声明页与资料页分开展示"
+            },
+            {
+              "entity_id": "E04-uk",
+              "name_zh": "GRO 旧式 1907 栏名婚姻核证副本",
+              "selected_edition": "GRO 核证副本旧式（1907 栏名）；十项标注版实物",
+              "surface": "核证副本正文面"
+            },
+            {
+              "entity_id": "E04-us",
+              "name_zh": "San Diego 婚姻核证副本",
+              "selected_edition": "San Diego VS-117 (01/15/2015)成品核证副本；县机构虚构适配",
+              "surface": "核证副本正文面"
+            }
+          ]
+        },
+        {
+          "id": "social_security_card",
+          "name_zh": "社保卡",
+          "entity_ids": [
+            "C07-main"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C07-main",
+              "name_zh": "北京第三代社保卡",
+              "selected_edition": "北京市第三代卡用户手册示意图；只作北京文字候选，不宣称全国样卡",
+              "surface": "背面（个人信息面）"
+            }
+          ]
+        },
+        {
+          "id": "retirement_certificate",
+          "name_zh": "退休证明",
+          "entity_ids": [
+            "C18-main"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C18-main",
+              "name_zh": "APP 电子退休证明",
+              "selected_edition": "选定实体＝威海市市本级企业职工电子退休证明（2025-12 起启用，依据 S185）",
+              "surface": "APP展示样式"
+            }
+          ]
+        },
+        {
+          "id": "vehicle_registration_certificate",
+          "name_zh": "机动车登记证",
+          "entity_ids": [
+            "C14-main"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C14-main",
+              "name_zh": "机动车登记证书第 2 页",
+              "selected_edition": "GA369—2005图B.2；历史参考候选，不宣称现行；选第二页不拼第一页所有人或登记日期",
+              "surface": "第2页注册登记机动车信息栏"
+            }
+          ]
+        },
+        {
+          "id": "real_property_certificate",
+          "name_zh": "不动产权证",
+          "entity_ids": [
+            "C19-property"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C19-property",
+              "name_zh": "不动产权证登记事项表",
+              "selected_edition": "单一版现有主规格选定登记事项表＋表头补证；日期/监制/编号位于宣告页，不塞进所选页",
+              "surface": "内页登记事项表"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

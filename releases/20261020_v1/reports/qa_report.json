@@ -1,0 +1,37 @@
+{
+  "version": "credential-imaging-20261020-v1",
+  "rows": 3000,
+  "groups": 1000,
+  "entities": 50,
+  "profiles": 54,
+  "capture_template_views": 162,
+  "category_l1": {
+    "教育与荣誉": 783,
+    "民事、社保与财产": 390,
+    "经营与机构许可": 408,
+    "资格与技能": 669,
+    "身份与出入境": 750
+  },
+  "category_l2_count": 29,
+  "variants": {
+    "clean": 3000
+  },
+  "capture_modes": {
+    "front_photo": 1000,
+    "oblique_photo": 1000,
+    "scan": 1000
+  },
+  "physical_scan_rows": 980,
+  "electronic_rows": 60,
+  "changed_rows_from_20261014_v3": 980,
+  "unchanged_rows_from_20261014_v3": 2020,
+  "manual_body_approved": 0,
+  "image_generated": 0,
+  "image_accepted": 0,
+  "source_ids_used": 135,
+  "source_registry_records": 135,
+  "unresolved_source_ids": [],
+  "source_urls_rechecked_on_release": false,
+  "scope": "Programmatic data checks are separate from human approval, source provenance, image generation, OCR and image acceptance.",
+  "scan_change_evidence": "Historical v3 prompt hashes are recorded; this public package does not contain all v3 prompt bodies and cannot independently re-run the full v3 comparison."
+}

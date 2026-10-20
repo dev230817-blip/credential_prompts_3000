@@ -1,0 +1,691 @@
+{
+  "schema_version": "1.0",
+  "recorded_date": "2026-10-14",
+  "responsibility_scope": {
+    "id": "credential",
+    "name_zh": "证件类"
+  },
+  "purpose": "分享负责方向与二级分类，便于真实图像数据集收集",
+  "category_count": 5,
+  "subcategory_count": 29,
+  "current_object_count": 50,
+  "current_template_count": 54,
+  "count_note": "分类数和现有证件对象数，不是已取得的真实图片数量；不是新增配额。",
+  "region_attributes": [
+    "中国",
+    "美国",
+    "英国"
+  ],
+  "separate_attributes": [
+    "国家/地区",
+    "版本/年份",
+    "页面/面别",
+    "证件子类",
+    "载体",
+    "图中文字语言"
+  ],
+  "collection_fields": [
+    "来源地址或数据集名称",
+    "简介",
+    "对应证件类型",
+    "国家/地区",
+    "版本/年份",
+    "页面/面别",
+    "材料形式",
+    "是否经过二次编辑"
+  ],
+  "reference_rule": "相机拍摄且未经二次编辑才按现有严格真实照片口径记录；扫描件、截图、PDF渲染、示意图、遮罩件分别登记。未知状态写待核。",
+  "categories": [
+    {
+      "id": "identity_and_travel",
+      "name_zh": "身份与出入境",
+      "subcategory_count": 6,
+      "current_object_count": 16,
+      "subcategories": [
+        {
+          "id": "resident_identity_card",
+          "name_zh": "居民身份证",
+          "entity_ids": [
+            "C01-authority",
+            "C01-portrait"
+          ],
+          "current_object_count": 2,
+          "current_examples": [
+            {
+              "entity_id": "C01-authority",
+              "name_zh": "居民身份证国徽面",
+              "selected_edition": "第二代居民身份证；公开示例图版次未标注，私有样本版次待核",
+              "surface": "国徽面"
+            },
+            {
+              "entity_id": "C01-portrait",
+              "name_zh": "居民身份证人像面",
+              "selected_edition": "第二代居民身份证；所见私有样本的具体版次待核",
+              "surface": "人像面"
+            }
+          ]
+        },
+        {
+          "id": "identity_card",
+          "name_zh": "身份证明卡",
+          "entity_ids": [
+            "E01-us"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "E01-us",
+              "name_zh": "加州身份证明卡 2010 历史版",
+              "selected_edition": "2010 Secure Card；历史样式",
+              "surface": "身份证明卡正面"
+            }
+          ]
+        },
+        {
+          "id": "household_registration_card",
+          "name_zh": "户口登记卡",
+          "entity_ids": [
+            "C02-household",
+            "C02-person"
+          ],
+          "current_object_count": 2,
+          "current_examples": [
+            {
+              "entity_id": "C02-household",
+              "name_zh": "户主常住人口登记卡",
+              "selected_edition": "1996字段框架候选；四川/河北独立户主卡旁证，不视为辽宁同版整页复刻",
+              "surface": "常住人口登记卡（户主本人）"
+            },
+            {
+              "entity_id": "C02-person",
+              "name_zh": "非户主常住人口登记卡",
+              "selected_edition": "同一登记卡；不与首页或独立住址变动页拼接",
+              "surface": "常住人口登记卡（非户主本人）"
+            }
+          ]
+        },
+        {
+          "id": "passport",
+          "name_zh": "护照",
+          "entity_ids": [
+            "C04-main",
+            "E02-uk",
+            "E02-us"
+          ],
+          "current_object_count": 3,
+          "current_examples": [
+            {
+              "entity_id": "C04-main",
+              "name_zh": "中国电子普通护照资料页",
+              "selected_edition": "2012年启用的电子普通护照；2019年3月起境内签发机关改为中华人民共和国国家移民管理局（自第EF6000001号起）；本规格所据样图为2019年3月后的资料页",
+              "surface": "资料页"
+            },
+            {
+              "entity_id": "E02-uk",
+              "name_zh": "英国 Series D 护照资料页",
+              "selected_edition": "2025 Series D specimen资料页；仅文字结构",
+              "surface": "资料页可读字段区；观察页和MRZ不呈现"
+            },
+            {
+              "entity_id": "E02-us",
+              "name_zh": "美国护照样例时代资料页",
+              "selected_edition": "样例签发日期 2016-08-07，载于 ICE M-396（2018-02 版）执法识别指南",
+              "surface": "资料页"
+            }
+          ]
+        },
+        {
+          "id": "travel_permit",
+          "name_zh": "出入境通行证",
+          "entity_ids": [
+            "C05-hkmo",
+            "C05-taiwan"
+          ],
+          "current_object_count": 2,
+          "current_examples": [
+            {
+              "entity_id": "C05-hkmo",
+              "name_zh": "往来港澳通行证",
+              "selected_edition": "2014年5月启用的电子往来港澳通行证；2019年6月起签发机关为中华人民共和国出入境管理局；本规格按正面与背面两面的现有官方样图建立",
+              "surface": "正面"
+            },
+            {
+              "entity_id": "C05-taiwan",
+              "name_zh": "往来台湾通行证",
+              "selected_edition": "2016年12月启用的电子往来台湾通行证；2019年6月起签发机关为中华人民共和国出入境管理局；本规格按正面与背面两面的现有官方样图建立",
+              "surface": "正面"
+            }
+          ]
+        },
+        {
+          "id": "visa",
+          "name_zh": "签证",
+          "entity_ids": [
+            "C06-f",
+            "C06-l",
+            "C06-m",
+            "C06-q2",
+            "C06-x1",
+            "E03-us"
+          ],
+          "current_object_count": 6,
+          "current_examples": [
+            {
+              "entity_id": "C06-f",
+              "name_zh": "中国普通签证 F",
+              "selected_edition": "国家移民管理局公开的普通签证式样页（页面发布2018-09-29，样图顶部标注“访问（F）”）；签发依据为国务院令第637号第六条与外交部、驻外使馆现行须知",
+              "surface": "正面"
+            },
+            {
+              "entity_id": "C06-l",
+              "name_zh": "中国普通签证 L",
+              "selected_edition": "通用贴纸＋2006 L类双语标签参考；非现行认定",
+              "surface": "贴纸可读字段区；不呈现机读区"
+            },
+            {
+              "entity_id": "C06-m",
+              "name_zh": "中国普通签证 M",
+              "selected_edition": "通用贴纸；M字据使用者放行推定",
+              "surface": "贴纸可读字段区；不呈现机读区"
+            },
+            {
+              "entity_id": "C06-q2",
+              "name_zh": "中国普通签证 Q2",
+              "selected_edition": "Q2示范数据件；非号码规则",
+              "surface": "贴纸可读字段区；不呈现机读区"
+            },
+            {
+              "entity_id": "C06-x1",
+              "name_zh": "中国普通签证 X1",
+              "selected_edition": "通用字段标注＋使用者放行X1字；不写停留值",
+              "surface": "贴纸已知文字区；停留值和机读区不呈现"
+            },
+            {
+              "entity_id": "E03-us",
+              "name_zh": "美国 R 类 B1/B2 签证贴纸",
+              "selected_edition": "样例版式：2004-08-17 签发的 R 类 B1/B2 样例贴纸（图版载于 ICE M-396《Guide to Selected U.S. Travel and Identity Documents》2018-02 版）；2026 年现行贴纸版式未取得依据",
+              "surface": "正面"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "education_and_honors",
+      "name_zh": "教育与荣誉",
+      "subcategory_count": 8,
+      "current_object_count": 13,
+      "subcategories": [
+        {
+          "id": "student_and_campus_card",
+          "name_zh": "学生证与校园卡",
+          "entity_ids": [
+            "C08-student",
+            "C08-supplement",
+            "E05-uk",
+            "E05-us"
+          ],
+          "current_object_count": 4,
+          "current_examples": [
+            {
+              "entity_id": "C08-student",
+              "name_zh": "校园智能卡学生证",
+              "selected_edition": "使用者2026-10-05去标识结构摘录；对应130周年双件制样本；背面不进入正面",
+              "surface": "智能卡正面（学生证本体）"
+            },
+            {
+              "entity_id": "C08-supplement",
+              "name_zh": "学生证副证信息页",
+              "selected_edition": "同一双件制实物；页脚说明和注册证文字另版补齐；旧25组不冒充完整当前样本",
+              "surface": "副证信息页"
+            },
+            {
+              "entity_id": "E05-uk",
+              "name_zh": "爱丁堡大学学生卡",
+              "selected_edition": "官方卡面样图；版次未标",
+              "surface": "学生卡正面"
+            },
+            {
+              "entity_id": "E05-us",
+              "name_zh": "俄亥俄州立大学 BuckID",
+              "selected_edition": "BuckID官方文字定义的法定姓、首选名、短号、长号；没有样图，不添加照片/有效期/版面位置",
+              "surface": "卡面文字候选"
+            }
+          ]
+        },
+        {
+          "id": "admission_letter",
+          "name_zh": "录取通知书",
+          "entity_ids": [
+            "C09-main"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C09-main",
+              "name_zh": "2017 本科录取通知书正文页",
+              "selected_edition": "选2017中国青年网公开件，不拼2024欢迎句、不升级2025/2026；校名/校长/院系/地址按内部约定虚构",
+              "surface": "本科录取通知书正文页（2017参考）"
+            }
+          ]
+        },
+        {
+          "id": "degree_certificate",
+          "name_zh": "学位证书",
+          "entity_ids": [
+            "C10-degree",
+            "E06-uk",
+            "E06-us"
+          ],
+          "current_object_count": 3,
+          "current_examples": [
+            {
+              "entity_id": "C10-degree",
+              "name_zh": "硕士学位证书",
+              "selected_edition": "学位〔2015〕18号（2016-01-01 起各学位授予单位自主设计印制，不再使用带国徽的统一印制证书）；参考对象＝湖南师范大学 2016 年自制版（校行发〔2016〕16号）",
+              "surface": "证书正文面（横版 A4）"
+            },
+            {
+              "entity_id": "E06-uk",
+              "name_zh": "牛津 2021 授予版 MSc 学位证书",
+              "selected_edition": "2021 授予版；持证人公开帖所摄",
+              "surface": "学位证书正面"
+            },
+            {
+              "entity_id": "E06-us",
+              "name_zh": "天普大学学位证书",
+              "selected_edition": "1992正文参考＋2023校印规范；不宣称1992纸张现行",
+              "surface": "学位证书正面"
+            }
+          ]
+        },
+        {
+          "id": "graduation_certificate",
+          "name_zh": "毕业证书",
+          "entity_ids": [
+            "C10-graduation"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C10-graduation",
+              "name_zh": "本科毕业证书",
+              "selected_edition": "内容要求依据教学〔2002〕15号（2003 年起统一规范；2000 年起毕业证书逐步由高校自行印制）；参考对象选定为湖南师范大学（校行发〔2016〕16号公布的自制版式，与该校学位证书统一为横版 A4）",
+              "surface": "内页"
+            }
+          ]
+        },
+        {
+          "id": "award_certificate",
+          "name_zh": "获奖证书",
+          "entity_ids": [
+            "C11-award"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C11-award",
+              "name_zh": "获奖证书",
+              "selected_edition": "第十六届决赛2025实物参考；机构虚构适配",
+              "surface": "证书正文面"
+            }
+          ]
+        },
+        {
+          "id": "honor_certificate",
+          "name_zh": "荣誉证书",
+          "entity_ids": [
+            "C11-honor"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C11-honor",
+              "name_zh": "荣誉证书",
+              "selected_edition": "2025团体一等奖机构件",
+              "surface": "证书正文面"
+            }
+          ]
+        },
+        {
+          "id": "competition_certificate",
+          "name_zh": "竞赛证书",
+          "entity_ids": [
+            "E07-uk"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "E07-uk",
+              "name_zh": "UKMT 竞赛证书",
+              "selected_edition": "2025 IMC金奖或JMC银奖实物；clean only",
+              "surface": "证书正文面"
+            }
+          ]
+        },
+        {
+          "id": "academic_recognition_certificate",
+          "name_zh": "学业表彰证书",
+          "entity_ids": [
+            "E07-us"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "E07-us",
+              "name_zh": "2026 PEAP 金银模板证书",
+              "selected_edition": "PEAP两份官方PDF与本地图像辨认；同版两种奖，不追加编号/公章/分数",
+              "surface": "2026有边框金/银模板正面"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qualifications_and_skills",
+      "name_zh": "资格与技能",
+      "subcategory_count": 6,
+      "current_object_count": 10,
+      "subcategories": [
+        {
+          "id": "mandarin_proficiency_certificate",
+          "name_zh": "普通话等级证书",
+          "entity_ids": [
+            "C12-main"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C12-main",
+              "name_zh": "普通话水平测试等级证书",
+              "selected_edition": "2022-01-01（含）以后测试使用的2022年新版等级证书；管理办法为国语函〔2022〕2号",
+              "surface": "内页"
+            }
+          ]
+        },
+        {
+          "id": "driving_license",
+          "name_zh": "驾驶证",
+          "entity_ids": [
+            "C13-main",
+            "E08-uk",
+            "E08-us"
+          ],
+          "current_object_count": 3,
+          "current_examples": [
+            {
+              "entity_id": "C13-main",
+              "name_zh": "沈阳驾驶证主页正面",
+              "selected_edition": "沈阳2025官方空白式样；未依GA482—2026正文",
+              "surface": "主页正面"
+            },
+            {
+              "entity_id": "E08-uk",
+              "name_zh": "GB DVLA 驾照正面",
+              "selected_edition": "DVLA INS57P 7/25（2025年7月）所载样例，正面标题为UK DRIVING LICENCE、无EU旗帜，对应2021年起版式",
+              "surface": "正面"
+            },
+            {
+              "entity_id": "E08-us",
+              "name_zh": "加州驾驶证正面",
+              "selected_edition": "2025-09-30起新版（DMV行业通告）；新闻稿2025-10-01称当日起发布；本规格采用新版成人横版正面样卡",
+              "surface": "正面"
+            }
+          ]
+        },
+        {
+          "id": "legal_professional_qualification",
+          "name_zh": "法律职业资格证书",
+          "entity_ids": [
+            "C16-legal"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C16-legal",
+              "name_zh": "法律职业资格证书",
+              "selected_edition": "司法部令第146号；样式由司法部统一制定（未公开）",
+              "surface": "证书正文面"
+            }
+          ]
+        },
+        {
+          "id": "teacher_qualification",
+          "name_zh": "教师资格证书",
+          "entity_ids": [
+            "C16-teacher"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C16-teacher",
+              "name_zh": "教师资格证书 2001 历史版内容",
+              "selected_edition": "教人〔2001〕6 号（2001 年版，按历史版本锁定；现行性未核）",
+              "surface": "内页（2001历史版内容）"
+            }
+          ]
+        },
+        {
+          "id": "contractor_license",
+          "name_zh": "承包商执照",
+          "entity_ids": [
+            "E10-cslb"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "E10-cslb",
+              "name_zh": "CSLB 承包商挂墙执照",
+              "selected_edition": "2025官方指南字段；选挂墙件",
+              "surface": "挂墙文字候选"
+            }
+          ]
+        },
+        {
+          "id": "medical_professional_registration",
+          "name_zh": "医疗专业注册或状态证明",
+          "entity_ids": [
+            "E10-gmc",
+            "E10-hcpc",
+            "E10-nmc"
+          ],
+          "current_object_count": 3,
+          "current_examples": [
+            {
+              "entity_id": "E10-gmc",
+              "name_zh": "GMC CGS/CCPS 证明件",
+              "selected_edition": "GMC官方CGS/CCPS说明字段；不套完整注册证书",
+              "surface": "CGS/CCPS文字候选"
+            },
+            {
+              "entity_id": "E10-hcpc",
+              "name_zh": "HCPC 单页注册状态确认书",
+              "selected_edition": "2025 Confirmation of registration status实物",
+              "surface": "单页状态确认书"
+            },
+            {
+              "entity_id": "E10-nmc",
+              "name_zh": "NMC 电子 CCPS",
+              "selected_edition": "官方六项CCPS信息；电子件；未知PIN仅内部虚构",
+              "surface": "电子CCPS文字候选"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "business_and_institutional_licensing",
+      "name_zh": "经营与机构许可",
+      "subcategory_count": 4,
+      "current_object_count": 4,
+      "subcategories": [
+        {
+          "id": "business_license",
+          "name_zh": "营业执照",
+          "entity_ids": [
+            "C15-main"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C15-main",
+              "name_zh": "公司法人 A 格式营业执照正本",
+              "selected_edition": "2019年A格式基础上，自2022-09-01新核发采用调整版；字段相对位置依据市监注发〔2022〕71号附件格式A正本示意图",
+              "surface": "正本照面"
+            }
+          ]
+        },
+        {
+          "id": "food_business_license",
+          "name_zh": "食品经营许可证",
+          "entity_ids": [
+            "C17-food"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C17-food",
+              "name_zh": "食品经营许可证正本",
+              "selected_edition": "2019-06-01 起调整版式（市场监管总局公告 2019 年第 14 号）；2019-06-01 前已发原式样证在有效期内继续有效",
+              "surface": "正本"
+            }
+          ]
+        },
+        {
+          "id": "school_operation_license",
+          "name_zh": "办学许可证",
+          "entity_ids": [
+            "C17-school"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C17-school",
+              "name_zh": "2020 民办学校办学许可证正本",
+              "selected_edition": "教发厅〔2020〕5号正本；日期行为②观察",
+              "surface": "许可证正本"
+            }
+          ]
+        },
+        {
+          "id": "certificate_of_incorporation",
+          "name_zh": "公司成立证书",
+          "entity_ids": [
+            "E09-uk"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "E09-uk",
+              "name_zh": "英格兰与威尔士私人股份有限公司成立证书",
+              "selected_edition": "private company limited by shares；具体证书印制版次待核",
+              "surface": "证书正面"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "civil_social_security_and_property",
+      "name_zh": "民事、社保与财产",
+      "subcategory_count": 5,
+      "current_object_count": 7,
+      "subcategories": [
+        {
+          "id": "marriage_certificate",
+          "name_zh": "婚姻证明",
+          "entity_ids": [
+            "C03-main",
+            "E04-uk",
+            "E04-us"
+          ],
+          "current_object_count": 3,
+          "current_examples": [
+            {
+              "entity_id": "C03-main",
+              "name_zh": "结婚证长式声明与资料页",
+              "selected_edition": "2025填写规范＋使用者选定长式民法典声明",
+              "surface": "声明页与资料页分开展示"
+            },
+            {
+              "entity_id": "E04-uk",
+              "name_zh": "GRO 旧式 1907 栏名婚姻核证副本",
+              "selected_edition": "GRO 核证副本旧式（1907 栏名）；十项标注版实物",
+              "surface": "核证副本正文面"
+            },
+            {
+              "entity_id": "E04-us",
+              "name_zh": "San Diego 婚姻核证副本",
+              "selected_edition": "San Diego VS-117 (01/15/2015)成品核证副本；县机构虚构适配",
+              "surface": "核证副本正文面"
+            }
+          ]
+        },
+        {
+          "id": "social_security_card",
+          "name_zh": "社保卡",
+          "entity_ids": [
+            "C07-main"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C07-main",
+              "name_zh": "北京第三代社保卡",
+              "selected_edition": "北京市第三代卡用户手册示意图；只作北京文字候选，不宣称全国样卡",
+              "surface": "背面（个人信息面）"
+            }
+          ]
+        },
+        {
+          "id": "retirement_certificate",
+          "name_zh": "退休证明",
+          "entity_ids": [
+            "C18-main"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C18-main",
+              "name_zh": "APP 电子退休证明",
+              "selected_edition": "选定实体＝威海市市本级企业职工电子退休证明（2025-12 起启用，依据 S185）",
+              "surface": "APP展示样式"
+            }
+          ]
+        },
+        {
+          "id": "vehicle_registration_certificate",
+          "name_zh": "机动车登记证",
+          "entity_ids": [
+            "C14-main"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C14-main",
+              "name_zh": "机动车登记证书第 2 页",
+              "selected_edition": "GA369—2005图B.2；历史参考候选，不宣称现行；选第二页不拼第一页所有人或登记日期",
+              "surface": "第2页注册登记机动车信息栏"
+            }
+          ]
+        },
+        {
+          "id": "real_property_certificate",
+          "name_zh": "不动产权证",
+          "entity_ids": [
+            "C19-property"
+          ],
+          "current_object_count": 1,
+          "current_examples": [
+            {
+              "entity_id": "C19-property",
+              "name_zh": "不动产权证登记事项表",
+              "selected_edition": "单一版现有主规格选定登记事项表＋表头补证；日期/监制/编号位于宣告页，不塞进所选页",
+              "surface": "内页登记事项表"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

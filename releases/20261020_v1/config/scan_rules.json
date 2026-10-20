@@ -1,0 +1,11 @@
+{
+  "version": "credential-imaging-20261020-v1",
+  "scope": "capture_mode=scan and material_kind!=electronic",
+  "capture_label": "平扫（扫描件样式）",
+  "zh": "直接输出一张彩色平板扫描仪扫描该记录限定的载体和指定可见面后得到的文档扫描件。画面仅包含完整证面及四周很窄的中性留白，边缘与画幅基本对齐，呈平面扫描效果，没有可辨认的拍摄透视或近远端大小差异。整面照明均匀，不出现桌面、手、扫描仪设备、其他环境物品、接触投影、悬浮阴影、景深虚化或单侧自然光造成的明暗渐变；不额外制造立体厚度、阴影边缘或反光亮斑。保留原版式规定的底色、印刷颜色、图案、材质和明确要求的可见特征，不统一改成白纸、黑白或灰度，不人为增加噪点、脏污、折痕、泛黄或模糊，也不强化纤维、浮雕、蜡质光泽或锐化。文字完整清楚可读。卡片、册页和贴纸保留原载体及下方版式和页别约束，不增加其他页面；不把扫描件或设备等成像说明印在图中。",
+  "en": "Directly output a color document scan produced by a flatbed scanner from the specified carrier and visible face. Show only the complete document face with a very narrow neutral margin, approximately aligned with the image edges, with a flat scanned appearance and no discernible camera perspective or near-to-far size difference. Use uniform illumination across the face. Include no tabletop, hands, scanner equipment, surrounding objects, contact or floating shadows, depth-of-field blur, or directional daylight gradient; add no three-dimensional thickness, edge shadows or glare spots. Preserve the substrate, background color, printed colors, patterns and visible features explicitly required by the original layout. Do not turn every carrier into white paper or force black-and-white or grayscale. Add no artificial noise, dirt, folds, yellowing or blur, and do not exaggerate fibers, embossing, waxy gloss or sharpening. Keep all text complete and readable. Cards, booklet pages and stickers retain their original carrier, layout and specified page constraints; add no other pages. Do not print scan or equipment instructions in the image.",
+  "baseline_prefixes": {
+    "中文": "以平扫式图像呈现该记录限定的载体和可见面，视线垂直于证面，边缘与画幅基本对齐，外边界完整，四周仅留窄中性空白。照明均匀，无桌面场景、接触投影、悬浮阴影或透视收敛；册页和贴纸按下方版式说明呈现。材质与底色服从原版式，不夸张强化纹理、纤维、光泽或锐化。",
+    "英文": "Present the specified face and carrier as a flat scan-like image, viewed normal to the document, aligned approximately with the image edges and with its full boundary visible. Use a narrow neutral margin and even illumination, without a tabletop scene, contact or floating shadows, or perspective convergence. Follow the layout below for booklet pages and stickers. Retain the specified substrate and colours without exaggerating texture, fibres, gloss or sharpening."
+  }
+}

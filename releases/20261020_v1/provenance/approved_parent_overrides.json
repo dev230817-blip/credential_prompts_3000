@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-14",
+  "user_statement": "同意限定修正",
+  "scope": "只改3组第二位申请人的父母两字段，其余保持；不构成新版正文/图片全量确认",
+  "source_version": "feedback_20261011_v4",
+  "source_prompt_file_sha256": "9866dcbdac1abfa7b4c828b79ea5160fecfc3948a96638b7123053eb2e14250a",
+  "changes": {
+    "G1007-E04-us-642a288b73b36dbb531b": {
+      "SECOND APPLICANT - FULL BIRTH NAME OF FATHER/PARENT": {
+        "old": "Rowan Wrenford",
+        "new": "Elias Wrenford"
+      },
+      "SECOND APPLICANT - FULL BIRTH NAME OF MOTHER/PARENT": {
+        "old": "Mira Wrenford",
+        "new": "Liora Fenlow"
+      }
+    },
+    "G1007-E04-us-0432d8f8b0a8ef10958c": {
+      "SECOND APPLICANT - FULL BIRTH NAME OF FATHER/PARENT": {
+        "old": "Rowan Wrenford",
+        "new": "Elias Wrenford"
+      },
+      "SECOND APPLICANT - FULL BIRTH NAME OF MOTHER/PARENT": {
+        "old": "Mira Wrenford",
+        "new": "Liora Fenlow"
+      }
+    },
+    "G1007-E04-us-42db34519a77f8b37973": {
+      "SECOND APPLICANT - FULL BIRTH NAME OF FATHER/PARENT": {
+        "old": "Rowan Wrenford",
+        "new": "Elias Wrenford"
+      },
+      "SECOND APPLICANT - FULL BIRTH NAME OF MOTHER/PARENT": {
+        "old": "Mira Wrenford",
+        "new": "Liora Fenlow"
+      }
+    }
+  }
+}
