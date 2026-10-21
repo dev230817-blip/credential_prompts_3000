@@ -1,5 +1,9 @@
 # Changelog
 
+## 20261021_seal_v1
+
+Added a delivery-only seal patch: 546 categories require a seal, 578 do not force one, and 306 use a style-dependent requirement. The current 4,290-row delivery CSV keeps supplied values, IDs, category display paths, ratios and capture modes; only seal wording and prompt hashes change. Included the narrowly updated explanation and eight existing illustrative images. All complete releases remain unchanged. No new image generation or image acceptance.
+
 ## 20261021_v2
 
 Knowledge-guided policy A: 1,430 categories / 4,290 prompts. Supplied core values stay fixed; layout and fixed prose may vary. Removed the generic layout skeleton, revised target_texts/group/hash semantics, reused two conversational trial-value sets, and preserved all three older releases. No new image execution or category research.

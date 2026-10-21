@@ -1,0 +1,21 @@
+{
+  "version": "20261021_seal_v1",
+  "upstream": "20261021_v2",
+  "files_sha256": {
+    "change_validation.json": "c96c706618db45918ae56389903510c951124a8adf17af1bd0450162628e293a",
+    "images/business_registration_chatgpt.png": "c9141823ead799e04702df52dc8121be3aa5e0de8dbc6157a6a33bb6c849fd8f",
+    "images/business_registration_nano.jpg": "d5d618f3506f51d81334a9e71642089f8812cead57baff9c502ed0a9c9e4a74e",
+    "images/cfp_chatgpt.png": "df11fd1e0d98e4884ff98026ee58457d38b5b2fd77637e2228ebc8ec223586cc",
+    "images/cfp_nano.jpg": "bfdb321002ed0cd911208e5cd6d22abcd90a4f9ee62b1813cb0bc13cdc763c9a",
+    "images/edinburgh_chatgpt.png": "65f398d66ca3db1f5b43204cefd83b8435192d197a24ef9695576019d2cb5ea1",
+    "images/edinburgh_nano.jpg": "3c37e7a4c6088ce0e04fbe637f5da95070989fb9e6452bad1450e7c8708cff72",
+    "images/household_chatgpt.png": "7e1c50bfe7eb5ed6c40250aedad9a3670bc25670c4b76103b88b2240a31485d5",
+    "images/household_nano.jpg": "d2d5c16fa9180ec5006ce4a7c45da09601e9f828f97d02132366625fcfbe4383",
+    "README.md": "45a43df6228d69511a63df7b4ef012e52969fd089faa0a5c5597f4c663bb53ff",
+    "seal_policy_1430.csv": "675d050bffcf4e44c6b762b6cc1e2a5901dc5fcca58ab0e88415e8b4adb5392b",
+    "seal_rules.json": "a1793136917dfd75db3cab11bea608b9b1228af0c494f86c9282d68058004ab4",
+    "validate_delivery.py": "9c18b8351b2d1bb24b4e90771eef5e43f5b04bd4d82f4017078f6d714ea588d3",
+    "证件类_分类与生图说明.md": "19bbf8636c827b6dc21bf605165c63030919f3c01046094efac8b84ef82223fd",
+    "证件类提示词_4290条.csv": "ac1aaec5d9ae32b52845fade7d37d66b9dfdb7e5b29c8cc31991b5897b4843ce"
+  }
+}

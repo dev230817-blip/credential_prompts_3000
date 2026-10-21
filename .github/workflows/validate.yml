@@ -51,3 +51,5 @@ jobs:
           python -B -X utf8 src/validate_release.py --repo . --rebuild
           python -B -X utf8 src/verify_hashes.py --repo .
           python -B -X utf8 -m unittest discover -s tests -v
+      - name: Validate seal delivery patch
+        run: python -B -X utf8 deliveries/20261021_seal_v1/validate_delivery.py
