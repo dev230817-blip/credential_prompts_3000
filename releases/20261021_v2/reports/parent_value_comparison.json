@@ -1,0 +1,18 @@
+{
+  "base_count": 1430,
+  "core_field_sets_unchanged": 1428,
+  "trial_example_overrides": [
+    "CAT-C0207",
+    "CAT-D0081"
+  ],
+  "excluded_text_roles": [
+    "标题",
+    "国家或地区",
+    "印章文字",
+    "授予语句",
+    "正文",
+    "毕业语句",
+    "记录说明"
+  ],
+  "scope": "core extraction and explicitly reused trial values, not category review"
+}

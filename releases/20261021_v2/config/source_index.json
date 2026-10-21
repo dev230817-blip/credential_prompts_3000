@@ -1,0 +1,512 @@
+[
+  {
+    "source_id": "PRADO",
+    "title": "欧盟理事会 PRADO",
+    "url": "https://www.consilium.europa.eu/prado/en/prado-start-page.html",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "已读官方入口；仅支持身份与旅行证件范围，未逐国逐版核实"
+  },
+  {
+    "source_id": "CNQUAL",
+    "title": "国家职业资格目录2021版",
+    "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/zcfg/gfxwj/rcrs/202112/t20211202_429301.html",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "已读官方公告；历史目录依据，不认定2026现行资格或证书版式"
+  },
+  {
+    "source_id": "CNSKILL",
+    "title": "职业技能等级证书样式说明",
+    "url": "https://chinajob.mohrss.gov.cn/c/2021-01-05/339470.shtml",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "已读官方说明；支持技能等级证书与职业资格区分，未逐工种核发证"
+  },
+  {
+    "source_id": "CNBUS",
+    "title": "市场监管总局新版营业执照通知",
+    "url": "https://www.samr.gov.cn/djzcj/zyfb/zjfb/art/2023/art_2912c3d4e57b4092b8835e8df05cf7f6.html",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "已读2019版通知的八格式说明；省份细分不是独立版式证据，当前版本待核"
+  },
+  {
+    "source_id": "QS",
+    "title": "QS 2027官方榜单入口",
+    "url": "https://www.topuniversities.com/qs-top-uni-wur",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "仅用于后续筛校；本清单未逐校核名次，不能把所有院校称为前200"
+  },
+  {
+    "source_id": "PMI",
+    "title": "PMI认证目录",
+    "url": "https://www.pmi.org/certifications",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "已读认证目录；只核对应认证名称，不核纸本或电子证书模板"
+  },
+  {
+    "source_id": "AWS",
+    "title": "AWS认证目录",
+    "url": "https://docs.aws.amazon.com/aws-certification/latest/examguides/",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "已读官方目录；认证现行/退役状态及证书载体仍需逐项核对"
+  },
+  {
+    "source_id": "CISCO",
+    "title": "Cisco认证目录",
+    "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/index.html",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "已读官方检索片段；部分旧名称仅作历史候选，版本需核"
+  },
+  {
+    "source_id": "ISC2",
+    "title": "ISC2认证目录",
+    "url": "https://www.isc2.org/certifications",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "已读官方检索片段；认证名不等于证书版式已核"
+  },
+  {
+    "source_id": "UKCO",
+    "title": "英国公司成立证书说明",
+    "url": "https://www.gov.uk/limited-company-formation/register-your-company",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "已读官方说明，支持certificate of incorporation名称；样式未核"
+  },
+  {
+    "source_id": "ACRA",
+    "title": "新加坡ACRA公司成立证书样本入口",
+    "url": "https://www.acra.gov.sg/docs/default-source/br2s-ishop-products/certificate-confirming-incorporation-of-company.pdf?sfvrsn=83c24399_2",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "已读官方检索片段；仅支持公司成立证书，不外推其他组织类型"
+  },
+  {
+    "source_id": "MCM",
+    "title": "COMAP数学建模竞赛",
+    "url": "https://www.comap.com/contests/mcm-icm",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "已查官方线索；竞赛与获奖证明的具体版本未逐项核实"
+  },
+  {
+    "source_id": "ISEF",
+    "title": "Society for Science ISEF",
+    "url": "https://www.societyforscience.org/isef/",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "已查官方线索；不据赛事存在推定证书版式"
+  },
+  {
+    "source_id": "WORLDSKILLS",
+    "title": "WorldSkills",
+    "url": "https://worldskills.org/",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "已查官方线索；不把奖牌当作纸面证书"
+  },
+  {
+    "source_id": "QS_NANKAI",
+    "title": "QS南开大学2027条目",
+    "url": "https://www.topuniversities.com/universities/nankai-university",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "官方检索结果显示2027版并列329；仅核排名，不核证件"
+  },
+  {
+    "source_id": "AUD-S01",
+    "title": "印刷业管理条例",
+    "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_bce1811584d5436aae143731843cee39.html",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "印刷经营许可证是证名，出版物为经营范围；不据此认定出版物经营许可证与印刷经营许可证相同。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S02",
+    "title": "互联网诊疗监管细则（试行）",
+    "url": "https://www.nhc.gov.cn/yzygj/c100068/202203/2072f0e8988249e59d942e1b2a933916.shtml",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "互联网医院使用医疗机构执业许可证；既可能为实体医院第二名称，也可能单独取证。不是说互联网医院没有许可。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S03",
+    "title": "澳大利亚189技术独立签证",
+    "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "支持189是可永久居留的具体签证；上位永久签证批准证明与子类存在交叉，不意味着所有永久签证都等于189。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S04",
+    "title": "英国eVisa说明",
+    "url": "https://www.gov.uk/evisa",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "eVisa是身份、移民状态和条件的数字记录；不能把通用eVisa和签证目的自动计成七份不同文书。批准信可能另有用途，尚未核到该库对应载体。",
+    "access": "官方页面正文",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S05",
+    "title": "国际道路运输管理规定2023修改",
+    "url": "https://xxgk.mot.gov.cn/jigou/fgs/202312/t20231204_3961946.html",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "国际道路旅客运输许可发道路运输经营许可证，并注明经营范围；车辆行车许可证是另一个对象。",
+    "access": "官方页面正文第八条、第十三条",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S06",
+    "title": "道路危险货物运输管理规定2026修改",
+    "url": "https://xxgk.mot.gov.cn/jigou/fgs/202602/t20260213_4200285.html",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "经营性申请发道路运输经营许可证，非经营性申请发道路危险货物运输许可证；这两项不能机械合并。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S07",
+    "title": "港澳台居民居住证申领发放办法",
+    "url": "https://www.gov.cn/zhengce/content/2018-08/19/content_5314865.htm",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "内地大陆居住生活资格，与跨境通行证分属不同功能；不把居住证当出入境证件。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S08",
+    "title": "韩国驻美使馆家庭关系登记证书说明",
+    "url": "https://overseas.mofa.go.kr/us-en/brd/m_4503/view.do?seq=713548",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "家庭关系、基本证明、婚姻关系证明分别列出；家庭关系证明归民事家庭关系更合适。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S09",
+    "title": "加拿大IRCC学习许可说明",
+    "url": "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=478",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "学习许可不是旅行证件；入境可能还需签证或eTA。没有替该库确认批准信与实际许可的具体形态。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S10",
+    "title": "加拿大IRCC学习工作许可与签证",
+    "url": "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=440",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "许可与签证是不同文件；同批获批不代表同一证件。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S11",
+    "title": "肯尼亚eTA官方说明",
+    "url": "https://etakenya.go.ke/apply/start/help",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "官方以电子旅行授权eTA列示；不能仅因入境用途把它当电子签证。签证类可扩大为签证及旅行授权，或分子型。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S12",
+    "title": "澳门其他人士逗留特别许可",
+    "url": "https://www.gov.mo/zh-hans/services/ps-2129/",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "官方对象为非居民；非永久性居民与非居民不是同义词。不同许可人群需进一步落实。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S13",
+    "title": "澳门治安警察局服务分类",
+    "url": "https://www.fsm.gov.mo/psp/WebReserveSystem/ChooseService.aspx",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "非永久性居民身份证办理与外地学生、外地雇员逗留许可分列，支持名称混淆问题。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S14",
+    "title": "法国居住证申请的地址证明要求",
+    "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33052",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "地址证明可以是账单、产权材料或住宿声明等，不是统一的一张住所登记证。不得从泛称推出不存在所有地址证明。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S15",
+    "title": "奥地利住址登记与确认",
+    "url": "https://www.oesterreich.gv.at/de/themen/persoenliche_dokumente_und_bestaetigungen/an__abmeldung_des_wohnsitzes/Seite.1180200",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "官方区分Meldezettel登记表与书面Bestätigung der Meldung；旧俗称与当前表格须分开。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S16",
+    "title": "奥地利登记确认",
+    "url": "https://www.oesterreich.gv.at/en/themen/persoenliche_dokumente_und_bestaetigungen/an__abmeldung_des_wohnsitzes/Seite.1180300",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "支持Meldebestätigung登记确认书类别，不把未提交的申请表当证明。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S17",
+    "title": "血站管理办法",
+    "url": "https://www.nhc.gov.cn/fzs/c100048/201808/9d6a83f512294e2b9e8c135b4d8cff82.shtml",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "血站的正式证名为血站执业许可证；不支持给所有采供血机构套同一泛称。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S18",
+    "title": "公路水运质量检测新旧证书衔接",
+    "url": "https://xxgk.mot.gov.cn/jigou/aqyzljlglj/202403/t20240315_4061171.html",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "原试验检测机构等级证书转为质量检测机构资质证书；不能把旧名直接标成当前版，也不认定旧文件从未存在。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S19",
+    "title": "国家体育总局职业资格查询下载范围",
+    "url": "https://zwfw.sport.gov.cn/qualification.html",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "游泳救生员以及游泳、滑雪、潜水、攀岩指导员是具体资格名称；不能把救生员泛称套全部救援职业。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S20",
+    "title": "USACO官方赛事细则",
+    "url": "https://usaco.org/index.php?page=details",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "已核分组、晋级和certified scores；没有核到库中所指的一份统一获奖证书。不作USACO绝无任何证书的否定结论。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S21",
+    "title": "第一届学生青年运动会通知",
+    "url": "https://www.moe.gov.cn/srcsite/A17/moe_938/s3279/202302/t20230209_1043100.html",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "原全国学生运动会与青年运动会合并；旧名应标历史，不能直接当2026现行赛名。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S22",
+    "title": "国际语言学奥林匹克主办方",
+    "url": "https://www.ioling.org/",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "赛事对象是语言学，不属于信息学或编程比赛。仅核赛事性质，未核某版获奖证书。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S23",
+    "title": "Jessup主办方赛事介绍",
+    "url": "https://www.ilsa.org/jessup/",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "国际法模拟法庭，不是语言或艺术竞赛；未核具体证书版式。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S24",
+    "title": "Vis Moot主办方赛事说明",
+    "url": "https://www.vismoot.org/home/32nd-vis-moot/",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "国际商事仲裁模拟仲裁庭，属于法律竞赛。未核具体获奖文书。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S25",
+    "title": "QS2027华中科技大学",
+    "url": "https://www.topuniversities.com/universities/huazhong-university-science-technology",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "官方可见排名307，超出前200选校偏好；与学校或证件真假无关。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S26",
+    "title": "QS2027北京师范大学",
+    "url": "https://www.topuniversities.com/universities/beijing-normal-university",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "官方可见排名并列237，超出前200选校偏好。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S27",
+    "title": "QS2027西安交通大学",
+    "url": "https://www.topuniversities.com/universities/xian-jiaotong-university",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "官方可见排名并列296，超出前200选校偏好。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S28",
+    "title": "QS2027天津大学",
+    "url": "https://www.topuniversities.com/universities/tianjin-university",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "官方可见排名并列235，超出前200选校偏好。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S29",
+    "title": "QS2027哈尔滨工业大学",
+    "url": "https://www.topuniversities.com/universities/harbin-institute-technology",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "官方可见排名190；作为不能凭印象剔除的反例。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S30",
+    "title": "PSL成员院校学生卡与注册",
+    "url": "https://dauphine.psl.eu/formations/scolarite/inscriptions-administratives",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "成员院校办理学生卡与注册；不支持推断PSL无学生卡或无文凭，只提示签发主体应落实。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S31",
+    "title": "PSL成员院校文凭颁发",
+    "url": "https://dauphine.psl.eu/en/training/school/awarding-of-diplomas",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "成员院校文凭办理；不能把联合体、项目与实际签发机构混作单一模板。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S32",
+    "title": "2025婚姻登记条例",
+    "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/202505/t20250508_4084522.html",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "第二十七条规定婚姻登记证由国务院民政部门规定式样并监制；不代表各省实物绝无差异。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S33",
+    "title": "2022营业执照照面事项调整",
+    "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/djzcj/art/2023/art_9c67139da37a46fc8955d42d130947b2.html",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "调整外的格式分类与印制标准沿用统一要求；不支持只因省名不同就证明独立版式。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S34",
+    "title": "2024不动产权证书监制办法",
+    "url": "https://www.hunan.gov.cn/zqt/zcsd/202406/t20240604_33319403.html",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "自然资源部统一样式、标准；省级负责印制等，不能等同每省独立样式。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S35",
+    "title": "2023食品经营许可和备案管理办法",
+    "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_91a91c26ae464a2f898952d5b84f62c6.html",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "总局制定正副本式样；地方差异应具体描述，不按省自动推定。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "AUD-S36",
+    "title": "GMC注册证明与专业状态证明",
+    "url": "https://www.gmc-uk.org/registration-and-licensing/managing-your-registration/proof-of-registration",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "注册证明与good standing用途可不同；应先落实具体文件，不因关键词近似就删。",
+    "access": "官方检索结果或可见片段",
+    "inherited_from": "分类审查_20261020_v1"
+  },
+  {
+    "source_id": "K9-01",
+    "title": "NCSU Putnam Prize Winners",
+    "url": "https://wp.math.ncsu.edu/competitions/ncsu-putnam-prize-winners/",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "学校官网明确说明本校Putnam前三名获得Levine-Anderson奖，含奖金和证书。 限制：限定为该校奖励；不是MAA统一颁发的全国竞赛获奖证书。",
+    "access": "官方页面或官方法规文字可读",
+    "entry_id": "CAT-B0404"
+  },
+  {
+    "source_id": "K9-02",
+    "title": "James Dyson Award Terms and Conditions",
+    "url": "https://www.jamesdysonaward.org/en-us/terms-and-conditions/",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "官方条款4.8、4.9、4.10、4.12、4.13列明相应获奖或入围者获得James Dyson Award Certificate。 限制：本次采用官方检索索引摘录；直接打开返回403。只确认有证书，不指定某届印模或版式。",
+    "access": "官方检索索引可见；直开403",
+    "entry_id": "CAT-B0475"
+  },
+  {
+    "source_id": "K9-03",
+    "title": "CFP Board Your Digital Certificate",
+    "url": "https://www.cfp.net/for-cfp-pros/market-yourself/your-digital-certificate",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "CFP Board官方说明向已获认证者提供数字证书，可访问并下载PDF。 限制：选择美国CFP Board体系；不把FPSB全球网络当作单一签发机构。",
+    "access": "官方页面或官方法规文字可读",
+    "entry_id": "CAT-C0207"
+  },
+  {
+    "source_id": "K9-04",
+    "title": "California Business Entities Records Request",
+    "url": "https://www.sos.ca.gov/business-programs/business-entities/information-requests",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "州务卿说明Certificate of Status证明实体当前状态，与登记文件认证副本分开。 限制：选择状态证书；不混称成立章程或通用营业执照。",
+    "access": "官方页面或官方法规文字可读",
+    "entry_id": "CAT-D0193"
+  },
+  {
+    "source_id": "K9-05",
+    "title": "New York FAQs Corporations and Business Entities",
+    "url": "https://dos.ny.gov/node/35461",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "纽约州说明可申请Certificate of Status，也称Good Standing或Existence证明。 限制：与Certificate of Incorporation等成立文件分开。",
+    "access": "官方页面或官方法规文字可读",
+    "entry_id": "CAT-D0194"
+  },
+  {
+    "source_id": "K9-06",
+    "title": "Florida Division of Corporations Certification",
+    "url": "https://dos.fl.gov/sunbiz/manage-business/certification/",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "州公司登记部门提供Certificate of Status申请和验证服务。 限制：只选状态证书，不把登记副本或成立文件合在一个类别。",
+    "access": "官方页面或官方法规文字可读",
+    "entry_id": "CAT-D0196"
+  },
+  {
+    "source_id": "K9-07",
+    "title": "Reglamento del Registro Público de Comercio Articles 23-24",
+    "url": "https://www.economia.gob.mx/files/marco_normativo/R14.pdf",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "条例第23、24条规定登记机关对商业电子登记簿的已登记事项签发认证，可为全文或指定内容。 限制：西班牙文为法律描述中的文书类型，不声称各州使用相同固定封面标题或版式。",
+    "access": "官方页面或官方法规文字可读",
+    "entry_id": "CAT-D0257"
+  },
+  {
+    "source_id": "K9-08",
+    "title": "Chile Registro de Empresas y Sociedades FAQs Section 5.1",
+    "url": "https://www.registrodeempresasysociedades.cl/PreguntasFrecuentes.aspx",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "官方说明Certificado de Vigencia用于证明法人处于存续或解散状态，与现行章程证明分开。 限制：选择企业登记体系RES的存续证明，不混称任何公司登记文件。",
+    "access": "官方页面或官方法规文字可读",
+    "entry_id": "CAT-D0259"
+  },
+  {
+    "source_id": "K9-09",
+    "title": "Dubai Municipality Services Permit for Food Related Activities",
+    "url": "https://www.dm.gov.ae/dubai-municipality-services/",
+    "checked_at": "2026-10-20",
+    "evidence_scope": "市政府服务目录明确列出食品相关活动许可，说明满足食品规范条件后可取得该许可。 限制：将泛称食品场所许可收窄至具体服务；不是建筑平面图审批或单纯受理回执。",
+    "access": "官方页面或官方法规文字可读",
+    "entry_id": "CAT-D0279"
+  }
+]

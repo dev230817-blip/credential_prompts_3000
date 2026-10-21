@@ -1,5 +1,9 @@
 # Changelog
 
+## 20261021_v2
+
+Knowledge-guided policy A: 1,430 categories / 4,290 prompts. Supplied core values stay fixed; layout and fixed prose may vary. Removed the generic layout skeleton, revised target_texts/group/hash semantics, reused two conversational trial-value sets, and preserved all three older releases. No new image execution or category research.
+
 ## 20261021_v1
 
 Added 1,430 categories / 4,290 clean prompts, with physical and electronic capture modes handled separately. Frozen content, standard canvases, content-group provenance and offline rebuilding/export are included. Archived releases remain byte-for-byte unchanged. New image generation and acceptance remain zero.

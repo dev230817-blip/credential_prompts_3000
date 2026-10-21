@@ -2,24 +2,27 @@
 
 [English](README_EN.md) | 中文
 
-用于AI生成富文字图像来源检测研究的证件类提示词库。仓库名称保留历史命名；**最新版本为[20261021_v1](releases/20261021_v1/README.md)，1430类、1430份基础内容、4290条提示词**，覆盖5个一级、40个二级分类。
+用于AI生成富文字图像来源检测研究的证件类提示词库。仓库保留历史名称，最新版为[20261021_v2](releases/20261021_v2/README.md)：**1430类、4290条，全clean，5一级、40二级**。
 
-实体1418类各有扫描、正拍、斜拍，共4254条；电子12类各有原生页面、屏幕正拍、屏幕斜拍，共36条。每组三条的完整文字相同，仅呈现方式变化。国内1524条、国外国家2490条、国际体系276条；全部clean，不含文字异常对照。
+本版采用使用者选择的A口径：每类三条提供相同核心取值，允许模型采用不同版式、固定印刷文案和装饰。它们是同一信息组，不是同一份证面的严格三视图。实体1418类×扫描/正拍/斜拍＝4254条；电子12类×原生页面/屏幕正拍/屏幕斜拍＝36条。
 
 | 文件 | 用途 |
 | --- | --- |
-| [团队CSV](releases/20261021_v1/data/credential_prompts_4290_unified.csv) | 固定12列，UTF-8 BOM |
-| [完整TXT](releases/20261021_v1/data/prompts.txt) | 阅读和复制 |
-| [Excel筛选](releases/20261021_v1/data/prompts_filter.xlsx) | 分类、国家、载体与成像方式 |
-| [JSONL主数据](releases/20261021_v1/data/prompts.jsonl) | 完整字段、正文哈希与追溯 |
-| [18条样例](releases/20261021_v1/docs/examples_18.md) | 六种文书各三成像 |
+| [团队CSV](releases/20261021_v2/data/credential_prompts_4290_unified.csv) | 固定12列，UTF-8 BOM |
+| [完整TXT](releases/20261021_v2/data/prompts.txt) | 阅读和复制 |
+| [Excel筛选](releases/20261021_v2/data/prompts_filter.xlsx) | 分类、国家、载体和成像方式 |
+| [JSONL主数据](releases/20261021_v2/data/prompts.jsonl) | 核心值、正文、哈希与追溯 |
+| [四类12条样例](releases/20261021_v2/docs/examples_12.md) | 学位证、户口页、香港商业登记证、CFP数字证书 |
 
-| 版本 | 内容 | 状态 |
-| --- | --- | --- |
-| [20261021_v1](releases/20261021_v1/README.md) | 1430类，4290条；实体与电子分别三成像 | 当前版本；新正文逐条人工确认0，图片生成0、验收0 |
-| [20261020_v1](releases/20261020_v1/README.md) | 1000组，3000条，全clean三成像 | 历史公开版，完整保留 |
-| [20261011_v4](releases/20261011_v4/README.md) | 2986条，clean/subtle/strong三档 | 历史公开版，完整保留 |
+target_texts只覆盖给定核心取值，不是整页OCR转录；extra_json.content_group_id关联核心值组，group_id仍保留团队文字篡改组的原意并留空。标准aspect_ratio仅限定输出画布，文档本体比例交由模型。旧固定骨架、统一印章与合成授予句已从新版提示词移除。
 
-本版采用已确定的1430类范围，不新增类别、不为中外比例补数。三成像通过extra_json.content_group_id关联；group_id不改作成像组。输出画布与文档本体比例分开保存。类别数不等于已核实的独立视觉模板数。
+| 版本 | 内容与口径 |
+| --- | --- |
+| [20261021_v2](releases/20261021_v2/README.md) | 当前：1430类/4290条，同组核心值固定，版式与固定文案可变化 |
+| [20261021_v1](releases/20261021_v1/README.md) | 历史：1430类/4290条，锁定输入完整文字和合成骨架 |
+| [20261020_v1](releases/20261020_v1/README.md) | 历史：1000组/3000条，全clean三成像 |
+| [20261011_v4](releases/20261011_v4/README.md) | 历史：2986条，clean/subtle/strong三档 |
 
-每个发布目录包含自己的数据、配置、说明、离线构建和检查工具。旧目录与旧Git历史不改。[复现说明](releases/20261021_v1/docs/reproduction_scope.md)、[审核边界](releases/20261021_v1/docs/review_and_limits.md)、[版本沿革](CHANGELOG.md)。没有图片随包发布；许可证仍待项目组确定，未新增LICENSE。
+分类及地理覆盖不变，不新增类别或补中外比例。本轮未重新检索或核查类别，未生图。用户此前小样支持改写方向，仍观察到补造信息、提示词说明入图和裁切，新指令尚未做新一轮图片验证。新4290条未逐条人工确认，对应图像生成/验收0。未附真实证件、用户图片或内部个人资料。历史目录和Git历史保留。
+
+详见[字段说明](releases/20261021_v2/docs/data_fields.md)、[小样反馈](releases/20261021_v2/docs/pilot_feedback.md)、[复现范围](releases/20261021_v2/docs/reproduction_scope.md)和[版本记录](CHANGELOG.md)。许可证未定，未新增LICENSE。

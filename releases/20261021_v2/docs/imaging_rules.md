@@ -1,0 +1,5 @@
+# 六种成像
+
+实体使用scan/front_photo/oblique_photo；电子使用digital_flat/screen_front_photo/screen_oblique_photo。规则在config/imaging_rules.json。输出画布继承父版标准枚举，但不据此限定文档本体的方向与比例。拍摄要求完整入画；电子页面不转为纸张。
+
+A口径允许三次独立生成采用不同版式和固定正文；不得把它们当作同一证面受控三视图。提示词的成像要求不等于模型实际执行通过，实际图片需另行看取值、补造信息及裁切。

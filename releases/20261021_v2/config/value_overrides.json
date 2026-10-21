@@ -1,0 +1,87 @@
+{
+  "CAT-D0081": {
+    "reason": "reuse user-tested conversational Hong Kong example; no source re-audit",
+    "fields": [
+      {
+        "label": "企业中文名称",
+        "role": "field",
+        "value": "澄禾工程服務有限公司"
+      },
+      {
+        "label": "企业英文名称",
+        "role": "field",
+        "value": "CLEARFIELD ENGINEERING SERVICES LIMITED"
+      },
+      {
+        "label": "中文业务地址",
+        "role": "field",
+        "value": "香港九龍觀塘澄禾道18號明川商業中心8樓802室"
+      },
+      {
+        "label": "英文业务地址",
+        "role": "field",
+        "value": "UNIT 802, 8/F, MING CHUAN COMMERCIAL CENTRE, 18 CHENG WO ROAD, KWUN TONG, KOWLOON, HONG KONG"
+      },
+      {
+        "label": "中文业务性质",
+        "role": "field",
+        "value": "工程顧問服務"
+      },
+      {
+        "label": "英文业务性质",
+        "role": "field",
+        "value": "ENGINEERING CONSULTANCY SERVICES"
+      },
+      {
+        "label": "中文企业形式",
+        "role": "field",
+        "value": "有限公司"
+      },
+      {
+        "label": "英文企业形式",
+        "role": "field",
+        "value": "LIMITED COMPANY"
+      },
+      {
+        "label": "生效日期",
+        "role": "field",
+        "value": "16 April 2026"
+      },
+      {
+        "label": "届满日期",
+        "role": "field",
+        "value": "15 April 2027"
+      }
+    ]
+  },
+  "CAT-C0207": {
+    "reason": "reuse user-tested CFP certification title as a supplied core value",
+    "fields": [
+      {
+        "label": "认证机构",
+        "role": "field",
+        "value": "CFP Board"
+      },
+      {
+        "label": "认证名称",
+        "role": "field",
+        "value": "CFP® CERTIFICATION"
+      },
+      {
+        "label": "资格名称",
+        "role": "field",
+        "value": "CERTIFIED FINANCIAL PLANNER®"
+      },
+      {
+        "label": "持证人姓名",
+        "role": "field",
+        "value": "Adrian Cole Bennett"
+      },
+      {
+        "label": "认证日期",
+        "role": "field",
+        "value": "16 April 2026"
+      }
+    ]
+  }
+}

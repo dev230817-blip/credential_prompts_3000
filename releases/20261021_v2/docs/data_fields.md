@@ -1,0 +1,7 @@
+# 字段与分组
+
+团队CSV固定12列、UTF-8 BOM、全clean；group_id和篡改列为空。sample_id为CRD-20261021-v2-00001至04290。extra_json.core_value_group_id与content_group_id都表示同一核心取值组；core_values_sha256与兼容content_sha256只计算给定取值及主体设定，不计算模型将补充的整页正文。
+
+target_texts是去重、按输入顺序排列的给定核心值，不能视作整页OCR真值或最终阅读顺序；实际布局允许变化，完整图中文字要在出图后另记录。expected_core_values为输入值，不名为expected_visible_text，以避免将模型可能补充的固定文案误称为已知全文。layout_locked与full_visible_text_locked均为false。
+
+新增固定文案不等于允许改动核心取值。提示词要求保留给定值及日期的原有写法，以对应团队target_texts的逐字目标。若模型输出发生格式变化，须在图像验收中单独记录；本版仅验证输入，未实施OCR验收。

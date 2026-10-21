@@ -1,0 +1,40 @@
+{
+  "version": "credential-knowledge-guided-20261021-v2",
+  "policy": "A",
+  "group_semantics": "same_supplied_core_values; layout_and_fixed_prose_may_vary",
+  "categories": 1430,
+  "prompts": 4290,
+  "category_l1": {
+    "身份与出入境": 310,
+    "教育与荣誉": 396,
+    "资格与技能": 296,
+    "经营与机构许可": 240,
+    "民事、社保与财产": 188
+  },
+  "capture_modes": {
+    "scan": 1418,
+    "front_photo": 1418,
+    "oblique_photo": 1418,
+    "digital_flat": 12,
+    "screen_front_photo": 12,
+    "screen_oblique_photo": 12
+  },
+  "material_kind": {
+    "card": 894,
+    "booklet": 228,
+    "paper": 2916,
+    "electronic": 36,
+    "sticker": 216
+  },
+  "geography": {
+    "国内": 1524,
+    "国外国家": 2490,
+    "国际体系": 276
+  },
+  "layout_and_full_text_invariance_claimed": false,
+  "core_values_identical_within_groups": true,
+  "new_release_images_generated": 0,
+  "new_release_images_accepted": 0,
+  "new_prompt_individually_approved": 0,
+  "category_research_repeated": false
+}

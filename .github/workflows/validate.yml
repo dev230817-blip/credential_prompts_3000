@@ -43,3 +43,11 @@ jobs:
           python -B -X utf8 src/validate_release.py --repo . --rebuild
           python -B -X utf8 src/verify_hashes.py --repo .
           python -B -X utf8 -m unittest discover -s tests -v
+      - name: Install knowledge-guided release dependencies
+        run: python -m pip install -r releases/20261021_v2/requirements.txt
+      - name: Validate knowledge-guided policy A
+        working-directory: releases/20261021_v2
+        run: |
+          python -B -X utf8 src/validate_release.py --repo . --rebuild
+          python -B -X utf8 src/verify_hashes.py --repo .
+          python -B -X utf8 -m unittest discover -s tests -v

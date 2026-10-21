@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "checks": {
+    "1430 unique categories and exact taxonomy": true,
+    "4290 unique IDs in versioned range": true,
+    "5 first level and 40 second level": true,
+    "three rows per supplied-value group": true,
+    "physical and electronic mode sets": true,
+    "4254 physical and 36 electronic": true,
+    "core payload hashes valid": true,
+    "same supplied fields targets and digest": true,
+    "knowledge-guided base regenerated": true,
+    "only capture paragraph varies within group": true,
+    "all supplied values embedded": true,
+    "current prompt SHA256": true,
+    "A semantics explicit no full-page lock": true,
+    "no inherited layout skeleton or forced document ratio": true,
+    "all clean with original team group semantics": true,
+    "standard canvas agrees with prompt": true,
+    "electronic never asks for a scanner": true,
+    "camera modes do not inherit scanner restrictions": true,
+    "no new-release images claimed": true,
+    "CSV exact values and metadata": true,
+    "TXT exact prompts": true,
+    "Excel exact rows": true,
+    "statistics computed from rows": true,
+    "12 sample prompts present": true,
+    "offline JSONL byte reproduction": true,
+    "offline CSV byte reproduction": true
+  },
+  "scope": "prompt data and exports only; no category re-audit or image acceptance"
+}

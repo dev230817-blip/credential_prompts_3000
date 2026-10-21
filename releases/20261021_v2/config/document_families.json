@@ -1,0 +1,138 @@
+{
+  "identity_card": {
+    "label": "身份卡",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "campus_card": {
+    "label": "校园卡",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "household": {
+    "label": "户籍登记册页",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "residence_extract": {
+    "label": "居住登记证明",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "passport": {
+    "label": "护照资料页",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "permit_card": {
+    "label": "居留与通行卡",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "permit_letter": {
+    "label": "许可通知文书",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "visa": {
+    "label": "签证贴纸",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "electronic": {
+    "label": "电子身份或授权记录",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "admission": {
+    "label": "录取通知函",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "degree": {
+    "label": "学位授予证书",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "graduation": {
+    "label": "毕业证书",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "award": {
+    "label": "竞赛获奖证书",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "honour": {
+    "label": "学业荣誉证书",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "qualification": {
+    "label": "专业资格证书",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "practice": {
+    "label": "执业与注册证明",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "membership": {
+    "label": "专业会员证明",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "language": {
+    "label": "语言能力证书",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "technical": {
+    "label": "技术认证证书",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "operator_card": {
+    "label": "操作资格卡",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "driving": {
+    "label": "驾驶资格卡",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "business": {
+    "label": "企业营业执照",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "incorporation": {
+    "label": "机构注册证书",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "registry_extract": {
+    "label": "登记摘录",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "operating": {
+    "label": "机构经营许可",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "project": {
+    "label": "工程项目许可",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "accreditation": {
+    "label": "机构认可证书",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "marriage": {
+    "label": "婚姻与家庭关系证明",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "vital": {
+    "label": "出生或死亡登记证明",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "social_card": {
+    "label": "社保与福利身份卡",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "benefit": {
+    "label": "待遇资格证明",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "property": {
+    "label": "不动产登记文书",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "vehicle": {
+    "label": "交通工具登记文书",
+    "layout_policy": "model_knowledge_not_locked"
+  },
+  "civil": {
+    "label": "民事证明与公证文书",
+    "layout_policy": "model_knowledge_not_locked"
+  }
+}
